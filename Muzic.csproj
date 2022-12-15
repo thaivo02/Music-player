@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Genre.Designer.cs~RF198d810.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Entity\" />
   </ItemGroup>
 
@@ -21,6 +25,10 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Genre.cs" />
+    <Compile Update="Top.cs">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 

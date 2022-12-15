@@ -18,4 +18,7 @@ F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.pdb
 F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.genruntimeconfig.cache
 F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\ref\Muzic.dll
 F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Properties.Resources.resources
-F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Treding.resources
+F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Discover.resources
+F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Trending.resources
+F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Genre.resources
+F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Top.resources
