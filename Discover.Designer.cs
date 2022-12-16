@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Discover));
             this.panMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.picSong2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.picSong6 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.picSong5 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.picSong4 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.picSong3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.picSong1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.picPop6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.picPop5 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -87,11 +92,6 @@
             this.labBanner1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.picBanner = new Guna.UI2.WinForms.Guna2PictureBox();
             this.picChill = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.picSong2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.picSong3 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.picSong4 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.picSong5 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.picSong6 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPop6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPop5)).BeginInit();
@@ -152,9 +152,85 @@
             this.panMain.Size = new System.Drawing.Size(1326, 851);
             this.panMain.TabIndex = 7;
             // 
+            // picSong2
+            // 
+            this.picSong2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picSong2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSong2.HoverState.ImageSize = new System.Drawing.Size(155, 146);
+            this.picSong2.Image = ((System.Drawing.Image)(resources.GetObject("picSong2.Image")));
+            this.picSong2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picSong2.ImageRotate = 0F;
+            this.picSong2.ImageSize = new System.Drawing.Size(150, 141);
+            this.picSong2.Location = new System.Drawing.Point(252, 344);
+            this.picSong2.Name = "picSong2";
+            this.picSong2.PressedState.ImageSize = new System.Drawing.Size(155, 146);
+            this.picSong2.Size = new System.Drawing.Size(155, 146);
+            this.picSong2.TabIndex = 19;
+            // 
+            // picSong6
+            // 
+            this.picSong6.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picSong6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSong6.HoverState.ImageSize = new System.Drawing.Size(155, 146);
+            this.picSong6.Image = ((System.Drawing.Image)(resources.GetObject("picSong6.Image")));
+            this.picSong6.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picSong6.ImageRotate = 0F;
+            this.picSong6.ImageSize = new System.Drawing.Size(150, 141);
+            this.picSong6.Location = new System.Drawing.Point(1136, 344);
+            this.picSong6.Name = "picSong6";
+            this.picSong6.PressedState.ImageSize = new System.Drawing.Size(155, 146);
+            this.picSong6.Size = new System.Drawing.Size(155, 146);
+            this.picSong6.TabIndex = 19;
+            // 
+            // picSong5
+            // 
+            this.picSong5.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picSong5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSong5.HoverState.ImageSize = new System.Drawing.Size(155, 146);
+            this.picSong5.Image = ((System.Drawing.Image)(resources.GetObject("picSong5.Image")));
+            this.picSong5.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picSong5.ImageRotate = 0F;
+            this.picSong5.ImageSize = new System.Drawing.Size(150, 141);
+            this.picSong5.Location = new System.Drawing.Point(915, 344);
+            this.picSong5.Name = "picSong5";
+            this.picSong5.PressedState.ImageSize = new System.Drawing.Size(155, 146);
+            this.picSong5.Size = new System.Drawing.Size(155, 146);
+            this.picSong5.TabIndex = 19;
+            // 
+            // picSong4
+            // 
+            this.picSong4.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picSong4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSong4.HoverState.ImageSize = new System.Drawing.Size(155, 146);
+            this.picSong4.Image = ((System.Drawing.Image)(resources.GetObject("picSong4.Image")));
+            this.picSong4.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picSong4.ImageRotate = 0F;
+            this.picSong4.ImageSize = new System.Drawing.Size(150, 141);
+            this.picSong4.Location = new System.Drawing.Point(694, 344);
+            this.picSong4.Name = "picSong4";
+            this.picSong4.PressedState.ImageSize = new System.Drawing.Size(155, 146);
+            this.picSong4.Size = new System.Drawing.Size(155, 146);
+            this.picSong4.TabIndex = 19;
+            // 
+            // picSong3
+            // 
+            this.picSong3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picSong3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSong3.HoverState.ImageSize = new System.Drawing.Size(155, 146);
+            this.picSong3.Image = ((System.Drawing.Image)(resources.GetObject("picSong3.Image")));
+            this.picSong3.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picSong3.ImageRotate = 0F;
+            this.picSong3.ImageSize = new System.Drawing.Size(150, 141);
+            this.picSong3.Location = new System.Drawing.Point(473, 344);
+            this.picSong3.Name = "picSong3";
+            this.picSong3.PressedState.ImageSize = new System.Drawing.Size(155, 146);
+            this.picSong3.Size = new System.Drawing.Size(155, 146);
+            this.picSong3.TabIndex = 19;
+            // 
             // picSong1
             // 
             this.picSong1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picSong1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picSong1.HoverState.ImageSize = new System.Drawing.Size(155, 146);
             this.picSong1.Image = ((System.Drawing.Image)(resources.GetObject("picSong1.Image")));
             this.picSong1.ImageOffset = new System.Drawing.Point(0, 0);
@@ -171,6 +247,7 @@
             this.picPop6.BackColor = System.Drawing.Color.Transparent;
             this.picPop6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picPop6.BorderRadius = 10;
+            this.picPop6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPop6.Image = ((System.Drawing.Image)(resources.GetObject("picPop6.Image")));
             this.picPop6.ImageRotate = 0F;
             this.picPop6.Location = new System.Drawing.Point(923, 725);
@@ -185,6 +262,7 @@
             this.picPop5.BackColor = System.Drawing.Color.Transparent;
             this.picPop5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picPop5.BorderRadius = 10;
+            this.picPop5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPop5.Image = ((System.Drawing.Image)(resources.GetObject("picPop5.Image")));
             this.picPop5.ImageRotate = 0F;
             this.picPop5.Location = new System.Drawing.Point(481, 725);
@@ -381,6 +459,7 @@
             this.picPop3.BackColor = System.Drawing.Color.Transparent;
             this.picPop3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picPop3.BorderRadius = 10;
+            this.picPop3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPop3.Image = ((System.Drawing.Image)(resources.GetObject("picPop3.Image")));
             this.picPop3.ImageRotate = 0F;
             this.picPop3.Location = new System.Drawing.Point(923, 615);
@@ -395,6 +474,7 @@
             this.picPop4.BackColor = System.Drawing.Color.Transparent;
             this.picPop4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picPop4.BorderRadius = 10;
+            this.picPop4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPop4.Image = ((System.Drawing.Image)(resources.GetObject("picPop4.Image")));
             this.picPop4.ImageRotate = 0F;
             this.picPop4.Location = new System.Drawing.Point(39, 725);
@@ -413,6 +493,7 @@
             this.panPop6.Controls.Add(this.btnPop6_play);
             this.panPop6.Controls.Add(this.labPop6_name);
             this.panPop6.Controls.Add(this.labPop6_singer);
+            this.panPop6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panPop6.Location = new System.Drawing.Point(915, 717);
             this.panPop6.Name = "panPop6";
             this.panPop6.Size = new System.Drawing.Size(376, 80);
@@ -477,6 +558,7 @@
             this.picPop2.BackColor = System.Drawing.Color.Transparent;
             this.picPop2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picPop2.BorderRadius = 10;
+            this.picPop2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPop2.Image = ((System.Drawing.Image)(resources.GetObject("picPop2.Image")));
             this.picPop2.ImageRotate = 0F;
             this.picPop2.Location = new System.Drawing.Point(481, 615);
@@ -495,6 +577,7 @@
             this.panPop3.Controls.Add(this.btnPop3_play);
             this.panPop3.Controls.Add(this.labPop3_name);
             this.panPop3.Controls.Add(this.labPop3_singer);
+            this.panPop3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panPop3.Location = new System.Drawing.Point(915, 607);
             this.panPop3.Name = "panPop3";
             this.panPop3.Size = new System.Drawing.Size(376, 80);
@@ -559,6 +642,7 @@
             this.picPop1.BackColor = System.Drawing.Color.Transparent;
             this.picPop1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picPop1.BorderRadius = 10;
+            this.picPop1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPop1.Image = ((System.Drawing.Image)(resources.GetObject("picPop1.Image")));
             this.picPop1.ImageRotate = 0F;
             this.picPop1.Location = new System.Drawing.Point(39, 615);
@@ -577,6 +661,7 @@
             this.panPop5.Controls.Add(this.btnPop5_play);
             this.panPop5.Controls.Add(this.labPop5_name);
             this.panPop5.Controls.Add(this.labPop5_singer);
+            this.panPop5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panPop5.Location = new System.Drawing.Point(473, 717);
             this.panPop5.Name = "panPop5";
             this.panPop5.Size = new System.Drawing.Size(376, 80);
@@ -645,6 +730,7 @@
             this.panPop2.Controls.Add(this.btnPop2_play);
             this.panPop2.Controls.Add(this.labPop2_name);
             this.panPop2.Controls.Add(this.labPop2_singer);
+            this.panPop2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panPop2.Location = new System.Drawing.Point(473, 607);
             this.panPop2.Name = "panPop2";
             this.panPop2.Size = new System.Drawing.Size(376, 80);
@@ -713,6 +799,7 @@
             this.panPop4.Controls.Add(this.btnPop4_play);
             this.panPop4.Controls.Add(this.labPop4_name);
             this.panPop4.Controls.Add(this.labPop4_singer);
+            this.panPop4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panPop4.Location = new System.Drawing.Point(31, 717);
             this.panPop4.Name = "panPop4";
             this.panPop4.Size = new System.Drawing.Size(376, 80);
@@ -781,6 +868,7 @@
             this.panPop1.Controls.Add(this.btnPop1_play);
             this.panPop1.Controls.Add(this.labPop1_name);
             this.panPop1.Controls.Add(this.labPop1_singer);
+            this.panPop1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panPop1.Location = new System.Drawing.Point(31, 607);
             this.panPop1.Name = "panPop1";
             this.panPop1.Size = new System.Drawing.Size(376, 80);
@@ -906,76 +994,6 @@
             this.picChill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picChill.TabIndex = 0;
             this.picChill.TabStop = false;
-            // 
-            // picSong2
-            // 
-            this.picSong2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.picSong2.HoverState.ImageSize = new System.Drawing.Size(155, 146);
-            this.picSong2.Image = ((System.Drawing.Image)(resources.GetObject("picSong2.Image")));
-            this.picSong2.ImageOffset = new System.Drawing.Point(0, 0);
-            this.picSong2.ImageRotate = 0F;
-            this.picSong2.ImageSize = new System.Drawing.Size(150, 141);
-            this.picSong2.Location = new System.Drawing.Point(252, 344);
-            this.picSong2.Name = "picSong2";
-            this.picSong2.PressedState.ImageSize = new System.Drawing.Size(155, 146);
-            this.picSong2.Size = new System.Drawing.Size(155, 146);
-            this.picSong2.TabIndex = 19;
-            // 
-            // picSong3
-            // 
-            this.picSong3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.picSong3.HoverState.ImageSize = new System.Drawing.Size(155, 146);
-            this.picSong3.Image = ((System.Drawing.Image)(resources.GetObject("picSong3.Image")));
-            this.picSong3.ImageOffset = new System.Drawing.Point(0, 0);
-            this.picSong3.ImageRotate = 0F;
-            this.picSong3.ImageSize = new System.Drawing.Size(150, 141);
-            this.picSong3.Location = new System.Drawing.Point(473, 344);
-            this.picSong3.Name = "picSong3";
-            this.picSong3.PressedState.ImageSize = new System.Drawing.Size(155, 146);
-            this.picSong3.Size = new System.Drawing.Size(155, 146);
-            this.picSong3.TabIndex = 19;
-            // 
-            // picSong4
-            // 
-            this.picSong4.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.picSong4.HoverState.ImageSize = new System.Drawing.Size(155, 146);
-            this.picSong4.Image = ((System.Drawing.Image)(resources.GetObject("picSong4.Image")));
-            this.picSong4.ImageOffset = new System.Drawing.Point(0, 0);
-            this.picSong4.ImageRotate = 0F;
-            this.picSong4.ImageSize = new System.Drawing.Size(150, 141);
-            this.picSong4.Location = new System.Drawing.Point(694, 344);
-            this.picSong4.Name = "picSong4";
-            this.picSong4.PressedState.ImageSize = new System.Drawing.Size(155, 146);
-            this.picSong4.Size = new System.Drawing.Size(155, 146);
-            this.picSong4.TabIndex = 19;
-            // 
-            // picSong5
-            // 
-            this.picSong5.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.picSong5.HoverState.ImageSize = new System.Drawing.Size(155, 146);
-            this.picSong5.Image = ((System.Drawing.Image)(resources.GetObject("picSong5.Image")));
-            this.picSong5.ImageOffset = new System.Drawing.Point(0, 0);
-            this.picSong5.ImageRotate = 0F;
-            this.picSong5.ImageSize = new System.Drawing.Size(150, 141);
-            this.picSong5.Location = new System.Drawing.Point(915, 344);
-            this.picSong5.Name = "picSong5";
-            this.picSong5.PressedState.ImageSize = new System.Drawing.Size(155, 146);
-            this.picSong5.Size = new System.Drawing.Size(155, 146);
-            this.picSong5.TabIndex = 19;
-            // 
-            // picSong6
-            // 
-            this.picSong6.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.picSong6.HoverState.ImageSize = new System.Drawing.Size(155, 146);
-            this.picSong6.Image = ((System.Drawing.Image)(resources.GetObject("picSong6.Image")));
-            this.picSong6.ImageOffset = new System.Drawing.Point(0, 0);
-            this.picSong6.ImageRotate = 0F;
-            this.picSong6.ImageSize = new System.Drawing.Size(150, 141);
-            this.picSong6.Location = new System.Drawing.Point(1136, 344);
-            this.picSong6.Name = "picSong6";
-            this.picSong6.PressedState.ImageSize = new System.Drawing.Size(155, 146);
-            this.picSong6.Size = new System.Drawing.Size(155, 146);
-            this.picSong6.TabIndex = 19;
             // 
             // Discover
             // 

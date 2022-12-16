@@ -44,9 +44,10 @@
             this.btnLoop = new Guna.UI2.WinForms.Guna2ImageButton();
             this.picPlaying_song = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panColumn = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnPlaylist = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnHistory = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnGenre = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnPlaylist = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnNew_playlist = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnFavorite = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnTop = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnTrend = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -215,6 +216,7 @@
             this.btnNext.PressedState.ImageSize = new System.Drawing.Size(27, 27);
             this.btnNext.Size = new System.Drawing.Size(45, 45);
             this.btnNext.TabIndex = 8;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnBack
             // 
@@ -229,6 +231,7 @@
             this.btnBack.PressedState.ImageSize = new System.Drawing.Size(27, 27);
             this.btnBack.Size = new System.Drawing.Size(45, 45);
             this.btnBack.TabIndex = 8;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnLoop
             // 
@@ -262,9 +265,10 @@
             // panColumn
             // 
             this.panColumn.BackColor = System.Drawing.Color.Linen;
+            this.panColumn.Controls.Add(this.btnPlaylist);
             this.panColumn.Controls.Add(this.btnHistory);
             this.panColumn.Controls.Add(this.btnGenre);
-            this.panColumn.Controls.Add(this.btnPlaylist);
+            this.panColumn.Controls.Add(this.btnNew_playlist);
             this.panColumn.Controls.Add(this.btnFavorite);
             this.panColumn.Controls.Add(this.btnTop);
             this.panColumn.Controls.Add(this.btnTrend);
@@ -278,10 +282,33 @@
             this.panColumn.Size = new System.Drawing.Size(282, 949);
             this.panColumn.TabIndex = 4;
             // 
+            // btnPlaylist
+            // 
+            this.btnPlaylist.BorderRadius = 10;
+            this.btnPlaylist.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnPlaylist.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPlaylist.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnPlaylist.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPlaylist.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPlaylist.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPlaylist.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPlaylist.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPlaylist.Font = new System.Drawing.Font("Segoe UI Emoji", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlaylist.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnPlaylist.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnPlaylist.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnPlaylist.HoverState.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPlaylist.Location = new System.Drawing.Point(29, 570);
+            this.btnPlaylist.Name = "btnPlaylist";
+            this.btnPlaylist.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnPlaylist.Size = new System.Drawing.Size(225, 41);
+            this.btnPlaylist.TabIndex = 7;
+            this.btnPlaylist.Text = "My playlists";
+            // 
             // btnHistory
             // 
             this.btnHistory.BorderRadius = 10;
-            this.btnHistory.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnHistory.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnHistory.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHistory.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnHistory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -304,7 +331,7 @@
             // btnGenre
             // 
             this.btnGenre.BorderRadius = 10;
-            this.btnGenre.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnGenre.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.btnGenre.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnGenre.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnGenre.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -325,35 +352,35 @@
             this.btnGenre.Text = "Genre";
             this.btnGenre.Click += new System.EventHandler(this.btnGenre_Click);
             // 
-            // btnPlaylist
+            // btnNew_playlist
             // 
-            this.btnPlaylist.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            this.btnPlaylist.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPlaylist.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnPlaylist.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPlaylist.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPlaylist.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPlaylist.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPlaylist.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPlaylist.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnPlaylist.FillColor = System.Drawing.SystemColors.Info;
-            this.btnPlaylist.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(70)))), ((int)(((byte)(200)))));
-            this.btnPlaylist.Font = new System.Drawing.Font("Segoe UI Emoji", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnPlaylist.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnPlaylist.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(70)))), ((int)(((byte)(200)))));
-            this.btnPlaylist.HoverState.FillColor2 = System.Drawing.SystemColors.Info;
-            this.btnPlaylist.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnPlaylist.Location = new System.Drawing.Point(0, 900);
-            this.btnPlaylist.Name = "btnPlaylist";
-            this.btnPlaylist.PressedColor = System.Drawing.Color.AliceBlue;
-            this.btnPlaylist.Size = new System.Drawing.Size(282, 49);
-            this.btnPlaylist.TabIndex = 3;
-            this.btnPlaylist.Text = "New playlist";
+            this.btnNew_playlist.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnNew_playlist.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnNew_playlist.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnNew_playlist.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNew_playlist.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNew_playlist.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNew_playlist.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNew_playlist.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNew_playlist.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnNew_playlist.FillColor = System.Drawing.SystemColors.Info;
+            this.btnNew_playlist.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(70)))), ((int)(((byte)(200)))));
+            this.btnNew_playlist.Font = new System.Drawing.Font("Segoe UI Emoji", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnNew_playlist.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnNew_playlist.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(70)))), ((int)(((byte)(200)))));
+            this.btnNew_playlist.HoverState.FillColor2 = System.Drawing.SystemColors.Info;
+            this.btnNew_playlist.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnNew_playlist.Location = new System.Drawing.Point(0, 900);
+            this.btnNew_playlist.Name = "btnNew_playlist";
+            this.btnNew_playlist.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnNew_playlist.Size = new System.Drawing.Size(282, 49);
+            this.btnNew_playlist.TabIndex = 3;
+            this.btnNew_playlist.Text = "New playlist";
             // 
             // btnFavorite
             // 
             this.btnFavorite.BorderRadius = 10;
-            this.btnFavorite.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnFavorite.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             this.btnFavorite.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnFavorite.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnFavorite.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -376,7 +403,7 @@
             // btnTop
             // 
             this.btnTop.BorderRadius = 10;
-            this.btnTop.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.btnTop.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.btnTop.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTop.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnTop.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -400,7 +427,7 @@
             // btnTrend
             // 
             this.btnTrend.BorderRadius = 10;
-            this.btnTrend.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            this.btnTrend.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
             this.btnTrend.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTrend.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnTrend.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -418,13 +445,13 @@
             this.btnTrend.PressedColor = System.Drawing.Color.AliceBlue;
             this.btnTrend.Size = new System.Drawing.Size(225, 41);
             this.btnTrend.TabIndex = 1;
-            this.btnTrend.Text = "Trending";
+            this.btnTrend.Text = "Hot artist";
             this.btnTrend.Click += new System.EventHandler(this.btnTrend_Click);
             // 
             // btnExplore
             // 
             this.btnExplore.BorderRadius = 10;
-            this.btnExplore.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            this.btnExplore.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
             this.btnExplore.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnExplore.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnExplore.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -526,7 +553,7 @@
         private Guna.UI2.WinForms.Guna2Panel panColumn;
         private Guna.UI2.WinForms.Guna2GradientButton btnHistory;
         private Guna.UI2.WinForms.Guna2GradientButton btnGenre;
-        private Guna.UI2.WinForms.Guna2GradientButton btnPlaylist;
+        private Guna.UI2.WinForms.Guna2GradientButton btnNew_playlist;
         private Guna.UI2.WinForms.Guna2GradientButton btnFavorite;
         private Guna.UI2.WinForms.Guna2GradientButton btnTop;
         private Guna.UI2.WinForms.Guna2GradientButton btnTrend;
@@ -539,5 +566,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel labTime_cur;
         private Guna.UI2.WinForms.Guna2HtmlLabel labTime_end;
         private Guna.UI2.WinForms.Guna2Panel panMain;
+        private Guna.UI2.WinForms.Guna2GradientButton btnPlaylist;
     }
 }

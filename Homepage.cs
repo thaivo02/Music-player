@@ -1,7 +1,11 @@
+using System.Media;
+
 namespace Muzic
 {
     public partial class Homepage : Form
     {
+        private MusicPlayer musicPlayer = new MusicPlayer();
+
         protected override CreateParams CreateParams
         {
             get
@@ -22,6 +26,17 @@ namespace Muzic
         private void btnPause_Click(object sender, EventArgs e)
         {
             btnPause.Checked = !btnPause.Checked;
+            //using (OpenFileDialog ofd = new OpenFileDialog())
+            //{
+            //    ofd.Filter = "Mp3 Files| *.mp3";
+            //    if (ofd.ShowDialog() == DialogResult.OK)
+            //    {
+            //        musicPlayer.open(ofd.FileName);
+            //    }
+            //}
+            //musicPlayer.play();
+            //SoundPlayer soundPlayer = new SoundPlayer(@"../Songs/Alan Walker - Alone.mp3");
+            //soundPlayer.Play();
         }
 
         private void btnRandom_Click(object sender, EventArgs e)
@@ -37,7 +52,7 @@ namespace Muzic
         }
         private void btnTrend_Click(object sender, EventArgs e)
         {
-            Trending frm = new Trending() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Artists frm = new Artists() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.panMain.Controls.Add(frm);
             frm.BringToFront();
             frm.Show();
@@ -65,6 +80,16 @@ namespace Muzic
             this.panMain.Controls.Add(frm);
             frm.BringToFront();
             frm.Show();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

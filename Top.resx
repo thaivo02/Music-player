@@ -58,7 +58,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="picTrend15.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picDance5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAYAAADNkKWqAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7c
         /QV4VNfa/o9PM/Fk4u7uuZKQkIQ4cQju7u7u7u5aoUCh1CgUijshgUCAcBXqdmq4O7S9//ezJhMCJ6fn
@@ -4245,7 +4245,7 @@
         +z9hgF9tZqDyNgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="picTrend14.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picDance4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAYAAADNkKWqAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF58
         /QdUFdcb9g0fzqH3KqCg2PsSe++aWKMxllhSjBoTTTcmmmKNsffeFRsgSO9FioIKKC5EsCBFeu8dr++6
@@ -9575,7 +9575,7 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="picTrend10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picUsuk5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAYAAADNkKWqAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
         vXV0HVe27f2600mMYmZmDR0xMzMzM1pkkWWZmWRmZkrMzOzYjmk44LDDzN19733fe29+a+1SyceKEqc7
@@ -12678,7 +12678,7 @@
         8sgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="picTrend9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picUsuk4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAYAAADNkKWqAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
         /WdUVdm2/o2yQcVEzjlnaOScc5JgBBUzKphFMYCgSJCcQUBFchQw55yrzM2cylRph7PPOf/3bffedkN7
@@ -15005,7 +15005,7 @@
         Kb+MVI5ivkcR5uPieGoCVDmyAZckQT/eWQS4cvJ69P9JW5eAy68AUQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="picTrend13.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picDance3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAYAAADNkKWqAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
         /XV0ZOeZ7g2ri1nMzLxUJZVKLJWYmZlb2FIzMzNzt9vudrvtdttuM8UQ23Hs2AFnBZwJTCbJTGbmDBx+
@@ -19931,7 +19931,7 @@
         AElFTkSuQmCC
 </value>
   </data>
-  <data name="picTrend5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picInstrument5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAIAAABC8jL9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAD/m0lEQVR4Xuz9B3wbV3qoD1MUKVb0Xoje
@@ -21490,7 +21490,7 @@
         iCz6ccY5Viaf+H/+z+xmC6qBtwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="picTrend8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picUsuk3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAYAAADNkKWqAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
         nXV4VNfa9s97ek4FibtM3JMrE3eFQAiWhBgWLCEQgmsI7u7uUtwdilSpC73aQlukWKnLqRz93vf+nntN
@@ -23709,7 +23709,7 @@
         BWB+eCwzra0QZJ4b+68NwBPK/x9w3vVxf7wYPQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="picTrend12.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picDance2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAYAAADNkKWqAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7k
         /XV0Vde79o2HJNslO+4GBGcQ3N3dvViBUigOpUBLizuFliKlUMGhWHGnaFtKWxi4ewIxCC5tr991z7VX
@@ -28398,7 +28398,7 @@
         AeiC/wsrH4JnLZ4sPwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="picTrend4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picInstrument4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAIAAABC8jL9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAD/m0lEQVR4XuydBXhUV/rwL7Fxd3eXzMTd
@@ -30099,7 +30099,7 @@
         OOeSVe+COqnvv/4PvSIiq7FEN2EAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="picTrend7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picUsuk2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAIAAABC8jL9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAD/m0lEQVR4Xuz9BXRcydWoDbdlQTMzo5iZ
@@ -32226,7 +32226,7 @@
         TkSuQmCC
 </value>
   </data>
-  <data name="picTrend11.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picDance1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAYAAADNkKWqAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF6k
         /QVYF1u7x4277aZUQEBEQkC4QESlQ0WxuxMxUBQVFQvF7k7s7u7exrYTL7tbAelOP/97Dbqf/TznnPec
@@ -37454,7 +37454,7 @@
         Uma1FipBExttUYJ6AlArSlAgKHOTaXf/nwHojf8PRqVb+OZh8aYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="picTrend3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picInstrument3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAIAAABC8jL9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAD/m0lEQVR4Xuz995MUx7rvjfaY9r572nvv
@@ -39263,7 +39263,7 @@
         8ExzMORrznGY7TnF+bz/B0JPpXFqO4TpAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="picTrend6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picUsuk1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAIAAABC8jL9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAD/m0lEQVR4Xuy9BXSbV7q2PafTJjHLbMso
@@ -41352,7 +41352,7 @@
         DwmKX7gKRK0ZAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="picTrend2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picInstrument2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAIAAABC8jL9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAD/m0lEQVR4XuydBVgc59qGieDuDuvO4u7u
@@ -42893,7 +42893,7 @@
         LttvAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="picTrend1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picInstrument1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAIAAABC8jL9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAD/m0lEQVR4XuzdBXgc15onfFmMzczMDFJ3
