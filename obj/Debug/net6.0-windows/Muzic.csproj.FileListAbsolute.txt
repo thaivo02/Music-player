@@ -25,4 +25,10 @@ F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Artists.re
 F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.ArtistInfo.resources
 F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.SongInfo.resources
 F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.SongsList.resources
-F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\BasicAudio.dll
+F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.dll
+F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.Asio.dll
+F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.Core.dll
+F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.Midi.dll
+F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.Wasapi.dll
+F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.WinForms.dll
+F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.WinMM.dll

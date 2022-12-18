@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.panPlaying = new Guna.UI2.WinForms.Guna2Panel();
-            this.trackVol = new Guna.UI2.WinForms.Guna2TrackBar();
-            this.track = new Guna.UI2.WinForms.Guna2TrackBar();
-            this.labPlaying_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labTime_cur = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labTime_end = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labTime_start = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.progressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.trackVol = new Guna.UI2.WinForms.Guna2TrackBar();
+            this.labPlaying_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnPause = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaying_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSound = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -56,6 +57,7 @@
             this.labLib = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labMenu = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.progressTimer = new System.Windows.Forms.Timer(this.components);
             this.panPlaying.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPlaying_song)).BeginInit();
             this.panColumn.SuspendLayout();
@@ -65,11 +67,11 @@
             // panPlaying
             // 
             this.panPlaying.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panPlaying.Controls.Add(this.trackVol);
-            this.panPlaying.Controls.Add(this.track);
-            this.panPlaying.Controls.Add(this.labPlaying_name);
-            this.panPlaying.Controls.Add(this.labTime_cur);
             this.panPlaying.Controls.Add(this.labTime_end);
+            this.panPlaying.Controls.Add(this.labTime_start);
+            this.panPlaying.Controls.Add(this.progressBar);
+            this.panPlaying.Controls.Add(this.trackVol);
+            this.panPlaying.Controls.Add(this.labPlaying_name);
             this.panPlaying.Controls.Add(this.btnPause);
             this.panPlaying.Controls.Add(this.labPlaying_singer);
             this.panPlaying.Controls.Add(this.btnSound);
@@ -84,6 +86,39 @@
             this.panPlaying.Size = new System.Drawing.Size(1326, 98);
             this.panPlaying.TabIndex = 5;
             // 
+            // labTime_end
+            // 
+            this.labTime_end.BackColor = System.Drawing.Color.Transparent;
+            this.labTime_end.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labTime_end.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.labTime_end.Location = new System.Drawing.Point(1051, 38);
+            this.labTime_end.Name = "labTime_end";
+            this.labTime_end.Size = new System.Drawing.Size(43, 22);
+            this.labTime_end.TabIndex = 10;
+            this.labTime_end.Text = "00:00";
+            // 
+            // labTime_start
+            // 
+            this.labTime_start.BackColor = System.Drawing.Color.Transparent;
+            this.labTime_start.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labTime_start.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.labTime_start.Location = new System.Drawing.Point(598, 38);
+            this.labTime_start.Name = "labTime_start";
+            this.labTime_start.Size = new System.Drawing.Size(43, 22);
+            this.labTime_start.TabIndex = 10;
+            this.labTime_start.Text = "00:00";
+            // 
+            // progressBar
+            // 
+            this.progressBar.BorderRadius = 4;
+            this.progressBar.Location = new System.Drawing.Point(656, 44);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.progressBar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.progressBar.Size = new System.Drawing.Size(380, 10);
+            this.progressBar.TabIndex = 0;
+            this.progressBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            // 
             // trackVol
             // 
             this.trackVol.Location = new System.Drawing.Point(1186, 35);
@@ -93,16 +128,7 @@
             this.trackVol.TabIndex = 9;
             this.trackVol.ThumbColor = System.Drawing.Color.HotPink;
             this.trackVol.Value = 70;
-            // 
-            // track
-            // 
-            this.track.Location = new System.Drawing.Point(653, 35);
-            this.track.Name = "track";
-            this.track.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.track.Size = new System.Drawing.Size(376, 29);
-            this.track.TabIndex = 9;
-            this.track.ThumbColor = System.Drawing.Color.HotPink;
-            this.track.Value = 20;
+            this.trackVol.Scroll += new System.Windows.Forms.ScrollEventHandler(this.trackVol_Scroll);
             // 
             // labPlaying_name
             // 
@@ -116,32 +142,6 @@
             this.labPlaying_name.TabIndex = 6;
             this.labPlaying_name.Text = "Back to you";
             this.labPlaying_name.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // labTime_cur
-            // 
-            this.labTime_cur.BackColor = System.Drawing.Color.Transparent;
-            this.labTime_cur.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labTime_cur.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.labTime_cur.IsSelectionEnabled = false;
-            this.labTime_cur.Location = new System.Drawing.Point(604, 38);
-            this.labTime_cur.Name = "labTime_cur";
-            this.labTime_cur.Size = new System.Drawing.Size(34, 22);
-            this.labTime_cur.TabIndex = 6;
-            this.labTime_cur.Text = "1:20";
-            this.labTime_cur.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // labTime_end
-            // 
-            this.labTime_end.BackColor = System.Drawing.Color.Transparent;
-            this.labTime_end.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labTime_end.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.labTime_end.IsSelectionEnabled = false;
-            this.labTime_end.Location = new System.Drawing.Point(1044, 38);
-            this.labTime_end.Name = "labTime_end";
-            this.labTime_end.Size = new System.Drawing.Size(34, 22);
-            this.labTime_end.TabIndex = 6;
-            this.labTime_end.Text = "3:45";
-            this.labTime_end.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnPause
             // 
@@ -175,7 +175,8 @@
             // 
             // btnSound
             // 
-            this.btnSound.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnSound.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnSound.CheckedState.ImageSize = new System.Drawing.Size(27, 27);
             this.btnSound.HoverState.ImageSize = new System.Drawing.Size(30, 30);
             this.btnSound.Image = ((System.Drawing.Image)(resources.GetObject("btnSound.Image")));
             this.btnSound.ImageOffset = new System.Drawing.Point(0, 0);
@@ -186,6 +187,7 @@
             this.btnSound.PressedState.ImageSize = new System.Drawing.Size(27, 27);
             this.btnSound.Size = new System.Drawing.Size(45, 45);
             this.btnSound.TabIndex = 8;
+            this.btnSound.Click += new System.EventHandler(this.btnSound_Click);
             // 
             // btnRandom
             // 
@@ -285,7 +287,7 @@
             // btnPlaylist
             // 
             this.btnPlaylist.BorderRadius = 10;
-            this.btnPlaylist.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnPlaylist.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnPlaylist.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPlaylist.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnPlaylist.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -308,7 +310,7 @@
             // btnHistory
             // 
             this.btnHistory.BorderRadius = 10;
-            this.btnHistory.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnHistory.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.btnHistory.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHistory.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnHistory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -331,7 +333,7 @@
             // btnGenre
             // 
             this.btnGenre.BorderRadius = 10;
-            this.btnGenre.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btnGenre.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnGenre.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnGenre.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnGenre.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -354,7 +356,7 @@
             // 
             // btnNew_playlist
             // 
-            this.btnNew_playlist.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnNew_playlist.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             this.btnNew_playlist.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnNew_playlist.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnNew_playlist.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -380,7 +382,7 @@
             // btnFavorite
             // 
             this.btnFavorite.BorderRadius = 10;
-            this.btnFavorite.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.btnFavorite.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.btnFavorite.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnFavorite.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnFavorite.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -403,7 +405,7 @@
             // btnTop
             // 
             this.btnTop.BorderRadius = 10;
-            this.btnTop.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            this.btnTop.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
             this.btnTop.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTop.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnTop.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -427,7 +429,7 @@
             // btnTrend
             // 
             this.btnTrend.BorderRadius = 10;
-            this.btnTrend.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            this.btnTrend.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
             this.btnTrend.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTrend.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnTrend.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -451,7 +453,7 @@
             // btnExplore
             // 
             this.btnExplore.BorderRadius = 10;
-            this.btnExplore.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            this.btnExplore.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
             this.btnExplore.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnExplore.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnExplore.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -516,6 +518,10 @@
             this.panMain.Size = new System.Drawing.Size(1326, 851);
             this.panMain.TabIndex = 6;
             // 
+            // progressTimer
+            // 
+            this.progressTimer.Tick += new System.EventHandler(this.progressTimer_Tick);
+            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -543,7 +549,6 @@
         #endregion
         private Guna.UI2.WinForms.Guna2Panel panPlaying;
         private Guna.UI2.WinForms.Guna2TrackBar trackVol;
-        private Guna.UI2.WinForms.Guna2TrackBar track;
         private Guna.UI2.WinForms.Guna2ImageButton btnPause;
         private Guna.UI2.WinForms.Guna2ImageButton btnSound;
         private Guna.UI2.WinForms.Guna2ImageButton btnRandom;
@@ -564,9 +569,11 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel labPlaying_singer;
         private Guna.UI2.WinForms.Guna2HtmlLabel labLib;
         private Guna.UI2.WinForms.Guna2HtmlLabel labMenu;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labTime_cur;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labTime_end;
         private Guna.UI2.WinForms.Guna2Panel panMain;
         private Guna.UI2.WinForms.Guna2GradientButton btnPlaylist;
+        private Guna.UI2.WinForms.Guna2ProgressBar progressBar;
+        private System.Windows.Forms.Timer progressTimer;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labTime_start;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labTime_end;
     }
 }

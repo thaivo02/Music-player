@@ -171,7 +171,6 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.AliceBlue;
             this.flowLayoutPanel1.Controls.Add(this.picGenre1);
             this.flowLayoutPanel1.Controls.Add(this.guna2Panel7);
@@ -186,7 +185,7 @@
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.flowLayoutPanel1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(30, -89);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(30, 11);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1270, 1028);
             this.flowLayoutPanel1.TabIndex = 9;

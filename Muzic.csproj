@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BasicAudio" Version="2022.11.30.1" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.3.5" />
+    <PackageReference Include="NAudio" Version="2.1.0" />
   </ItemGroup>
 
   <ItemGroup>

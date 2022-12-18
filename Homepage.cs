@@ -1,5 +1,4 @@
-using BasicAudio;
-
+using NAudio.Wave;
 
 namespace Muzic
 {
@@ -21,21 +20,6 @@ namespace Muzic
             this.panMain.Controls.Add(form);
             form.BringToFront();
             form.Show();
-        }
-        private void btnPause_Click(object sender, EventArgs e)
-        {
-            btnPause.Checked = !btnPause.Checked;
-            //using (OpenFileDialog ofd = new OpenFileDialog())
-            //{
-            //    ofd.Filter = "Mp3 Files| *.mp3";
-            //    if (ofd.ShowDialog() == DialogResult.OK)
-            //    {
-            //        musicPlayer.open(ofd.FileName);
-            //    }
-            //}
-            //musicPlayer.play();
-            //SoundPlayer soundPlayer = new SoundPlayer(@"../Songs/Alan Walker - Alone.mp3");
-            //soundPlayer.Play();
         }
 
         private void btnRandom_Click(object sender, EventArgs e)
@@ -90,13 +74,62 @@ namespace Muzic
         {
 
         }
-        private AudioPlayer audioPlayer = new AudioPlayer();
+
+        private WaveOutEvent wo = new WaveOutEvent();
+        private AudioFileReader af = new AudioFileReader(@"Songs\\Ed Sheeran - Shape Of You.mp3");
 
         private void Homepage_Load(object sender, EventArgs e)
         {
-            //audioPlayer.Filename = @"Songs\\Alan Walker - Alone.mp3";
-            //audioPlayer.Play();
+            wo.Init(af);
+            wo.Volume = trackVol.Value / 100f;
+            labTime_end.Text = String.Format("{0:00}:{1:00}", (int)af.TotalTime.TotalMinutes, af.TotalTime.Seconds);
+
         }
-       
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            btnPause.Checked = !btnPause.Checked;
+            var closing = false;
+            wo.PlaybackStopped += (s, a) => { if (closing) { wo.Dispose(); af.Dispose(); } };
+            if (btnPause.Checked) wo.Play();
+            else wo.Stop();
+            if (wo.PlaybackState.ToString() == "Playing") progressTimer.Start();
+            else progressTimer.Stop();
+            this.FormClosing += (s, a) => { closing = true; wo.Stop(); };
+        }
+
+        private void trackVol_Scroll(object sender, ScrollEventArgs e)
+        {
+            wo.Volume = trackVol.Value / 100f;
+        }
+
+        private void progressTimer_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                TimeSpan currentTime = (wo.PlaybackState == PlaybackState.Stopped) ? TimeSpan.Zero : af.CurrentTime;
+                //trackBar.Value = Math.Min(trackBar.Maximum, (int)(100 * currentTime.TotalSeconds / inputStream.TotalTime.TotalSeconds));
+                labTime_start.Text = String.Format("{0:00}:{1:00}", (int)currentTime.TotalMinutes, currentTime.Seconds);
+                progressBar.Minimum = 0;
+
+                progressBar.Maximum = (int)(af.TotalTime.TotalSeconds);
+                if (progressBar.Value <= progressBar.Maximum)
+                    progressBar.Value = (int)(af.CurrentTime.TotalSeconds);
+            }
+            catch
+            {
+                progressTimer.Stop();
+            }
+        }
+
+        private void btnSound_Click(object sender, EventArgs e)
+        {
+            btnSound.Checked = !btnSound.Checked;
+            if (btnSound.Checked) wo.Volume = trackVol.Value = 0;
+            else
+            {
+                trackVol.Value = 10;
+                wo.Volume = trackVol.Value / 100f;
+            }
+        }
     }
 }
