@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LuZqlgFbT3gn7lDOkrVVFAm4jQIPvgBJbHSChe0vEa7cRePjCAnWEa23QNAXz02Gjcpk7qUA/d13jN8/VWyOkQ==",
+  "dgSpecHash": "eKhAbvqm5mFDuYAiT4eztjli9d4T4b0occR6uVuHBLpssK1t4CaCrDn+I6tvWWefjEv2YZT3ryX5DQ4GcY3WqA==",
   "success": true,
   "projectFilePath": "F:\\Experiment\\UIT\\Năm III\\CS511\\Muzic\\Muzic.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\basicaudio\\2022.11.30.1\\basicaudio.2022.11.30.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\guna.ui2.winforms\\2.0.3.5\\guna.ui2.winforms.2.0.3.5.nupkg.sha512"
   ],
   "logs": [

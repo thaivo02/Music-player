@@ -529,6 +529,7 @@
             this.Name = "Homepage";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.Homepage_Load);
             this.panPlaying.ResumeLayout(false);
             this.panPlaying.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPlaying_song)).EndInit();

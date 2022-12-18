@@ -16,5 +16,13 @@ namespace Muzic
         {
             InitializeComponent();
         }
+
+        private void btnInfo(object sender, EventArgs e)
+        {
+            ArtistInfo frm = new ArtistInfo() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.panMain.Controls.Add(frm);
+            frm.BringToFront();
+            frm.Show();
+        }
     }
 }

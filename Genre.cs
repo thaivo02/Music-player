@@ -16,5 +16,13 @@ namespace Muzic
         {
             InitializeComponent();
         }
+
+        private void btnSongsList(object sender, EventArgs e)
+        {
+            SongsList frm = new SongsList() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.panMain.Controls.Add(frm);
+            frm.BringToFront();
+            frm.Show();
+        }
     }
 }

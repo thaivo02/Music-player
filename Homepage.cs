@@ -1,11 +1,10 @@
-using System.Media;
+using BasicAudio;
+
 
 namespace Muzic
 {
     public partial class Homepage : Form
     {
-        private MusicPlayer musicPlayer = new MusicPlayer();
-
         protected override CreateParams CreateParams
         {
             get
@@ -91,5 +90,13 @@ namespace Muzic
         {
 
         }
+        private AudioPlayer audioPlayer = new AudioPlayer();
+
+        private void Homepage_Load(object sender, EventArgs e)
+        {
+            //audioPlayer.Filename = @"Songs\\Alan Walker - Alone.mp3";
+            //audioPlayer.Play();
+        }
+       
     }
 }

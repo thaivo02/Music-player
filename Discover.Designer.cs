@@ -118,8 +118,6 @@
             this.panMain.Controls.Add(this.picSong4);
             this.panMain.Controls.Add(this.picSong3);
             this.panMain.Controls.Add(this.picSong1);
-            this.panMain.Controls.Add(this.picPop6);
-            this.panMain.Controls.Add(this.picPop5);
             this.panMain.Controls.Add(this.labSong);
             this.panMain.Controls.Add(this.labPopular);
             this.panMain.Controls.Add(this.labSong6_name);
@@ -134,12 +132,8 @@
             this.panMain.Controls.Add(this.labSong2_singer);
             this.panMain.Controls.Add(this.labSong1_name);
             this.panMain.Controls.Add(this.labSong1_singer);
-            this.panMain.Controls.Add(this.picPop3);
-            this.panMain.Controls.Add(this.picPop4);
             this.panMain.Controls.Add(this.panPop6);
-            this.panMain.Controls.Add(this.picPop2);
             this.panMain.Controls.Add(this.panPop3);
-            this.panMain.Controls.Add(this.picPop1);
             this.panMain.Controls.Add(this.panPop5);
             this.panMain.Controls.Add(this.panPop2);
             this.panMain.Controls.Add(this.panPop4);
@@ -250,7 +244,7 @@
             this.picPop6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPop6.Image = ((System.Drawing.Image)(resources.GetObject("picPop6.Image")));
             this.picPop6.ImageRotate = 0F;
-            this.picPop6.Location = new System.Drawing.Point(923, 725);
+            this.picPop6.Location = new System.Drawing.Point(8, 8);
             this.picPop6.Name = "picPop6";
             this.picPop6.Size = new System.Drawing.Size(65, 65);
             this.picPop6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -265,7 +259,7 @@
             this.picPop5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPop5.Image = ((System.Drawing.Image)(resources.GetObject("picPop5.Image")));
             this.picPop5.ImageRotate = 0F;
-            this.picPop5.Location = new System.Drawing.Point(481, 725);
+            this.picPop5.Location = new System.Drawing.Point(12, 8);
             this.picPop5.Name = "picPop5";
             this.picPop5.Size = new System.Drawing.Size(65, 65);
             this.picPop5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -462,7 +456,7 @@
             this.picPop3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPop3.Image = ((System.Drawing.Image)(resources.GetObject("picPop3.Image")));
             this.picPop3.ImageRotate = 0F;
-            this.picPop3.Location = new System.Drawing.Point(923, 615);
+            this.picPop3.Location = new System.Drawing.Point(8, 8);
             this.picPop3.Name = "picPop3";
             this.picPop3.Size = new System.Drawing.Size(65, 65);
             this.picPop3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -477,7 +471,7 @@
             this.picPop4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPop4.Image = ((System.Drawing.Image)(resources.GetObject("picPop4.Image")));
             this.picPop4.ImageRotate = 0F;
-            this.picPop4.Location = new System.Drawing.Point(39, 725);
+            this.picPop4.Location = new System.Drawing.Point(8, 8);
             this.picPop4.Name = "picPop4";
             this.picPop4.Size = new System.Drawing.Size(65, 65);
             this.picPop4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -493,6 +487,7 @@
             this.panPop6.Controls.Add(this.btnPop6_play);
             this.panPop6.Controls.Add(this.labPop6_name);
             this.panPop6.Controls.Add(this.labPop6_singer);
+            this.panPop6.Controls.Add(this.picPop6);
             this.panPop6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panPop6.Location = new System.Drawing.Point(915, 717);
             this.panPop6.Name = "panPop6";
@@ -561,7 +556,7 @@
             this.picPop2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPop2.Image = ((System.Drawing.Image)(resources.GetObject("picPop2.Image")));
             this.picPop2.ImageRotate = 0F;
-            this.picPop2.Location = new System.Drawing.Point(481, 615);
+            this.picPop2.Location = new System.Drawing.Point(12, 8);
             this.picPop2.Name = "picPop2";
             this.picPop2.Size = new System.Drawing.Size(65, 65);
             this.picPop2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -577,6 +572,7 @@
             this.panPop3.Controls.Add(this.btnPop3_play);
             this.panPop3.Controls.Add(this.labPop3_name);
             this.panPop3.Controls.Add(this.labPop3_singer);
+            this.panPop3.Controls.Add(this.picPop3);
             this.panPop3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panPop3.Location = new System.Drawing.Point(915, 607);
             this.panPop3.Name = "panPop3";
@@ -645,7 +641,7 @@
             this.picPop1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPop1.Image = ((System.Drawing.Image)(resources.GetObject("picPop1.Image")));
             this.picPop1.ImageRotate = 0F;
-            this.picPop1.Location = new System.Drawing.Point(39, 615);
+            this.picPop1.Location = new System.Drawing.Point(8, 8);
             this.picPop1.Name = "picPop1";
             this.picPop1.Size = new System.Drawing.Size(65, 65);
             this.picPop1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -661,6 +657,7 @@
             this.panPop5.Controls.Add(this.btnPop5_play);
             this.panPop5.Controls.Add(this.labPop5_name);
             this.panPop5.Controls.Add(this.labPop5_singer);
+            this.panPop5.Controls.Add(this.picPop5);
             this.panPop5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panPop5.Location = new System.Drawing.Point(473, 717);
             this.panPop5.Name = "panPop5";
@@ -730,6 +727,7 @@
             this.panPop2.Controls.Add(this.btnPop2_play);
             this.panPop2.Controls.Add(this.labPop2_name);
             this.panPop2.Controls.Add(this.labPop2_singer);
+            this.panPop2.Controls.Add(this.picPop2);
             this.panPop2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panPop2.Location = new System.Drawing.Point(473, 607);
             this.panPop2.Name = "panPop2";
@@ -799,6 +797,7 @@
             this.panPop4.Controls.Add(this.btnPop4_play);
             this.panPop4.Controls.Add(this.labPop4_name);
             this.panPop4.Controls.Add(this.labPop4_singer);
+            this.panPop4.Controls.Add(this.picPop4);
             this.panPop4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panPop4.Location = new System.Drawing.Point(31, 717);
             this.panPop4.Name = "panPop4";
@@ -868,6 +867,7 @@
             this.panPop1.Controls.Add(this.btnPop1_play);
             this.panPop1.Controls.Add(this.labPop1_name);
             this.panPop1.Controls.Add(this.labPop1_singer);
+            this.panPop1.Controls.Add(this.picPop1);
             this.panPop1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panPop1.Location = new System.Drawing.Point(31, 607);
             this.panPop1.Name = "panPop1";

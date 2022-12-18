@@ -279,6 +279,7 @@
             this.picArtist15.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist15.Size = new System.Drawing.Size(197, 197);
             this.picArtist15.TabIndex = 2;
+            this.picArtist15.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist14
             // 
@@ -294,6 +295,7 @@
             this.picArtist14.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist14.Size = new System.Drawing.Size(197, 197);
             this.picArtist14.TabIndex = 2;
+            this.picArtist14.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist10
             // 
@@ -309,6 +311,7 @@
             this.picArtist10.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist10.Size = new System.Drawing.Size(197, 197);
             this.picArtist10.TabIndex = 2;
+            this.picArtist10.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist9
             // 
@@ -324,6 +327,7 @@
             this.picArtist9.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist9.Size = new System.Drawing.Size(197, 197);
             this.picArtist9.TabIndex = 2;
+            this.picArtist9.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist13
             // 
@@ -339,6 +343,7 @@
             this.picArtist13.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist13.Size = new System.Drawing.Size(197, 197);
             this.picArtist13.TabIndex = 2;
+            this.picArtist13.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist5
             // 
@@ -354,6 +359,7 @@
             this.picArtist5.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist5.Size = new System.Drawing.Size(197, 197);
             this.picArtist5.TabIndex = 2;
+            this.picArtist5.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist8
             // 
@@ -369,6 +375,7 @@
             this.picArtist8.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist8.Size = new System.Drawing.Size(197, 197);
             this.picArtist8.TabIndex = 2;
+            this.picArtist8.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist12
             // 
@@ -384,6 +391,7 @@
             this.picArtist12.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist12.Size = new System.Drawing.Size(197, 197);
             this.picArtist12.TabIndex = 2;
+            this.picArtist12.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist4
             // 
@@ -399,6 +407,7 @@
             this.picArtist4.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist4.Size = new System.Drawing.Size(197, 197);
             this.picArtist4.TabIndex = 2;
+            this.picArtist4.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist7
             // 
@@ -414,6 +423,7 @@
             this.picArtist7.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist7.Size = new System.Drawing.Size(197, 197);
             this.picArtist7.TabIndex = 2;
+            this.picArtist7.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist11
             // 
@@ -429,6 +439,7 @@
             this.picArtist11.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist11.Size = new System.Drawing.Size(197, 197);
             this.picArtist11.TabIndex = 2;
+            this.picArtist11.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist3
             // 
@@ -444,6 +455,7 @@
             this.picArtist3.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist3.Size = new System.Drawing.Size(197, 197);
             this.picArtist3.TabIndex = 2;
+            this.picArtist3.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist6
             // 
@@ -459,6 +471,7 @@
             this.picArtist6.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist6.Size = new System.Drawing.Size(197, 197);
             this.picArtist6.TabIndex = 2;
+            this.picArtist6.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist2
             // 
@@ -474,6 +487,7 @@
             this.picArtist2.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist2.Size = new System.Drawing.Size(197, 197);
             this.picArtist2.TabIndex = 2;
+            this.picArtist2.Click += new System.EventHandler(this.btnInfo);
             // 
             // picArtist1
             // 
@@ -489,6 +503,7 @@
             this.picArtist1.PressedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist1.Size = new System.Drawing.Size(197, 197);
             this.picArtist1.TabIndex = 2;
+            this.picArtist1.Click += new System.EventHandler(this.btnInfo);
             // 
             // Artists
             // 

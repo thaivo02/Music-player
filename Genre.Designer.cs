@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Genre));
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panMain = new Guna.UI2.WinForms.Guna2Panel();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -80,7 +80,7 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel1.SuspendLayout();
+            this.panMain.SuspendLayout();
             this.flowLayoutPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             this.flowLayoutPanel8.SuspendLayout();
@@ -101,24 +101,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.picGenre1)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2Panel1
+            // panMain
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.guna2Panel1.Controls.Add(this.flowLayoutPanel9);
-            this.guna2Panel1.Controls.Add(this.flowLayoutPanel8);
-            this.guna2Panel1.Controls.Add(this.flowLayoutPanel6);
-            this.guna2Panel1.Controls.Add(this.flowLayoutPanel5);
-            this.guna2Panel1.Controls.Add(this.flowLayoutPanel7);
-            this.guna2Panel1.Controls.Add(this.flowLayoutPanel3);
-            this.guna2Panel1.Controls.Add(this.flowLayoutPanel4);
-            this.guna2Panel1.Controls.Add(this.flowLayoutPanel2);
-            this.guna2Panel1.Controls.Add(this.flowLayoutPanel1);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1326, 851);
-            this.guna2Panel1.TabIndex = 0;
+            this.panMain.BackColor = System.Drawing.Color.LavenderBlush;
+            this.panMain.Controls.Add(this.flowLayoutPanel9);
+            this.panMain.Controls.Add(this.flowLayoutPanel8);
+            this.panMain.Controls.Add(this.flowLayoutPanel6);
+            this.panMain.Controls.Add(this.flowLayoutPanel5);
+            this.panMain.Controls.Add(this.flowLayoutPanel7);
+            this.panMain.Controls.Add(this.flowLayoutPanel3);
+            this.panMain.Controls.Add(this.flowLayoutPanel4);
+            this.panMain.Controls.Add(this.flowLayoutPanel2);
+            this.panMain.Controls.Add(this.flowLayoutPanel1);
+            this.panMain.Controls.Add(this.guna2HtmlLabel1);
+            this.panMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panMain.Location = new System.Drawing.Point(0, 0);
+            this.panMain.Name = "panMain";
+            this.panMain.Size = new System.Drawing.Size(1326, 851);
+            this.panMain.TabIndex = 0;
             // 
             // flowLayoutPanel9
             // 
@@ -671,6 +671,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(315, 208);
             this.flowLayoutPanel1.TabIndex = 4;
+            this.flowLayoutPanel1.Click += new System.EventHandler(this.btnSongsList);
             // 
             // picGenre1
             // 
@@ -786,12 +787,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1326, 851);
-            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.panMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Genre";
             this.Text = "Genre";
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
+            this.panMain.ResumeLayout(false);
+            this.panMain.PerformLayout();
             this.flowLayoutPanel9.ResumeLayout(false);
             this.flowLayoutPanel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
@@ -825,7 +826,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel panMain;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;

@@ -22,3 +22,7 @@ F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Discover.r
 F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Genre.resources
 F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Top.resources
 F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Artists.resources
+F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.ArtistInfo.resources
+F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.SongInfo.resources
+F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.SongsList.resources
+F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\BasicAudio.dll
