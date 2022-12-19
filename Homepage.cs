@@ -97,9 +97,9 @@ namespace Muzic
 
         public static void LoadMusic(WaveOutEvent w, AudioFileReader a)
         {
-            initSound(af);
-            wo.Volume = trackVol.Value / 100f;
-            labTime_end.Text = String.Format("{0:00}:{1:00}", (int)a.TotalTime.TotalMinutes, af.TotalTime.Seconds);
+            w.Init(a);
+            w.Volume = trackVol.Value / 100f;
+            labTime_end.Text = String.Format("{0:00}:{1:00}", (int)a.TotalTime.TotalMinutes, a.TotalTime.Seconds);
         }
 
         private void Homepage_Load(object sender, EventArgs e)
