@@ -22,13 +22,101 @@ F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Discover.r
 F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Genre.resources
 F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Top.resources
 F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.Artists.resources
-F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.ArtistInfo.resources
-F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.SongInfo.resources
-F:\Experiment\UIT\Năm III\CS511\Muzic\obj\Debug\net6.0-windows\Muzic.SongsList.resources
-F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.dll
-F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.Asio.dll
-F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.Core.dll
-F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.Midi.dll
-F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.Wasapi.dll
-F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.WinForms.dll
-F:\Experiment\UIT\Năm III\CS511\Muzic\bin\Debug\net6.0-windows\NAudio.WinMM.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Muzic.exe
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Muzic.deps.json
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Muzic.runtimeconfig.json
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Muzic.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Muzic.pdb
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Azure.Core.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Azure.Identity.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Guna.UI2.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Humanizer.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.CommandLine.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.UserSecrets.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Configuration.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Console.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Debug.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.EventLog.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.EventSource.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\NAudio.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\NAudio.Asio.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\NAudio.Core.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\NAudio.Midi.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\NAudio.Wasapi.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\NAudio.WinForms.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\NAudio.WinMM.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\System.Diagnostics.EventLog.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\System.Memory.Data.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\System.Text.Json.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\workspace\Helper\Music-player\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.csproj.AssemblyReference.cache
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.ArtistInfo.resources
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.Artists.resources
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.Discover.resources
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.Genre.resources
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.Homepage.resources
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.Properties.Resources.resources
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.SongInfo.resources
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.SongsList.resources
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.Top.resources
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.csproj.GenerateResource.cache
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.GeneratedMSBuildEditorConfig.editorconfig
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.AssemblyInfoInputs.cache
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.AssemblyInfo.cs
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.csproj.CoreCompileInputs.cache
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.csproj.CopyComplete
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.dll
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\refint\Muzic.dll
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.pdb
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\Muzic.genruntimeconfig.cache
+E:\workspace\Helper\Music-player\obj\Debug\net6.0-windows\ref\Muzic.dll

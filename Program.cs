@@ -2,11 +2,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Muzic.Database;
+using Muzic.Repositories;
+using Muzic.Services;
 
 namespace Muzic
 {
     public static class Program
     {
+        private static ApplicationDbContext? _dbContext;
         public static IHost host = Host.CreateDefaultBuilder()
             .ConfigureServices(c =>
             {
@@ -14,6 +17,9 @@ namespace Muzic
                 {
                     s.UseSqlServer("Server=localhost;Database=Muzic;Trusted_Connection=True;Encrypt=False");
                 });
+                c.AddRepositories();
+                c.AddServices();
+                c.AddTransient<Discover>();
             }).Build();
         /// <summary>
         ///  The main entry point for the application.

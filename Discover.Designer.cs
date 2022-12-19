@@ -36,8 +36,6 @@
             this.picSong4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.picSong3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.picSong1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.picPop6 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.picPop5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.labSong = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPopular = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labSong6_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -52,40 +50,42 @@
             this.labSong2_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labSong1_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labSong1_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.picPop3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.picPop4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panPop6 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnPop6_fav = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnPop6_play = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPop6_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPop6_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.picPop2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picPop6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panPop3 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnPop3_fav = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnPop3_play = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPop3_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPop3_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.picPop1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picPop3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panPop5 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnPop5_fav = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnPop5_play = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPop5_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPop5_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.picPop5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panPop2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnPop2_fav = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnPop2_play = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPop2_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPop2_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.picPop2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panPop4 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnPop4_fav = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnPop4_play = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPop4_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPop4_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.picPop4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panPop1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnPop1_fav = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnPop1_play = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPop1_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPop1_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.picPop1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panBanner = new Guna.UI2.WinForms.Guna2Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.labBanner2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -93,18 +93,18 @@
             this.picBanner = new Guna.UI2.WinForms.Guna2PictureBox();
             this.picChill = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop4)).BeginInit();
             this.panPop6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPop6)).BeginInit();
             this.panPop3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPop3)).BeginInit();
             this.panPop5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPop5)).BeginInit();
             this.panPop2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPop2)).BeginInit();
             this.panPop4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPop4)).BeginInit();
             this.panPop1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPop1)).BeginInit();
             this.panBanner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBanner)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChill)).BeginInit();
@@ -160,6 +160,7 @@
             this.picSong2.PressedState.ImageSize = new System.Drawing.Size(155, 146);
             this.picSong2.Size = new System.Drawing.Size(155, 146);
             this.picSong2.TabIndex = 19;
+            this.picSong2.Click += new System.EventHandler(this.picSong2_Click);
             // 
             // picSong6
             // 
@@ -175,6 +176,7 @@
             this.picSong6.PressedState.ImageSize = new System.Drawing.Size(155, 146);
             this.picSong6.Size = new System.Drawing.Size(155, 146);
             this.picSong6.TabIndex = 19;
+            this.picSong6.Click += new System.EventHandler(this.picSong6_Click);
             // 
             // picSong5
             // 
@@ -190,6 +192,7 @@
             this.picSong5.PressedState.ImageSize = new System.Drawing.Size(155, 146);
             this.picSong5.Size = new System.Drawing.Size(155, 146);
             this.picSong5.TabIndex = 19;
+            this.picSong5.Click += new System.EventHandler(this.picSong5_Click);
             // 
             // picSong4
             // 
@@ -205,6 +208,7 @@
             this.picSong4.PressedState.ImageSize = new System.Drawing.Size(155, 146);
             this.picSong4.Size = new System.Drawing.Size(155, 146);
             this.picSong4.TabIndex = 19;
+            this.picSong4.Click += new System.EventHandler(this.picSong4_Click);
             // 
             // picSong3
             // 
@@ -220,6 +224,7 @@
             this.picSong3.PressedState.ImageSize = new System.Drawing.Size(155, 146);
             this.picSong3.Size = new System.Drawing.Size(155, 146);
             this.picSong3.TabIndex = 19;
+            this.picSong3.Click += new System.EventHandler(this.picSong3_Click);
             // 
             // picSong1
             // 
@@ -235,36 +240,7 @@
             this.picSong1.PressedState.ImageSize = new System.Drawing.Size(155, 146);
             this.picSong1.Size = new System.Drawing.Size(155, 146);
             this.picSong1.TabIndex = 19;
-            // 
-            // picPop6
-            // 
-            this.picPop6.BackColor = System.Drawing.Color.Transparent;
-            this.picPop6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picPop6.BorderRadius = 10;
-            this.picPop6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPop6.Image = ((System.Drawing.Image)(resources.GetObject("picPop6.Image")));
-            this.picPop6.ImageRotate = 0F;
-            this.picPop6.Location = new System.Drawing.Point(8, 8);
-            this.picPop6.Name = "picPop6";
-            this.picPop6.Size = new System.Drawing.Size(65, 65);
-            this.picPop6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPop6.TabIndex = 17;
-            this.picPop6.TabStop = false;
-            // 
-            // picPop5
-            // 
-            this.picPop5.BackColor = System.Drawing.Color.Transparent;
-            this.picPop5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picPop5.BorderRadius = 10;
-            this.picPop5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPop5.Image = ((System.Drawing.Image)(resources.GetObject("picPop5.Image")));
-            this.picPop5.ImageRotate = 0F;
-            this.picPop5.Location = new System.Drawing.Point(12, 8);
-            this.picPop5.Name = "picPop5";
-            this.picPop5.Size = new System.Drawing.Size(65, 65);
-            this.picPop5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPop5.TabIndex = 13;
-            this.picPop5.TabStop = false;
+            this.picSong1.Click += new System.EventHandler(this.picSong1_Click);
             // 
             // labSong
             // 
@@ -448,36 +424,6 @@
             this.labSong1_singer.Text = "Lost frequencies";
             this.labSong1_singer.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // picPop3
-            // 
-            this.picPop3.BackColor = System.Drawing.Color.Transparent;
-            this.picPop3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picPop3.BorderRadius = 10;
-            this.picPop3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPop3.Image = ((System.Drawing.Image)(resources.GetObject("picPop3.Image")));
-            this.picPop3.ImageRotate = 0F;
-            this.picPop3.Location = new System.Drawing.Point(8, 8);
-            this.picPop3.Name = "picPop3";
-            this.picPop3.Size = new System.Drawing.Size(65, 65);
-            this.picPop3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPop3.TabIndex = 15;
-            this.picPop3.TabStop = false;
-            // 
-            // picPop4
-            // 
-            this.picPop4.BackColor = System.Drawing.Color.Transparent;
-            this.picPop4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picPop4.BorderRadius = 10;
-            this.picPop4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPop4.Image = ((System.Drawing.Image)(resources.GetObject("picPop4.Image")));
-            this.picPop4.ImageRotate = 0F;
-            this.picPop4.Location = new System.Drawing.Point(8, 8);
-            this.picPop4.Name = "picPop4";
-            this.picPop4.Size = new System.Drawing.Size(65, 65);
-            this.picPop4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPop4.TabIndex = 9;
-            this.picPop4.TabStop = false;
-            // 
             // panPop6
             // 
             this.panPop6.BorderColor = System.Drawing.Color.Silver;
@@ -521,6 +467,7 @@
             this.btnPop6_play.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop6_play.Size = new System.Drawing.Size(45, 45);
             this.btnPop6_play.TabIndex = 8;
+            this.btnPop6_play.Click += new System.EventHandler(this.btnPop6_play_Click);
             // 
             // labPop6_name
             // 
@@ -548,20 +495,20 @@
             this.labPop6_singer.Text = "MIKA feat Ariana Grande";
             this.labPop6_singer.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // picPop2
+            // picPop6
             // 
-            this.picPop2.BackColor = System.Drawing.Color.Transparent;
-            this.picPop2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picPop2.BorderRadius = 10;
-            this.picPop2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPop2.Image = ((System.Drawing.Image)(resources.GetObject("picPop2.Image")));
-            this.picPop2.ImageRotate = 0F;
-            this.picPop2.Location = new System.Drawing.Point(12, 8);
-            this.picPop2.Name = "picPop2";
-            this.picPop2.Size = new System.Drawing.Size(65, 65);
-            this.picPop2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPop2.TabIndex = 11;
-            this.picPop2.TabStop = false;
+            this.picPop6.BackColor = System.Drawing.Color.Transparent;
+            this.picPop6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picPop6.BorderRadius = 10;
+            this.picPop6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPop6.Image = ((System.Drawing.Image)(resources.GetObject("picPop6.Image")));
+            this.picPop6.ImageRotate = 0F;
+            this.picPop6.Location = new System.Drawing.Point(8, 8);
+            this.picPop6.Name = "picPop6";
+            this.picPop6.Size = new System.Drawing.Size(65, 65);
+            this.picPop6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPop6.TabIndex = 17;
+            this.picPop6.TabStop = false;
             // 
             // panPop3
             // 
@@ -606,6 +553,7 @@
             this.btnPop3_play.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop3_play.Size = new System.Drawing.Size(45, 45);
             this.btnPop3_play.TabIndex = 8;
+            this.btnPop3_play.Click += new System.EventHandler(this.btnPop3_play_Click);
             // 
             // labPop3_name
             // 
@@ -633,20 +581,20 @@
             this.labPop3_singer.Text = "MIKA feat Ariana Grande";
             this.labPop3_singer.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // picPop1
+            // picPop3
             // 
-            this.picPop1.BackColor = System.Drawing.Color.Transparent;
-            this.picPop1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picPop1.BorderRadius = 10;
-            this.picPop1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPop1.Image = ((System.Drawing.Image)(resources.GetObject("picPop1.Image")));
-            this.picPop1.ImageRotate = 0F;
-            this.picPop1.Location = new System.Drawing.Point(8, 8);
-            this.picPop1.Name = "picPop1";
-            this.picPop1.Size = new System.Drawing.Size(65, 65);
-            this.picPop1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPop1.TabIndex = 0;
-            this.picPop1.TabStop = false;
+            this.picPop3.BackColor = System.Drawing.Color.Transparent;
+            this.picPop3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picPop3.BorderRadius = 10;
+            this.picPop3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPop3.Image = ((System.Drawing.Image)(resources.GetObject("picPop3.Image")));
+            this.picPop3.ImageRotate = 0F;
+            this.picPop3.Location = new System.Drawing.Point(8, 8);
+            this.picPop3.Name = "picPop3";
+            this.picPop3.Size = new System.Drawing.Size(65, 65);
+            this.picPop3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPop3.TabIndex = 15;
+            this.picPop3.TabStop = false;
             // 
             // panPop5
             // 
@@ -691,6 +639,7 @@
             this.btnPop5_play.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop5_play.Size = new System.Drawing.Size(45, 45);
             this.btnPop5_play.TabIndex = 8;
+            this.btnPop5_play.Click += new System.EventHandler(this.btnPop5_play_Click);
             // 
             // labPop5_name
             // 
@@ -717,6 +666,21 @@
             this.labPop5_singer.TabIndex = 6;
             this.labPop5_singer.Text = "MIKA feat Ariana Grande";
             this.labPop5_singer.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // picPop5
+            // 
+            this.picPop5.BackColor = System.Drawing.Color.Transparent;
+            this.picPop5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picPop5.BorderRadius = 10;
+            this.picPop5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPop5.Image = ((System.Drawing.Image)(resources.GetObject("picPop5.Image")));
+            this.picPop5.ImageRotate = 0F;
+            this.picPop5.Location = new System.Drawing.Point(12, 8);
+            this.picPop5.Name = "picPop5";
+            this.picPop5.Size = new System.Drawing.Size(65, 65);
+            this.picPop5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPop5.TabIndex = 13;
+            this.picPop5.TabStop = false;
             // 
             // panPop2
             // 
@@ -761,6 +725,7 @@
             this.btnPop2_play.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop2_play.Size = new System.Drawing.Size(45, 45);
             this.btnPop2_play.TabIndex = 8;
+            this.btnPop2_play.Click += new System.EventHandler(this.btnPop2_play_Click);
             // 
             // labPop2_name
             // 
@@ -787,6 +752,21 @@
             this.labPop2_singer.TabIndex = 6;
             this.labPop2_singer.Text = "MIKA feat Ariana Grande";
             this.labPop2_singer.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // picPop2
+            // 
+            this.picPop2.BackColor = System.Drawing.Color.Transparent;
+            this.picPop2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picPop2.BorderRadius = 10;
+            this.picPop2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPop2.Image = ((System.Drawing.Image)(resources.GetObject("picPop2.Image")));
+            this.picPop2.ImageRotate = 0F;
+            this.picPop2.Location = new System.Drawing.Point(12, 8);
+            this.picPop2.Name = "picPop2";
+            this.picPop2.Size = new System.Drawing.Size(65, 65);
+            this.picPop2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPop2.TabIndex = 11;
+            this.picPop2.TabStop = false;
             // 
             // panPop4
             // 
@@ -831,6 +811,7 @@
             this.btnPop4_play.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop4_play.Size = new System.Drawing.Size(45, 45);
             this.btnPop4_play.TabIndex = 8;
+            this.btnPop4_play.Click += new System.EventHandler(this.btnPop4_play_Click);
             // 
             // labPop4_name
             // 
@@ -857,6 +838,21 @@
             this.labPop4_singer.TabIndex = 6;
             this.labPop4_singer.Text = "MIKA feat Ariana Grande";
             this.labPop4_singer.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // picPop4
+            // 
+            this.picPop4.BackColor = System.Drawing.Color.Transparent;
+            this.picPop4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picPop4.BorderRadius = 10;
+            this.picPop4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPop4.Image = ((System.Drawing.Image)(resources.GetObject("picPop4.Image")));
+            this.picPop4.ImageRotate = 0F;
+            this.picPop4.Location = new System.Drawing.Point(8, 8);
+            this.picPop4.Name = "picPop4";
+            this.picPop4.Size = new System.Drawing.Size(65, 65);
+            this.picPop4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPop4.TabIndex = 9;
+            this.picPop4.TabStop = false;
             // 
             // panPop1
             // 
@@ -901,6 +897,7 @@
             this.btnPop1_play.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop1_play.Size = new System.Drawing.Size(45, 45);
             this.btnPop1_play.TabIndex = 8;
+            this.btnPop1_play.Click += new System.EventHandler(this.btnPop1_play_Click);
             // 
             // labPop1_name
             // 
@@ -927,6 +924,21 @@
             this.labPop1_singer.TabIndex = 6;
             this.labPop1_singer.Text = "MIKA feat Ariana Grande";
             this.labPop1_singer.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // picPop1
+            // 
+            this.picPop1.BackColor = System.Drawing.Color.Transparent;
+            this.picPop1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picPop1.BorderRadius = 10;
+            this.picPop1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPop1.Image = ((System.Drawing.Image)(resources.GetObject("picPop1.Image")));
+            this.picPop1.ImageRotate = 0F;
+            this.picPop1.Location = new System.Drawing.Point(8, 8);
+            this.picPop1.Name = "picPop1";
+            this.picPop1.Size = new System.Drawing.Size(65, 65);
+            this.picPop1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPop1.TabIndex = 0;
+            this.picPop1.TabStop = false;
             // 
             // panBanner
             // 
@@ -1006,24 +1018,24 @@
             this.Text = "Discover";
             this.panMain.ResumeLayout(false);
             this.panMain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop4)).EndInit();
             this.panPop6.ResumeLayout(false);
             this.panPop6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPop6)).EndInit();
             this.panPop3.ResumeLayout(false);
             this.panPop3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPop3)).EndInit();
             this.panPop5.ResumeLayout(false);
             this.panPop5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPop5)).EndInit();
             this.panPop2.ResumeLayout(false);
             this.panPop2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPop2)).EndInit();
             this.panPop4.ResumeLayout(false);
             this.panPop4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPop4)).EndInit();
             this.panPop1.ResumeLayout(false);
             this.panPop1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPop1)).EndInit();
             this.panBanner.ResumeLayout(false);
             this.panBanner.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBanner)).EndInit();
