@@ -112,7 +112,9 @@ namespace Muzic
 
         private void Homepage_Load(object sender, EventArgs e)
         {
-            LoadMusic(af);
+            wo.Init(af);
+            wo.Volume = trackVol.Value / 100f;
+            labTime_end.Text = String.Format("{0:00}:{1:00}", (int)af.TotalTime.TotalMinutes, af.TotalTime.Seconds);
         }
         
         private void btnPause_Click(object sender, EventArgs e)
