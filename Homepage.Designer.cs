@@ -36,7 +36,7 @@
             this.progressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
             trackVol = new Guna.UI2.WinForms.Guna2TrackBar();
             this.labPlaying_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnPause = new Guna.UI2.WinForms.Guna2ImageButton();
+            btnPause = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaying_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSound = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnRandom = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -57,7 +57,7 @@
             this.labLib = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labMenu = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panMain = new Guna.UI2.WinForms.Guna2Panel();
-            this.progressTimer = new System.Windows.Forms.Timer(this.components);
+            progressTimer = new System.Windows.Forms.Timer(this.components);
             this.panPlaying.SuspendLayout();
             this.panColumn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -71,7 +71,7 @@
             this.panPlaying.Controls.Add(this.progressBar);
             this.panPlaying.Controls.Add(trackVol);
             this.panPlaying.Controls.Add(this.labPlaying_name);
-            this.panPlaying.Controls.Add(this.btnPause);
+            this.panPlaying.Controls.Add(btnPause);
             this.panPlaying.Controls.Add(this.labPlaying_singer);
             this.panPlaying.Controls.Add(this.btnSound);
             this.panPlaying.Controls.Add(this.btnRandom);
@@ -143,20 +143,20 @@
             // 
             // btnPause
             // 
-            this.btnPause.BackColor = System.Drawing.Color.HotPink;
-            this.btnPause.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.btnPause.CheckedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.btnPause.HoverState.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnPause.Image = ((System.Drawing.Image)(resources.GetObject("btnPause.Image")));
-            this.btnPause.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnPause.ImageRotate = 0F;
-            this.btnPause.ImageSize = new System.Drawing.Size(27, 27);
-            this.btnPause.Location = new System.Drawing.Point(422, 27);
-            this.btnPause.Name = "btnPause";
-            this.btnPause.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.btnPause.Size = new System.Drawing.Size(45, 45);
-            this.btnPause.TabIndex = 8;
-            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
+            btnPause.BackColor = System.Drawing.Color.HotPink;
+            btnPause.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            btnPause.CheckedState.ImageSize = new System.Drawing.Size(27, 27);
+            btnPause.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            btnPause.Image = ((System.Drawing.Image)(resources.GetObject("btnPause.Image")));
+            btnPause.ImageOffset = new System.Drawing.Point(0, 0);
+            btnPause.ImageRotate = 0F;
+            btnPause.ImageSize = new System.Drawing.Size(27, 27);
+            btnPause.Location = new System.Drawing.Point(422, 27);
+            btnPause.Name = "btnPause";
+            btnPause.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            btnPause.Size = new System.Drawing.Size(45, 45);
+            btnPause.TabIndex = 8;
+            btnPause.Click += new System.EventHandler(btnPause_Click);
             // 
             // labPlaying_singer
             // 
@@ -517,7 +517,7 @@
             // 
             // progressTimer
             // 
-            this.progressTimer.Tick += new System.EventHandler(this.progressTimer_Tick);
+            progressTimer.Tick += new System.EventHandler(this.progressTimer_Tick);
             // 
             // Homepage
             // 
@@ -544,7 +544,7 @@
 
         #endregion
         private Guna.UI2.WinForms.Guna2Panel panPlaying;
-        private Guna.UI2.WinForms.Guna2ImageButton btnPause;
+        private static Guna.UI2.WinForms.Guna2ImageButton btnPause;
         private Guna.UI2.WinForms.Guna2ImageButton btnSound;
         private Guna.UI2.WinForms.Guna2ImageButton btnRandom;
         private Guna.UI2.WinForms.Guna2ImageButton btnNext;
@@ -565,7 +565,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel labMenu;
         private Guna.UI2.WinForms.Guna2Panel panMain;
         private Guna.UI2.WinForms.Guna2ProgressBar progressBar;
-        private System.Windows.Forms.Timer progressTimer;
+        private static System.Windows.Forms.Timer progressTimer;
         private Guna.UI2.WinForms.Guna2HtmlLabel labTime_start;
         private Guna.UI2.WinForms.Guna2Panel panPlaying_logo;
         private Guna.UI2.WinForms.Guna2GradientButton btnPlaylist;
