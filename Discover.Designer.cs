@@ -160,6 +160,7 @@
             this.picSong2.PressedState.ImageSize = new System.Drawing.Size(155, 146);
             this.picSong2.Size = new System.Drawing.Size(155, 146);
             this.picSong2.TabIndex = 19;
+            this.picSong2.Click += new System.EventHandler(this.picSong2_Click);
             // 
             // picSong6
             // 
@@ -175,6 +176,7 @@
             this.picSong6.PressedState.ImageSize = new System.Drawing.Size(155, 146);
             this.picSong6.Size = new System.Drawing.Size(155, 146);
             this.picSong6.TabIndex = 19;
+            this.picSong6.Click += new System.EventHandler(this.picSong6_Click);
             // 
             // picSong5
             // 
@@ -190,6 +192,7 @@
             this.picSong5.PressedState.ImageSize = new System.Drawing.Size(155, 146);
             this.picSong5.Size = new System.Drawing.Size(155, 146);
             this.picSong5.TabIndex = 19;
+            this.picSong5.Click += new System.EventHandler(this.picSong5_Click);
             // 
             // picSong4
             // 
@@ -205,6 +208,7 @@
             this.picSong4.PressedState.ImageSize = new System.Drawing.Size(155, 146);
             this.picSong4.Size = new System.Drawing.Size(155, 146);
             this.picSong4.TabIndex = 19;
+            this.picSong4.Click += new System.EventHandler(this.picSong4_Click);
             // 
             // picSong3
             // 
@@ -220,6 +224,7 @@
             this.picSong3.PressedState.ImageSize = new System.Drawing.Size(155, 146);
             this.picSong3.Size = new System.Drawing.Size(155, 146);
             this.picSong3.TabIndex = 19;
+            this.picSong3.Click += new System.EventHandler(this.picSong3_Click);
             // 
             // picSong1
             // 
@@ -235,6 +240,7 @@
             this.picSong1.PressedState.ImageSize = new System.Drawing.Size(155, 146);
             this.picSong1.Size = new System.Drawing.Size(155, 146);
             this.picSong1.TabIndex = 19;
+            this.picSong1.Click += new System.EventHandler(this.picSong1_Click);
             // 
             // labSong
             // 
@@ -462,6 +468,7 @@
             this.btnPop6_play.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop6_play.Size = new System.Drawing.Size(45, 45);
             this.btnPop6_play.TabIndex = 8;
+            this.btnPop6_play.Click += new System.EventHandler(this.btnPop6_play_Click);
             // 
             // labPop6_name
             // 
@@ -548,6 +555,7 @@
             this.btnPop3_play.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop3_play.Size = new System.Drawing.Size(45, 45);
             this.btnPop3_play.TabIndex = 8;
+            this.btnPop3_play.Click += new System.EventHandler(this.btnPop3_play_Click);
             // 
             // labPop3_name
             // 
@@ -634,6 +642,7 @@
             this.btnPop5_play.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop5_play.Size = new System.Drawing.Size(45, 45);
             this.btnPop5_play.TabIndex = 8;
+            this.btnPop5_play.Click += new System.EventHandler(this.btnPop5_play_Click);
             // 
             // labPop5_name
             // 
@@ -720,6 +729,7 @@
             this.btnPop2_play.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop2_play.Size = new System.Drawing.Size(45, 45);
             this.btnPop2_play.TabIndex = 8;
+            this.btnPop2_play.Click += new System.EventHandler(this.btnPop2_play_Click);
             // 
             // labPop2_name
             // 
@@ -806,6 +816,7 @@
             this.btnPop4_play.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop4_play.Size = new System.Drawing.Size(45, 45);
             this.btnPop4_play.TabIndex = 8;
+            this.btnPop4_play.Click += new System.EventHandler(this.btnPop4_play_Click);
             // 
             // labPop4_name
             // 
@@ -892,6 +903,7 @@
             this.btnPop1_play.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop1_play.Size = new System.Drawing.Size(45, 45);
             this.btnPop1_play.TabIndex = 8;
+            this.btnPop1_play.Click += new System.EventHandler(this.btnPop1_play_Click);
             // 
             // labPop1_name
             // 

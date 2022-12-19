@@ -1,3 +1,4 @@
+using Microsoft.Extensions.DependencyInjection;
 using NAudio.Wave;
 using System.Drawing.Drawing2D;
 
@@ -5,6 +6,8 @@ namespace Muzic
 {
     public partial class Homepage : Form
     {
+        public static WaveOutEvent wo = new WaveOutEvent();
+        public static AudioFileReader af = new AudioFileReader(@"Songs\\Ed Sheeran - Shape Of You.mp3");
         protected override CreateParams CreateParams
         {
             get
@@ -17,7 +20,8 @@ namespace Muzic
         public Homepage()
         {
             InitializeComponent();
-            Discover form = new Discover() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            var form = Program.host.Services.GetRequiredService<Discover>();
+            form.Init(DockStyle.Fill, false, true);
             this.panMain.Controls.Add(form);
             form.BringToFront();
             form.Show();
@@ -46,7 +50,8 @@ namespace Muzic
 
         private void btnExplore_Click(object sender, EventArgs e)
         {
-            Discover frm = new Discover() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            var frm = Program.host.Services.GetRequiredService<Discover>();
+            frm.Init(DockStyle.Fill, false, true);
             this.panMain.Controls.Add(frm);
             frm.BringToFront();
             frm.Show();
@@ -90,16 +95,18 @@ namespace Muzic
             labTime_end.Text = String.Format("{0:00}:{1:00}", (int)af.TotalTime.TotalMinutes, af.TotalTime.Seconds);
         }
 
-        private String song = "";
-        private WaveOutEvent wo = new WaveOutEvent();
-        private AudioFileReader af = new AudioFileReader(@"Songs\\Lost frequencies - Back To You.mp3");
-
-        private void Homepage_Load(object sender, EventArgs e)
+        public static void LoadMusic(WaveOutEvent w, AudioFileReader a)
         {
             initSound(af);
             wo.Volume = trackVol.Value / 100f;
-
+            labTime_end.Text = String.Format("{0:00}:{1:00}", (int)a.TotalTime.TotalMinutes, af.TotalTime.Seconds);
         }
+
+        private void Homepage_Load(object sender, EventArgs e)
+        {
+            LoadMusic(wo, af);
+        }
+        
         private void btnPause_Click(object sender, EventArgs e)
         {
             btnPause.Checked = !btnPause.Checked;

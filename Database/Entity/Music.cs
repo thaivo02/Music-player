@@ -1,13 +1,16 @@
-﻿namespace Muzic.Database.Entity
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Muzic.Database.Entity
 {
-    public class Music
+    public class Music : AggressiveRoot<int>
     {
+        [Key]
         public int MusicId { get; set; }
         public string MusicName { get; set; }
         public long TimeEnd { get; set; }
         public string URL { get; set; }
         public string Thumbnail { get; set; }
-        public string Artist { get; set; }
+        public int ArtistId { get; set; }
         public string Lyric { get; set; }
         public string ReleaseDate { get; set; }
         public string Genre { get; set; }

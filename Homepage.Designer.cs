@@ -31,11 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.panPlaying = new Guna.UI2.WinForms.Guna2Panel();
-            this.panPlaying_logo = new Guna.UI2.WinForms.Guna2Panel();
-            this.labTime_end = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            labTime_end = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            panPlaying_logo = new Guna.UI2.WinForms.Guna2Panel();
+            labTime_end = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labTime_start = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.progressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.trackVol = new Guna.UI2.WinForms.Guna2TrackBar();
+            trackVol = new Guna.UI2.WinForms.Guna2TrackBar();
             this.labPlaying_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnPause = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaying_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -66,11 +67,10 @@
             // panPlaying
             // 
             this.panPlaying.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panPlaying.Controls.Add(this.panPlaying_logo);
-            this.panPlaying.Controls.Add(this.labTime_end);
+            this.panPlaying.Controls.Add(labTime_end);
             this.panPlaying.Controls.Add(this.labTime_start);
             this.panPlaying.Controls.Add(this.progressBar);
-            this.panPlaying.Controls.Add(this.trackVol);
+            this.panPlaying.Controls.Add(trackVol);
             this.panPlaying.Controls.Add(this.labPlaying_name);
             this.panPlaying.Controls.Add(this.btnPause);
             this.panPlaying.Controls.Add(this.labPlaying_singer);
@@ -100,14 +100,14 @@
             // 
             // labTime_end
             // 
-            this.labTime_end.BackColor = System.Drawing.Color.Transparent;
-            this.labTime_end.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labTime_end.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.labTime_end.Location = new System.Drawing.Point(1051, 38);
-            this.labTime_end.Name = "labTime_end";
-            this.labTime_end.Size = new System.Drawing.Size(43, 22);
-            this.labTime_end.TabIndex = 10;
-            this.labTime_end.Text = "00:00";
+            labTime_end.BackColor = System.Drawing.Color.Transparent;
+            labTime_end.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            labTime_end.ForeColor = System.Drawing.SystemColors.GrayText;
+            labTime_end.Location = new System.Drawing.Point(1051, 38);
+            labTime_end.Name = "labTime_end";
+            labTime_end.Size = new System.Drawing.Size(43, 22);
+            labTime_end.TabIndex = 10;
+            labTime_end.Text = "00:00";
             // 
             // labTime_start
             // 
@@ -133,14 +133,14 @@
             // 
             // trackVol
             // 
-            this.trackVol.Location = new System.Drawing.Point(1186, 35);
-            this.trackVol.Name = "trackVol";
-            this.trackVol.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackVol.Size = new System.Drawing.Size(105, 29);
-            this.trackVol.TabIndex = 9;
-            this.trackVol.ThumbColor = System.Drawing.Color.HotPink;
-            this.trackVol.Value = 70;
-            this.trackVol.Scroll += new System.Windows.Forms.ScrollEventHandler(this.trackVol_Scroll);
+            trackVol.Location = new System.Drawing.Point(1186, 35);
+            trackVol.Name = "trackVol";
+            trackVol.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            trackVol.Size = new System.Drawing.Size(105, 29);
+            trackVol.TabIndex = 9;
+            trackVol.ThumbColor = System.Drawing.Color.HotPink;
+            trackVol.Value = 70;
+            trackVol.Scroll += new System.Windows.Forms.ScrollEventHandler(this.trackVol_Scroll);
             // 
             // labPlaying_name
             // 
@@ -545,7 +545,7 @@
 
         #endregion
         private Guna.UI2.WinForms.Guna2Panel panPlaying;
-        private Guna.UI2.WinForms.Guna2TrackBar trackVol;
+        private static Guna.UI2.WinForms.Guna2TrackBar trackVol;
         private Guna.UI2.WinForms.Guna2ImageButton btnPause;
         private Guna.UI2.WinForms.Guna2ImageButton btnSound;
         private Guna.UI2.WinForms.Guna2ImageButton btnRandom;
@@ -569,7 +569,7 @@
         private Guna.UI2.WinForms.Guna2ProgressBar progressBar;
         private System.Windows.Forms.Timer progressTimer;
         private Guna.UI2.WinForms.Guna2HtmlLabel labTime_start;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labTime_end;
+        private static Guna.UI2.WinForms.Guna2HtmlLabel labTime_end;
         private Guna.UI2.WinForms.Guna2Panel panPlaying_logo;
         private Guna.UI2.WinForms.Guna2GradientButton btnPlaylist;
     }
