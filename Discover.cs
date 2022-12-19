@@ -42,9 +42,8 @@ namespace Muzic
 
         public void PlaySong(int i)
         {
-            WaveOutEvent wo = new WaveOutEvent();
-            AudioFileReader af = new AudioFileReader(Musics[i].URL);
-            Homepage.LoadMusic(wo, af);
+            AudioFileReader af = new AudioFileReader(Musics[i].URL + ".mp3");
+            Homepage.LoadMusic(af);
         }
 
         public Discover(IMusicRepository musicRepository, IArtistRepository artistRepository)
@@ -62,12 +61,12 @@ namespace Muzic
             UpdateLabSong(picSong5, labSong5_name, labSong5_singer, Musics[4]);                       
             UpdateLabSong(picSong6, labSong6_name, labSong6_singer, Musics[5]);    
             
-            UpdatePopSong(picPop1, labPop1_name, labPop1_singer, Musics[5]);
-            UpdatePopSong(picPop2, labPop2_name, labPop2_singer, Musics[6]);
-            UpdatePopSong(picPop3, labPop3_name, labPop3_singer, Musics[7]);
-            UpdatePopSong(picPop4, labPop4_name, labPop4_singer, Musics[8]);
-            UpdatePopSong(picPop5, labPop5_name, labPop5_singer, Musics[9]);
-            UpdatePopSong(picPop6, labPop6_name, labPop6_singer, Musics[10]);
+            UpdatePopSong(picPop1, labPop1_name, labPop1_singer, Musics[6]);
+            UpdatePopSong(picPop2, labPop2_name, labPop2_singer, Musics[7]);
+            UpdatePopSong(picPop3, labPop3_name, labPop3_singer, Musics[8]);
+            UpdatePopSong(picPop4, labPop4_name, labPop4_singer, Musics[9]);
+            UpdatePopSong(picPop5, labPop5_name, labPop5_singer, Musics[10]);
+            UpdatePopSong(picPop6, labPop6_name, labPop6_singer, Musics[11]);
         }
 
         public void Init(DockStyle dock, bool topLevel, bool topMost)

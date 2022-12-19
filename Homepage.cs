@@ -95,16 +95,24 @@ namespace Muzic
             labTime_end.Text = String.Format("{0:00}:{1:00}", (int)af.TotalTime.TotalMinutes, af.TotalTime.Seconds);
         }
 
-        public static void LoadMusic(WaveOutEvent w, AudioFileReader a)
+        public static void LoadMusic(AudioFileReader a)
         {
-            w.Init(a);
-            w.Volume = trackVol.Value / 100f;
+            wo.Stop();
+            wo.Init(a);
+            wo.Volume = trackVol.Value / 100f;
             labTime_end.Text = String.Format("{0:00}:{1:00}", (int)a.TotalTime.TotalMinutes, a.TotalTime.Seconds);
+            btnPause.Checked = !btnPause.Checked;
+            var closing = false;
+            wo.PlaybackStopped += (s, a) => { if (closing) { wo.Dispose(); af.Dispose(); } };
+            if (btnPause.Checked) wo.Play();
+            else wo.Stop();
+            if (wo.PlaybackState.ToString() == "Playing") progressTimer.Start();
+            else progressTimer.Stop();
         }
 
         private void Homepage_Load(object sender, EventArgs e)
         {
-            LoadMusic(wo, af);
+            LoadMusic(af);
         }
         
         private void btnPause_Click(object sender, EventArgs e)
@@ -116,7 +124,7 @@ namespace Muzic
             else wo.Stop();
             if (wo.PlaybackState.ToString() == "Playing") progressTimer.Start();
             else progressTimer.Stop();
-            this.FormClosing += (s, a) => { closing = true; wo.Stop(); };
+            FormClosing += (s, a) => { closing = true; wo.Stop(); };
         }
 
         private void trackVol_Scroll(object sender, ScrollEventArgs e)
