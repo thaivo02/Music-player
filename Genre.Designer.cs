@@ -135,6 +135,7 @@
             this.flowLayoutPanel9.Name = "flowLayoutPanel9";
             this.flowLayoutPanel9.Size = new System.Drawing.Size(315, 208);
             this.flowLayoutPanel9.TabIndex = 4;
+            this.flowLayoutPanel9.Click += new System.EventHandler(this.btnSongsList);
             // 
             // guna2PictureBox6
             // 
@@ -202,6 +203,7 @@
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             this.flowLayoutPanel8.Size = new System.Drawing.Size(315, 208);
             this.flowLayoutPanel8.TabIndex = 4;
+            this.flowLayoutPanel8.Click += new System.EventHandler(this.btnSongsList);
             // 
             // guna2PictureBox5
             // 
@@ -269,6 +271,7 @@
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(315, 208);
             this.flowLayoutPanel6.TabIndex = 4;
+            this.flowLayoutPanel6.Click += new System.EventHandler(this.btnSongsList);
             // 
             // guna2PictureBox3
             // 
@@ -336,6 +339,7 @@
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Size = new System.Drawing.Size(315, 208);
             this.flowLayoutPanel5.TabIndex = 4;
+            this.flowLayoutPanel5.Click += new System.EventHandler(this.btnSongsList);
             // 
             // guna2PictureBox2
             // 
@@ -403,6 +407,7 @@
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
             this.flowLayoutPanel7.Size = new System.Drawing.Size(315, 208);
             this.flowLayoutPanel7.TabIndex = 4;
+            this.flowLayoutPanel7.Click += new System.EventHandler(this.btnSongsList);
             // 
             // guna2PictureBox4
             // 
@@ -470,6 +475,7 @@
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(315, 208);
             this.flowLayoutPanel3.TabIndex = 4;
+            this.flowLayoutPanel3.Click += new System.EventHandler(this.btnSongsList);
             // 
             // picGenre3
             // 
@@ -537,6 +543,7 @@
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(315, 208);
             this.flowLayoutPanel4.TabIndex = 4;
+            this.flowLayoutPanel4.Click += new System.EventHandler(this.btnSongsList);
             // 
             // guna2PictureBox1
             // 
@@ -604,6 +611,7 @@
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(315, 208);
             this.flowLayoutPanel2.TabIndex = 4;
+            this.flowLayoutPanel2.Click += new System.EventHandler(this.btnSongsList);
             // 
             // picGenre2
             // 

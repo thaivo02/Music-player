@@ -1,4 +1,5 @@
 using NAudio.Wave;
+using System.Drawing.Drawing2D;
 
 namespace Muzic
 {
@@ -24,13 +25,15 @@ namespace Muzic
 
         private void btnRandom_Click(object sender, EventArgs e)
         {
-            if (btnRandom.BackColor == Color.HotPink) btnRandom.BackColor = Color.Transparent;
+            btnRandom.Checked = !btnRandom.Checked;
+            if (btnRandom.Checked) btnRandom.BackColor = Color.Transparent;
             else btnRandom.BackColor = Color.HotPink;
         }
 
         private void btnLoop_Click(object sender, EventArgs e)
         {
-            if (btnLoop.BackColor == Color.HotPink) btnLoop.BackColor = Color.Transparent;
+            btnLoop.Checked = !btnLoop.Checked;
+            if (btnLoop.Checked) btnLoop.BackColor = Color.Transparent;
             else btnLoop.BackColor = Color.HotPink;
         }
         private void btnTrend_Click(object sender, EventArgs e)
@@ -67,22 +70,34 @@ namespace Muzic
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-
+            btnPause.Checked = false;
+            wo.Stop();
+            af = new AudioFileReader(@"Songs\\Lost frequencies - Reality.mp3");
+            initSound(af);
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-
+            btnPause.Checked = false;
+            wo.Stop();
+            af = new AudioFileReader(@"Songs\\Lost frequencies - Reality.mp3");
+            initSound(af);
         }
 
+        private void initSound(AudioFileReader af)
+        {
+            wo.Init(af);
+            labTime_end.Text = String.Format("{0:00}:{1:00}", (int)af.TotalTime.TotalMinutes, af.TotalTime.Seconds);
+        }
+
+        private String song = "";
         private WaveOutEvent wo = new WaveOutEvent();
-        private AudioFileReader af = new AudioFileReader(@"Songs\\Ed Sheeran - Shape Of You.mp3");
+        private AudioFileReader af = new AudioFileReader(@"Songs\\Lost frequencies - Back To You.mp3");
 
         private void Homepage_Load(object sender, EventArgs e)
         {
-            wo.Init(af);
+            initSound(af);
             wo.Volume = trackVol.Value / 100f;
-            labTime_end.Text = String.Format("{0:00}:{1:00}", (int)af.TotalTime.TotalMinutes, af.TotalTime.Seconds);
 
         }
         private void btnPause_Click(object sender, EventArgs e)
@@ -100,6 +115,7 @@ namespace Muzic
         private void trackVol_Scroll(object sender, ScrollEventArgs e)
         {
             wo.Volume = trackVol.Value / 100f;
+            btnSound.Checked =  (trackVol.Value > 0) ?  false : true;
         }
 
         private void progressTimer_Tick(object sender, EventArgs e)
@@ -107,13 +123,16 @@ namespace Muzic
             try
             {
                 TimeSpan currentTime = (wo.PlaybackState == PlaybackState.Stopped) ? TimeSpan.Zero : af.CurrentTime;
-                //trackBar.Value = Math.Min(trackBar.Maximum, (int)(100 * currentTime.TotalSeconds / inputStream.TotalTime.TotalSeconds));
+                //progressBar.Value = Math.Min(progressBar.Maximum, (int)(100 * currentTime.TotalSeconds / af.TotalTime.TotalSeconds));
                 labTime_start.Text = String.Format("{0:00}:{1:00}", (int)currentTime.TotalMinutes, currentTime.Seconds);
                 progressBar.Minimum = 0;
 
                 progressBar.Maximum = (int)(af.TotalTime.TotalSeconds);
                 if (progressBar.Value <= progressBar.Maximum)
                     progressBar.Value = (int)(af.CurrentTime.TotalSeconds);
+                if (progressBar.Value == progressBar.Maximum) btnPause.Checked = false;
+                angle += 2;
+                Invalidate();
             }
             catch
             {
@@ -130,6 +149,48 @@ namespace Muzic
                 trackVol.Value = 10;
                 wo.Volume = trackVol.Value / 100f;
             }
+        }
+
+        private void btnSongInfo(object sender, EventArgs e)
+        {
+            SongInfo frm = new SongInfo() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.panMain.Controls.Add(frm);
+            frm.BringToFront();
+            frm.Show();
+        }
+
+        private int cx = 36, cy = 36, rx = 72, ry = 72;
+
+        private float angle;
+        Bitmap image = new Bitmap(@"Homepage\Songs\backtoyou.jpg");
+
+        public Image RoundCorners(Bitmap StartImage, int CornerRadius, Color BackgroundColor)
+        {
+            CornerRadius *= 2;
+            Bitmap RoundedImage = new Bitmap(StartImage);
+            using (Graphics g = Graphics.FromImage(RoundedImage))
+            {
+                g.Clear(BackgroundColor);
+                g.SmoothingMode = SmoothingMode.AntiAlias;
+                Brush brush = new TextureBrush(StartImage);
+                GraphicsPath gp = new GraphicsPath();
+                gp.AddArc(0, 0, CornerRadius, CornerRadius, 180, 90);
+                gp.AddArc(0 + RoundedImage.Width - CornerRadius, 0, CornerRadius, CornerRadius, 270, 90);
+                gp.AddArc(0 + RoundedImage.Width - CornerRadius, 0 + RoundedImage.Height - CornerRadius, CornerRadius, CornerRadius, 0, 90);
+                gp.AddArc(0, 0 + RoundedImage.Height - CornerRadius, CornerRadius, CornerRadius, 90, 90);
+                g.FillPath(brush, gp);
+                return RoundedImage;
+            }
+        }
+          
+        private void rotateCD(object sender, PaintEventArgs e)
+        {
+            Image RoundedImage = RoundCorners(image, 250, Color.Transparent);
+            Graphics g = e.Graphics;
+
+            g.RotateTransform(angle, MatrixOrder.Append);
+            g.TranslateTransform(cx, cy, MatrixOrder.Append);
+            g.DrawImage(RoundedImage, -rx / 2, -ry / 2, rx, ry);
         }
     }
 }

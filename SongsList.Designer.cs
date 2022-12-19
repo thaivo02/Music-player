@@ -274,6 +274,7 @@
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(1264, 80);
             this.guna2Panel8.TabIndex = 15;
+            this.guna2Panel8.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // guna2ImageButton19
             // 
@@ -398,6 +399,7 @@
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(1264, 80);
             this.guna2Panel6.TabIndex = 13;
+            this.guna2Panel6.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // guna2ImageButton16
             // 
@@ -522,6 +524,7 @@
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(1264, 80);
             this.guna2Panel5.TabIndex = 14;
+            this.guna2Panel5.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // guna2ImageButton13
             // 
@@ -646,6 +649,7 @@
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(1264, 80);
             this.guna2Panel3.TabIndex = 17;
+            this.guna2Panel3.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // guna2ImageButton7
             // 
@@ -770,6 +774,7 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1264, 80);
             this.guna2Panel2.TabIndex = 16;
+            this.guna2Panel2.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // guna2ImageButton4
             // 
@@ -894,6 +899,7 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1264, 80);
             this.guna2Panel1.TabIndex = 15;
+            this.guna2Panel1.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // guna2ImageButton1
             // 
@@ -1018,6 +1024,7 @@
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(1264, 80);
             this.guna2Panel4.TabIndex = 15;
+            this.guna2Panel4.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // guna2ImageButton10
             // 

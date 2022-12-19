@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.panPlaying = new Guna.UI2.WinForms.Guna2Panel();
+            this.panPlaying_logo = new Guna.UI2.WinForms.Guna2Panel();
             this.labTime_end = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labTime_start = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.progressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
@@ -43,7 +44,6 @@
             this.btnNext = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnBack = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnLoop = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.picPlaying_song = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panColumn = new Guna.UI2.WinForms.Guna2Panel();
             this.btnPlaylist = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnHistory = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -59,7 +59,6 @@
             this.panMain = new Guna.UI2.WinForms.Guna2Panel();
             this.progressTimer = new System.Windows.Forms.Timer(this.components);
             this.panPlaying.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPlaying_song)).BeginInit();
             this.panColumn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +66,7 @@
             // panPlaying
             // 
             this.panPlaying.BackColor = System.Drawing.Color.LavenderBlush;
+            this.panPlaying.Controls.Add(this.panPlaying_logo);
             this.panPlaying.Controls.Add(this.labTime_end);
             this.panPlaying.Controls.Add(this.labTime_start);
             this.panPlaying.Controls.Add(this.progressBar);
@@ -79,12 +79,24 @@
             this.panPlaying.Controls.Add(this.btnNext);
             this.panPlaying.Controls.Add(this.btnBack);
             this.panPlaying.Controls.Add(this.btnLoop);
-            this.panPlaying.Controls.Add(this.picPlaying_song);
             this.panPlaying.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panPlaying.Location = new System.Drawing.Point(282, 851);
             this.panPlaying.Name = "panPlaying";
             this.panPlaying.Size = new System.Drawing.Size(1326, 98);
             this.panPlaying.TabIndex = 5;
+            // 
+            // panPlaying_logo
+            // 
+            this.panPlaying_logo.BorderColor = System.Drawing.Color.Black;
+            this.panPlaying_logo.BorderRadius = 35;
+            this.panPlaying_logo.BorderThickness = 2;
+            this.panPlaying_logo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panPlaying_logo.Location = new System.Drawing.Point(31, 12);
+            this.panPlaying_logo.Name = "panPlaying_logo";
+            this.panPlaying_logo.Size = new System.Drawing.Size(72, 72);
+            this.panPlaying_logo.TabIndex = 12;
+            this.panPlaying_logo.Click += new System.EventHandler(this.btnSongInfo);
+            this.panPlaying_logo.Paint += new System.Windows.Forms.PaintEventHandler(this.rotateCD);
             // 
             // labTime_end
             // 
@@ -192,7 +204,7 @@
             // btnRandom
             // 
             this.btnRandom.BackColor = System.Drawing.Color.HotPink;
-            this.btnRandom.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnRandom.CheckedState.ImageSize = new System.Drawing.Size(27, 27);
             this.btnRandom.HoverState.ImageSize = new System.Drawing.Size(30, 30);
             this.btnRandom.Image = ((System.Drawing.Image)(resources.GetObject("btnRandom.Image")));
             this.btnRandom.ImageOffset = new System.Drawing.Point(0, 0);
@@ -237,7 +249,7 @@
             // 
             // btnLoop
             // 
-            this.btnLoop.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnLoop.CheckedState.ImageSize = new System.Drawing.Size(27, 27);
             this.btnLoop.HoverState.ImageSize = new System.Drawing.Size(30, 30);
             this.btnLoop.Image = ((System.Drawing.Image)(resources.GetObject("btnLoop.Image")));
             this.btnLoop.ImageOffset = new System.Drawing.Point(0, 0);
@@ -249,20 +261,6 @@
             this.btnLoop.Size = new System.Drawing.Size(45, 45);
             this.btnLoop.TabIndex = 8;
             this.btnLoop.Click += new System.EventHandler(this.btnLoop_Click);
-            // 
-            // picPlaying_song
-            // 
-            this.picPlaying_song.BackColor = System.Drawing.Color.Transparent;
-            this.picPlaying_song.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.picPlaying_song.BorderRadius = 37;
-            this.picPlaying_song.Image = ((System.Drawing.Image)(resources.GetObject("picPlaying_song.Image")));
-            this.picPlaying_song.ImageRotate = 0F;
-            this.picPlaying_song.Location = new System.Drawing.Point(31, 12);
-            this.picPlaying_song.Name = "picPlaying_song";
-            this.picPlaying_song.Size = new System.Drawing.Size(72, 74);
-            this.picPlaying_song.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPlaying_song.TabIndex = 3;
-            this.picPlaying_song.TabStop = false;
             // 
             // panColumn
             // 
@@ -538,7 +536,6 @@
             this.Load += new System.EventHandler(this.Homepage_Load);
             this.panPlaying.ResumeLayout(false);
             this.panPlaying.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPlaying_song)).EndInit();
             this.panColumn.ResumeLayout(false);
             this.panColumn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
@@ -555,7 +552,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnNext;
         private Guna.UI2.WinForms.Guna2ImageButton btnBack;
         private Guna.UI2.WinForms.Guna2ImageButton btnLoop;
-        private Guna.UI2.WinForms.Guna2PictureBox picPlaying_song;
         private Guna.UI2.WinForms.Guna2Panel panColumn;
         private Guna.UI2.WinForms.Guna2GradientButton btnHistory;
         private Guna.UI2.WinForms.Guna2GradientButton btnGenre;
@@ -570,10 +566,11 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel labLib;
         private Guna.UI2.WinForms.Guna2HtmlLabel labMenu;
         private Guna.UI2.WinForms.Guna2Panel panMain;
-        private Guna.UI2.WinForms.Guna2GradientButton btnPlaylist;
         private Guna.UI2.WinForms.Guna2ProgressBar progressBar;
         private System.Windows.Forms.Timer progressTimer;
         private Guna.UI2.WinForms.Guna2HtmlLabel labTime_start;
         private Guna.UI2.WinForms.Guna2HtmlLabel labTime_end;
+        private Guna.UI2.WinForms.Guna2Panel panPlaying_logo;
+        private Guna.UI2.WinForms.Guna2GradientButton btnPlaylist;
     }
 }
