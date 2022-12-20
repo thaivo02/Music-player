@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Muzic.Repositories.ArtistRepositories;
 using Muzic.Repositories.MusicRepositories;
+using Muzic.Repositories.PlaylistRepositories;
 
 namespace Muzic.Repositories
 {
@@ -10,6 +11,7 @@ namespace Muzic.Repositories
         {
             services.AddScoped<IMusicRepository, MusicRepository>();
             services.AddScoped<IArtistRepository, ArtistRepository>();
+            services.AddScoped<IPlaylistRepository, PlaylistRepository>();
             return services;
         }
     }
