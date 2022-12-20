@@ -9,7 +9,7 @@ namespace Muzic
     {
         public static WaveOutEvent wo = new WaveOutEvent();
         public static AudioFileReader af = new AudioFileReader(@"Songs\\Lost frequencies - Back To You.mp3");
-        public static int CurrentIndex = 0;
+        public static int CurrentIndex = 16;
         protected override CreateParams CreateParams
         {
             get
@@ -25,9 +25,6 @@ namespace Muzic
             var form = Program.host.Services.GetRequiredService<Discover>();
             form.Init(DockStyle.Fill, false, true);
             this.panMain.Controls.Add(form);
-
-          
-
             form.BringToFront();
             form.Show();
         }
@@ -87,6 +84,8 @@ namespace Muzic
                 index = Math.Max(0, CurrentIndex - 1);
                 CurrentIndex = index;
             }
+
+            CurrentIndex = index;
             labPlaying_name.Text = Discover.Musics[index].MusicName;
             var artist = Discover.Artists.First(e => e.ArtistId == Discover.Musics[index].ArtistId);
             labPlaying_singer.Text = artist.ArtistName;
@@ -102,6 +101,8 @@ namespace Muzic
                 index = Math.Min(Discover.Musics.Count, CurrentIndex + 1);
                 CurrentIndex = index;
             }
+
+            CurrentIndex = index;
             labPlaying_name.Text = Discover.Musics[index].MusicName;
             var artist = Discover.Artists.First(e => e.ArtistId == Discover.Musics[index].ArtistId);
             labPlaying_singer.Text = artist.ArtistName;
@@ -187,7 +188,8 @@ namespace Muzic
 
         private void btnSongInfo(object sender, EventArgs e)
         {
-            SongInfo frm = new SongInfo() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            SongInfo frm = Program.host.Services.GetRequiredService<SongInfo>();
+            frm.Init();
             this.panMain.Controls.Add(frm);
             frm.BringToFront();
             frm.Show();
@@ -199,9 +201,8 @@ namespace Muzic
 
         private void btnNew_playlist_Click(object sender, EventArgs e)
         {
-            NewPlaylist newPlaylist = new NewPlaylist();
+            NewPlaylist newPlaylist = Program.host.Services.GetRequiredService<NewPlaylist>();
             newPlaylist.Show();
-
         }
 
         public static Bitmap image = new Bitmap(@"Homepage\Songs\backtoyou.jpg");

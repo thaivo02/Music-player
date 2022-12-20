@@ -66,7 +66,6 @@ namespace Muzic
             }
 
             Homepage.CurrentIndex = i;
-            
             Homepage.LoadMusic(Musics[i].URL + ".mp3");
         }
 
@@ -79,6 +78,17 @@ namespace Muzic
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Discover));
             Musics = _musicRepository.GetAll().ToList();
             Musics.Shuffle();
+            var i = 0;
+            Discover.Musics.ForEach(e =>
+            {
+                if (e.MusicId == 16)
+                {
+                    Homepage.CurrentIndex = i;
+                    return;
+                }
+
+                i += 1;
+            });
             UpdateLabSong(picSong1, labSong1_name, labSong1_singer, Musics[0]);                       
             UpdateLabSong(picSong2, labSong2_name, labSong2_singer, Musics[1]);                       
             UpdateLabSong(picSong3, labSong3_name, labSong3_singer, Musics[2]);                       

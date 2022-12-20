@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Muzic
 {
@@ -19,7 +20,8 @@ namespace Muzic
 
         private void btnSongInfo(object sender, EventArgs e)
         {
-            SongInfo frm = new SongInfo() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            SongInfo frm = Program.host.Services.GetRequiredService<SongInfo>();
+            frm.Init();
             this.panMain.Controls.Add(frm);
             frm.BringToFront();
             frm.Show();
