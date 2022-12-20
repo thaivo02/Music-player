@@ -135,13 +135,12 @@
             // 
             // labLyrics
             // 
-            this.labLyrics.AutoSize = true;
             this.labLyrics.BackColor = System.Drawing.Color.Linen;
             this.labLyrics.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.labLyrics.ForeColor = System.Drawing.Color.Teal;
             this.labLyrics.Location = new System.Drawing.Point(434, 12);
             this.labLyrics.Name = "labLyrics";
-            this.labLyrics.Size = new System.Drawing.Size(789, 1190);
+            this.labLyrics.Size = new System.Drawing.Size(789, 1503);
             this.labLyrics.TabIndex = 18;
             this.labLyrics.Text = resources.GetString("labLyrics.Text");
             // 
