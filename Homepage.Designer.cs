@@ -56,11 +56,29 @@
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.labLib = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labMenu = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panMain = new Guna.UI2.WinForms.Guna2Panel();
             progressTimer = new System.Windows.Forms.Timer(this.components);
-            this.panPlaying.SuspendLayout();
+            this.panMain = new Guna.UI2.WinForms.Guna2Panel();
+            labPlaying_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            labPlaying_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labTime_start = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            labTime_end = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panPlaying = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.progressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
+            trackVol = new Guna.UI2.WinForms.Guna2TrackBar();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            btnPause = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnSound = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnRandom = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnNext = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnBack = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnLoop = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.panPlaying_rotate = new Guna.UI2.WinForms.Guna2Panel();
             this.panColumn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.panPlaying.SuspendLayout();
             this.SuspendLayout();
             // 
             // panPlaying
@@ -259,7 +277,6 @@
             this.panPlaying_logo.Size = new System.Drawing.Size(72, 72);
             this.panPlaying_logo.TabIndex = 12;
             this.panPlaying_logo.Click += new System.EventHandler(this.btnSongInfo);
-            this.panPlaying_logo.Paint += new System.Windows.Forms.PaintEventHandler(this.rotateCD);
             // 
             // panColumn
             // 
@@ -284,7 +301,7 @@
             // btnPlaylist
             // 
             this.btnPlaylist.BorderRadius = 10;
-            this.btnPlaylist.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnPlaylist.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btnPlaylist.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPlaylist.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnPlaylist.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -307,7 +324,7 @@
             // btnHistory
             // 
             this.btnHistory.BorderRadius = 10;
-            this.btnHistory.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btnHistory.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.btnHistory.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHistory.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnHistory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -330,7 +347,7 @@
             // btnGenre
             // 
             this.btnGenre.BorderRadius = 10;
-            this.btnGenre.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnGenre.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnGenre.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnGenre.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnGenre.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -353,7 +370,7 @@
             // 
             // btnNew_playlist
             // 
-            this.btnNew_playlist.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.btnNew_playlist.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.btnNew_playlist.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnNew_playlist.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnNew_playlist.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -379,7 +396,7 @@
             // btnFavorite
             // 
             this.btnFavorite.BorderRadius = 10;
-            this.btnFavorite.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            this.btnFavorite.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnFavorite.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnFavorite.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnFavorite.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -402,7 +419,7 @@
             // btnTop
             // 
             this.btnTop.BorderRadius = 10;
-            this.btnTop.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            this.btnTop.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             this.btnTop.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTop.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnTop.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -426,7 +443,7 @@
             // btnTrend
             // 
             this.btnTrend.BorderRadius = 10;
-            this.btnTrend.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            this.btnTrend.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.btnTrend.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTrend.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnTrend.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -450,7 +467,7 @@
             // btnExplore
             // 
             this.btnExplore.BorderRadius = 10;
-            this.btnExplore.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
+            this.btnExplore.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
             this.btnExplore.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnExplore.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.btnExplore.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -507,17 +524,252 @@
             this.labMenu.Text = "MENU";
             this.labMenu.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // progressTimer
+            // 
+            progressTimer.Tick += new System.EventHandler(this.progressTimer_Tick);
+            // 
             // panMain
             // 
             this.panMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panMain.Location = new System.Drawing.Point(282, 0);
             this.panMain.Name = "panMain";
-            this.panMain.Size = new System.Drawing.Size(1326, 851);
+            this.panMain.Size = new System.Drawing.Size(1326, 949);
             this.panMain.TabIndex = 6;
             // 
-            // progressTimer
+            // labPlaying_singer
             // 
-            progressTimer.Tick += new System.EventHandler(this.progressTimer_Tick);
+            labPlaying_singer.BackColor = System.Drawing.Color.Transparent;
+            labPlaying_singer.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            labPlaying_singer.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            labPlaying_singer.IsSelectionEnabled = false;
+            labPlaying_singer.Location = new System.Drawing.Point(114, 51);
+            labPlaying_singer.Name = "labPlaying_singer";
+            labPlaying_singer.Size = new System.Drawing.Size(118, 22);
+            labPlaying_singer.TabIndex = 6;
+            labPlaying_singer.Text = "Lost frequencies";
+            labPlaying_singer.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labPlaying_name
+            // 
+            this.labPlaying_name.BackColor = System.Drawing.Color.Transparent;
+            this.labPlaying_name.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labPlaying_name.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.labPlaying_name.IsSelectionEnabled = false;
+            this.labPlaying_name.Location = new System.Drawing.Point(114, 25);
+            this.labPlaying_name.Name = "labPlaying_name";
+            this.labPlaying_name.Size = new System.Drawing.Size(104, 27);
+            this.labPlaying_name.TabIndex = 6;
+            this.labPlaying_name.Text = "Back to you";
+            this.labPlaying_name.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labTime_start
+            // 
+            this.labTime_start.BackColor = System.Drawing.Color.Transparent;
+            this.labTime_start.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labTime_start.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.labTime_start.Location = new System.Drawing.Point(598, 38);
+            this.labTime_start.Name = "labTime_start";
+            this.labTime_start.Size = new System.Drawing.Size(43, 22);
+            this.labTime_start.TabIndex = 10;
+            this.labTime_start.Text = "00:00";
+            // 
+            // labTime_end
+            // 
+            labTime_end.BackColor = System.Drawing.Color.Transparent;
+            labTime_end.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            labTime_end.ForeColor = System.Drawing.SystemColors.GrayText;
+            labTime_end.Location = new System.Drawing.Point(1051, 38);
+            labTime_end.Name = "labTime_end";
+            labTime_end.Size = new System.Drawing.Size(43, 22);
+            labTime_end.TabIndex = 10;
+            labTime_end.Text = "00:00";
+            // 
+            // panPlaying
+            // 
+            this.panPlaying.BackColor = System.Drawing.Color.LavenderBlush;
+            this.panPlaying.Controls.Add(this.panPlaying_rotate);
+            this.panPlaying.Controls.Add(this.guna2HtmlLabel1);
+            this.panPlaying.Controls.Add(this.guna2HtmlLabel2);
+            this.panPlaying.Controls.Add(this.progressBar);
+            this.panPlaying.Controls.Add(trackVol);
+            this.panPlaying.Controls.Add(this.guna2HtmlLabel3);
+            this.panPlaying.Controls.Add(btnPause);
+            this.panPlaying.Controls.Add(this.guna2HtmlLabel4);
+            this.panPlaying.Controls.Add(this.btnSound);
+            this.panPlaying.Controls.Add(this.btnRandom);
+            this.panPlaying.Controls.Add(this.btnNext);
+            this.panPlaying.Controls.Add(this.btnBack);
+            this.panPlaying.Controls.Add(this.btnLoop);
+            this.panPlaying.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panPlaying.Location = new System.Drawing.Point(282, 851);
+            this.panPlaying.Name = "panPlaying";
+            this.panPlaying.Size = new System.Drawing.Size(1326, 98);
+            this.panPlaying.TabIndex = 7;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(1051, 38);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(43, 22);
+            this.guna2HtmlLabel1.TabIndex = 10;
+            this.guna2HtmlLabel1.Text = "00:00";
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(598, 38);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(43, 22);
+            this.guna2HtmlLabel2.TabIndex = 10;
+            this.guna2HtmlLabel2.Text = "00:00";
+            // 
+            // progressBar
+            // 
+            this.progressBar.BorderRadius = 4;
+            this.progressBar.Location = new System.Drawing.Point(656, 44);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.progressBar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.progressBar.Size = new System.Drawing.Size(380, 10);
+            this.progressBar.TabIndex = 0;
+            this.progressBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            // 
+            // trackVol
+            // 
+            trackVol.Location = new System.Drawing.Point(1186, 35);
+            trackVol.Name = "trackVol";
+            trackVol.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            trackVol.Size = new System.Drawing.Size(105, 29);
+            trackVol.TabIndex = 9;
+            trackVol.ThumbColor = System.Drawing.Color.HotPink;
+            trackVol.Value = 70;
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.guna2HtmlLabel3.IsSelectionEnabled = false;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(114, 25);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(104, 27);
+            this.guna2HtmlLabel3.TabIndex = 6;
+            this.guna2HtmlLabel3.Text = "Back to you";
+            this.guna2HtmlLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnPause
+            // 
+            btnPause.BackColor = System.Drawing.Color.HotPink;
+            btnPause.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            btnPause.CheckedState.ImageSize = new System.Drawing.Size(27, 27);
+            btnPause.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            btnPause.Image = ((System.Drawing.Image)(resources.GetObject("btnPause.Image")));
+            btnPause.ImageOffset = new System.Drawing.Point(0, 0);
+            btnPause.ImageRotate = 0F;
+            btnPause.ImageSize = new System.Drawing.Size(27, 27);
+            btnPause.Location = new System.Drawing.Point(422, 27);
+            btnPause.Name = "btnPause";
+            btnPause.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            btnPause.Size = new System.Drawing.Size(45, 45);
+            btnPause.TabIndex = 8;
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.guna2HtmlLabel4.IsSelectionEnabled = false;
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(114, 51);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(118, 22);
+            this.guna2HtmlLabel4.TabIndex = 6;
+            this.guna2HtmlLabel4.Text = "Lost frequencies";
+            this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnSound
+            // 
+            this.btnSound.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
+            this.btnSound.CheckedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnSound.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSound.Image = ((System.Drawing.Image)(resources.GetObject("btnSound.Image")));
+            this.btnSound.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnSound.ImageRotate = 0F;
+            this.btnSound.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnSound.Location = new System.Drawing.Point(1129, 26);
+            this.btnSound.Name = "btnSound";
+            this.btnSound.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnSound.Size = new System.Drawing.Size(45, 45);
+            this.btnSound.TabIndex = 8;
+            // 
+            // btnRandom
+            // 
+            this.btnRandom.BackColor = System.Drawing.Color.HotPink;
+            this.btnRandom.CheckedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnRandom.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnRandom.Image = ((System.Drawing.Image)(resources.GetObject("btnRandom.Image")));
+            this.btnRandom.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnRandom.ImageRotate = 0F;
+            this.btnRandom.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnRandom.Location = new System.Drawing.Point(532, 26);
+            this.btnRandom.Name = "btnRandom";
+            this.btnRandom.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnRandom.Size = new System.Drawing.Size(45, 45);
+            this.btnRandom.TabIndex = 8;
+            // 
+            // btnNext
+            // 
+            this.btnNext.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnNext.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
+            this.btnNext.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnNext.ImageRotate = 0F;
+            this.btnNext.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnNext.Location = new System.Drawing.Point(481, 27);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnNext.Size = new System.Drawing.Size(45, 45);
+            this.btnNext.TabIndex = 8;
+            // 
+            // btnBack
+            // 
+            this.btnBack.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnBack.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnBack.ImageRotate = 0F;
+            this.btnBack.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnBack.Location = new System.Drawing.Point(363, 27);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnBack.Size = new System.Drawing.Size(45, 45);
+            this.btnBack.TabIndex = 8;
+            // 
+            // btnLoop
+            // 
+            this.btnLoop.CheckedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnLoop.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnLoop.Image = ((System.Drawing.Image)(resources.GetObject("btnLoop.Image")));
+            this.btnLoop.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnLoop.ImageRotate = 0F;
+            this.btnLoop.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnLoop.Location = new System.Drawing.Point(302, 27);
+            this.btnLoop.Name = "btnLoop";
+            this.btnLoop.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.btnLoop.Size = new System.Drawing.Size(45, 45);
+            this.btnLoop.TabIndex = 8;
+            // 
+            // panPlaying_rotate
+            // 
+            this.panPlaying_rotate.Location = new System.Drawing.Point(31, 12);
+            this.panPlaying_rotate.Name = "panPlaying_rotate";
+            this.panPlaying_rotate.Size = new System.Drawing.Size(72, 72);
+            this.panPlaying_rotate.TabIndex = 11;
+            this.panPlaying_rotate.Paint += new System.Windows.Forms.PaintEventHandler(this.rotateCD);
             // 
             // Homepage
             // 
@@ -525,31 +777,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(1608, 949);
-            this.Controls.Add(this.panMain);
             this.Controls.Add(this.panPlaying);
+            this.Controls.Add(this.panMain);
             this.Controls.Add(this.panColumn);
             this.MaximizeBox = false;
             this.Name = "Homepage";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Homepage_Load);
-            this.panPlaying.ResumeLayout(false);
-            this.panPlaying.PerformLayout();
             this.panColumn.ResumeLayout(false);
             this.panColumn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.panPlaying.ResumeLayout(false);
+            this.panPlaying.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Panel panPlaying;
-        private static Guna.UI2.WinForms.Guna2ImageButton btnPause;
-        private Guna.UI2.WinForms.Guna2ImageButton btnSound;
-        private Guna.UI2.WinForms.Guna2ImageButton btnRandom;
-        private Guna.UI2.WinForms.Guna2ImageButton btnNext;
-        private Guna.UI2.WinForms.Guna2ImageButton btnBack;
-        private Guna.UI2.WinForms.Guna2ImageButton btnLoop;
         private Guna.UI2.WinForms.Guna2Panel panColumn;
         private Guna.UI2.WinForms.Guna2GradientButton btnHistory;
         private Guna.UI2.WinForms.Guna2GradientButton btnGenre;
@@ -563,13 +808,27 @@
         public static Guna.UI2.WinForms.Guna2HtmlLabel labPlaying_singer;
         private Guna.UI2.WinForms.Guna2HtmlLabel labLib;
         private Guna.UI2.WinForms.Guna2HtmlLabel labMenu;
-        private Guna.UI2.WinForms.Guna2Panel panMain;
-        private Guna.UI2.WinForms.Guna2ProgressBar progressBar;
-        private static System.Windows.Forms.Timer progressTimer;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labTime_start;
         private Guna.UI2.WinForms.Guna2Panel panPlaying_logo;
         private Guna.UI2.WinForms.Guna2GradientButton btnPlaylist;
-        private static Guna.UI2.WinForms.Guna2TrackBar trackVol;
+        private static System.Windows.Forms.Timer progressTimer;
+        private Guna.UI2.WinForms.Guna2Panel panMain;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labPlaying_singer;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labPlaying_name;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labTime_start;
         private static Guna.UI2.WinForms.Guna2HtmlLabel labTime_end;
+        private Guna.UI2.WinForms.Guna2Panel panPlaying;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2ProgressBar progressBar;
+        private static Guna.UI2.WinForms.Guna2TrackBar trackVol;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private static Guna.UI2.WinForms.Guna2ImageButton btnPause;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2ImageButton btnSound;
+        private Guna.UI2.WinForms.Guna2ImageButton btnRandom;
+        private Guna.UI2.WinForms.Guna2ImageButton btnNext;
+        private Guna.UI2.WinForms.Guna2ImageButton btnBack;
+        private Guna.UI2.WinForms.Guna2ImageButton btnLoop;
+        private Guna.UI2.WinForms.Guna2Panel panPlaying_rotate;
     }
 }
