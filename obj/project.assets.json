@@ -4700,19 +4700,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\caoda\\.nuget\\packages\\": {}
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\workspace\\Helper\\Music-player\\Muzic.csproj",
+      "projectUniqueName": "F:\\Experiment\\UIT\\Năm III\\CS511\\Muzic\\Muzic.csproj",
       "projectName": "Muzic",
-      "projectPath": "E:\\workspace\\Helper\\Music-player\\Muzic.csproj",
-      "packagesPath": "C:\\Users\\caoda\\.nuget\\packages\\",
-      "outputPath": "E:\\workspace\\Helper\\Music-player\\obj\\",
+      "projectPath": "F:\\Experiment\\UIT\\Năm III\\CS511\\Muzic\\Muzic.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "F:\\Experiment\\UIT\\Năm III\\CS511\\Muzic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\caoda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

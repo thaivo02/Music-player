@@ -48,11 +48,6 @@
             this.btnNext = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnBack = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnLoop = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.panPlaying_rotate = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panPlaying_logo = new Guna.UI2.WinForms.Guna2Panel();
             this.panColumn = new Guna.UI2.WinForms.Guna2Panel();
             this.btnPlaylist = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -81,14 +76,6 @@
             this.panPlaying.Controls.Add(labPlaying_name);
             this.panPlaying.Controls.Add(labPlaying_singer);
             this.panPlaying.Controls.Add(this.panPlaying_rotate);
-            this.panPlaying.Controls.Add(this.guna2HtmlLabel1);
-            this.panPlaying.Controls.Add(this.guna2HtmlLabel2);
-            this.panPlaying.Controls.Add(labTime_start);
-            this.panPlaying.Controls.Add(labPlaying_name);
-            this.panPlaying.Controls.Add(labPlaying_singer);
-            this.panPlaying.Controls.Add(this.panPlaying_rotate);
-            this.panPlaying.Controls.Add(this.guna2HtmlLabel1);
-            this.panPlaying.Controls.Add(this.guna2HtmlLabel2);
             this.panPlaying.Controls.Add(this.progressBar);
             this.panPlaying.Controls.Add(trackVol);
             this.panPlaying.Controls.Add(this.guna2HtmlLabel3);
@@ -118,14 +105,14 @@
             // 
             // labTime_start
             // 
-            labTime_start.BackColor = System.Drawing.Color.Transparent;
-            labTime_start.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            labTime_start.ForeColor = System.Drawing.SystemColors.GrayText;
-            labTime_start.Location = new System.Drawing.Point(626, 38);
-            labTime_start.Name = "labTime_start";
-            labTime_start.Size = new System.Drawing.Size(43, 22);
-            labTime_start.TabIndex = 10;
-            labTime_start.Text = "00:00";
+            this.labTime_start.BackColor = System.Drawing.Color.Transparent;
+            this.labTime_start.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labTime_start.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.labTime_start.Location = new System.Drawing.Point(626, 38);
+            this.labTime_start.Name = "labTime_start";
+            this.labTime_start.Size = new System.Drawing.Size(43, 22);
+            this.labTime_start.TabIndex = 10;
+            this.labTime_start.Text = "00:00";
             // 
             // labPlaying_name
             // 
@@ -159,6 +146,7 @@
             this.panPlaying_rotate.Name = "panPlaying_rotate";
             this.panPlaying_rotate.Size = new System.Drawing.Size(72, 72);
             this.panPlaying_rotate.TabIndex = 11;
+            this.panPlaying_rotate.Visible = true;
             this.panPlaying_rotate.Click += new System.EventHandler(this.btnSongInfo);
             this.panPlaying_rotate.Paint += new System.Windows.Forms.PaintEventHandler(this.rotateCD);
             // 
@@ -167,22 +155,24 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(1079, 38);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(1051, 38);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(43, 22);
             this.guna2HtmlLabel1.TabIndex = 10;
             this.guna2HtmlLabel1.Text = "00:00";
+            this.guna2HtmlLabel1.Visible = false;
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(626, 38);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(598, 38);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(43, 22);
             this.guna2HtmlLabel2.TabIndex = 10;
             this.guna2HtmlLabel2.Text = "00:00";
+            this.guna2HtmlLabel2.Visible = false;
             // 
             // progressBar
             // 
@@ -325,62 +315,6 @@
             this.btnLoop.Size = new System.Drawing.Size(45, 45);
             this.btnLoop.TabIndex = 8;
             this.btnLoop.Click += new System.EventHandler(this.btnLoop_Click);
-            // 
-            // panPlaying_rotate
-            // 
-            this.panPlaying_rotate.Location = new System.Drawing.Point(31, 12);
-            this.panPlaying_rotate.Name = "panPlaying_rotate";
-            this.panPlaying_rotate.Size = new System.Drawing.Size(72, 72);
-            this.panPlaying_rotate.TabIndex = 11;
-            this.panPlaying_rotate.Paint += new System.Windows.Forms.PaintEventHandler(this.rotateCD);
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(1051, 38);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(43, 22);
-            this.guna2HtmlLabel1.TabIndex = 10;
-            this.guna2HtmlLabel1.Text = "00:00";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(598, 38);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(43, 22);
-            this.guna2HtmlLabel2.TabIndex = 10;
-            this.guna2HtmlLabel2.Text = "00:00";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.guna2HtmlLabel3.IsSelectionEnabled = false;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(114, 25);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(104, 27);
-            this.guna2HtmlLabel3.TabIndex = 6;
-            this.guna2HtmlLabel3.Text = "Back to you";
-            this.guna2HtmlLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.guna2HtmlLabel4.IsSelectionEnabled = false;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(114, 51);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(118, 22);
-            this.guna2HtmlLabel4.TabIndex = 6;
-            this.guna2HtmlLabel4.Text = "Lost frequencies";
-            this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panPlaying_logo
             // 
