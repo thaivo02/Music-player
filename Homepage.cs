@@ -8,6 +8,7 @@ namespace Muzic
     {
         public static WaveOutEvent wo = new WaveOutEvent();
         public static AudioFileReader af = new AudioFileReader(@"Songs\\Ed Sheeran - Shape Of You.mp3");
+        public static int CurrentIndex = 0;
         protected override CreateParams CreateParams
         {
             get
@@ -75,18 +76,32 @@ namespace Muzic
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            btnPause.Checked = false;
-            wo.Stop();
-            af = new AudioFileReader(@"Songs\\Lost frequencies - Reality.mp3");
-            initSound(af);
+            var random = new Random();
+            var index = random.Next(Discover.Musics.Count);
+            if (btnRandom.Checked)
+            {
+                index = Math.Max(0, CurrentIndex - 1);
+                CurrentIndex = index;
+            }
+            labPlaying_name.Text = Discover.Musics[index].MusicName;
+            var artist = Discover.Artists.First(e => e.ArtistId == Discover.Musics[index].ArtistId);
+            labPlaying_singer.Text = artist.ArtistName;
+            LoadMusic(Discover.Musics[index].URL + ".mp3");
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            btnPause.Checked = false;
-            wo.Stop();
-            af = new AudioFileReader(@"Songs\\Lost frequencies - Reality.mp3");
-            initSound(af);
+            var random = new Random();
+            var index = random.Next(Discover.Musics.Count);
+            if (btnRandom.Checked)
+            {
+                index = Math.Min(Discover.Musics.Count, CurrentIndex + 1);
+                CurrentIndex = index;
+            }
+            labPlaying_name.Text = Discover.Musics[index].MusicName;
+            var artist = Discover.Artists.First(e => e.ArtistId == Discover.Musics[index].ArtistId);
+            labPlaying_singer.Text = artist.ArtistName;
+            LoadMusic(Discover.Musics[index].URL + ".mp3");
         }
 
         private void initSound(AudioFileReader af)
@@ -95,24 +110,24 @@ namespace Muzic
             labTime_end.Text = String.Format("{0:00}:{1:00}", (int)af.TotalTime.TotalMinutes, af.TotalTime.Seconds);
         }
 
-        public static void LoadMusic(AudioFileReader a)
+        public static void LoadMusic(string url)
         {
+            btnPause.Checked = false;
             wo.Stop();
-            wo.Init(a);
-            wo.Volume = trackVol.Value / 100f;
-            labTime_end.Text = String.Format("{0:00}:{1:00}", (int)a.TotalTime.TotalMinutes, a.TotalTime.Seconds);
-            btnPause.Checked = !btnPause.Checked;
-            var closing = false;
-            wo.PlaybackStopped += (s, a) => { if (closing) { wo.Dispose(); af.Dispose(); } };
-            if (btnPause.Checked) wo.Play();
-            else wo.Stop();
-            if (wo.PlaybackState.ToString() == "Playing") progressTimer.Start();
-            else progressTimer.Stop();
+            af = new AudioFileReader(url);
+            wo.Init(af);
+            labTime_end.Text = String.Format("{0:00}:{1:00}", (int)af.TotalTime.TotalMinutes, af.TotalTime.Seconds);
+            progressTimer.Stop();
+            btnPause.Checked = true;
+            wo.Play();
+            progressTimer.Start();
         }
 
         private void Homepage_Load(object sender, EventArgs e)
         {
-            LoadMusic(af);
+            wo.Init(af);
+            labTime_end.Text = String.Format("{0:00}:{1:00}", (int)af.TotalTime.TotalMinutes, af.TotalTime.Seconds);
+            wo.Volume = trackVol.Value / 100f;
         }
         
         private void btnPause_Click(object sender, EventArgs e)
@@ -177,7 +192,7 @@ namespace Muzic
         private int cx = 36, cy = 36, rx = 72, ry = 72;
 
         private float angle;
-        Bitmap image = new Bitmap(@"Homepage\Songs\backtoyou.jpg");
+        public static Bitmap image = new Bitmap(@"Homepage\Songs\backtoyou.jpg");
 
         public Image RoundCorners(Bitmap StartImage, int CornerRadius, Color BackgroundColor)
         {
