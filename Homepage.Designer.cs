@@ -35,9 +35,9 @@
             this.labTime_start = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.progressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
             trackVol = new Guna.UI2.WinForms.Guna2TrackBar();
-            this.labPlaying_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            labPlaying_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             btnPause = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.labPlaying_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            labPlaying_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSound = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnRandom = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnNext = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -70,9 +70,9 @@
             this.panPlaying.Controls.Add(this.labTime_start);
             this.panPlaying.Controls.Add(this.progressBar);
             this.panPlaying.Controls.Add(trackVol);
-            this.panPlaying.Controls.Add(this.labPlaying_name);
+            this.panPlaying.Controls.Add(labPlaying_name);
             this.panPlaying.Controls.Add(btnPause);
-            this.panPlaying.Controls.Add(this.labPlaying_singer);
+            this.panPlaying.Controls.Add(labPlaying_singer);
             this.panPlaying.Controls.Add(this.btnSound);
             this.panPlaying.Controls.Add(this.btnRandom);
             this.panPlaying.Controls.Add(this.btnNext);
@@ -130,16 +130,16 @@
             // 
             // labPlaying_name
             // 
-            this.labPlaying_name.BackColor = System.Drawing.Color.Transparent;
-            this.labPlaying_name.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaying_name.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.labPlaying_name.IsSelectionEnabled = false;
-            this.labPlaying_name.Location = new System.Drawing.Point(114, 25);
-            this.labPlaying_name.Name = "labPlaying_name";
-            this.labPlaying_name.Size = new System.Drawing.Size(104, 27);
-            this.labPlaying_name.TabIndex = 6;
-            this.labPlaying_name.Text = "Back to you";
-            this.labPlaying_name.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            labPlaying_name.BackColor = System.Drawing.Color.Transparent;
+            labPlaying_name.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            labPlaying_name.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            labPlaying_name.IsSelectionEnabled = false;
+            labPlaying_name.Location = new System.Drawing.Point(114, 25);
+            labPlaying_name.Name = "labPlaying_name";
+            labPlaying_name.Size = new System.Drawing.Size(104, 27);
+            labPlaying_name.TabIndex = 6;
+            labPlaying_name.Text = "Back to you";
+            labPlaying_name.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnPause
             // 
@@ -160,16 +160,16 @@
             // 
             // labPlaying_singer
             // 
-            this.labPlaying_singer.BackColor = System.Drawing.Color.Transparent;
-            this.labPlaying_singer.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaying_singer.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.labPlaying_singer.IsSelectionEnabled = false;
-            this.labPlaying_singer.Location = new System.Drawing.Point(114, 51);
-            this.labPlaying_singer.Name = "labPlaying_singer";
-            this.labPlaying_singer.Size = new System.Drawing.Size(118, 22);
-            this.labPlaying_singer.TabIndex = 6;
-            this.labPlaying_singer.Text = "Lost frequencies";
-            this.labPlaying_singer.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            labPlaying_singer.BackColor = System.Drawing.Color.Transparent;
+            labPlaying_singer.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            labPlaying_singer.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            labPlaying_singer.IsSelectionEnabled = false;
+            labPlaying_singer.Location = new System.Drawing.Point(114, 51);
+            labPlaying_singer.Name = "labPlaying_singer";
+            labPlaying_singer.Size = new System.Drawing.Size(118, 22);
+            labPlaying_singer.TabIndex = 6;
+            labPlaying_singer.Text = "Lost frequencies";
+            labPlaying_singer.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnSound
             // 
@@ -559,8 +559,8 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnTrend;
         private Guna.UI2.WinForms.Guna2GradientButton btnExplore;
         private PictureBox picLogo;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labPlaying_name;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labPlaying_singer;
+        public static Guna.UI2.WinForms.Guna2HtmlLabel labPlaying_name;
+        public static Guna.UI2.WinForms.Guna2HtmlLabel labPlaying_singer;
         private Guna.UI2.WinForms.Guna2HtmlLabel labLib;
         private Guna.UI2.WinForms.Guna2HtmlLabel labMenu;
         private Guna.UI2.WinForms.Guna2Panel panMain;

@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,19 +23,31 @@ namespace Muzic
         private readonly IMusicRepository _musicRepository;
         private readonly IArtistRepository _artistRepository;
         public static List<Music> Musics = new List<Music>();
+        public static List<Artist> Artists = new List<Artist>();
         public void UpdateLabSong(Guna2ImageButton image, Guna2HtmlLabel name, Guna2HtmlLabel singer, Music music)
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Discover));
-            image.Image = (Image)resources.GetObject(music.Thumbnail)!;
+            var request = WebRequest.Create(music.Thumbnail);
+
+            using (var response = request.GetResponse())
+            using (var stream = response.GetResponseStream())
+            {
+                image.Image = Image.FromStream(stream);
+            }
             name.Text = music.MusicName;
             var artist = _artistRepository.GetAll().First(e => e.ArtistId == music.ArtistId);
             singer.Text = artist.ArtistName;
+            
         }
         
         public void UpdatePopSong(Guna2PictureBox image, Guna2HtmlLabel name, Guna2HtmlLabel singer, Music music)
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Discover));
-            image.Image = (Image) resources.GetObject(music.Thumbnail)!;
+            var request = WebRequest.Create(music.Thumbnail);
+
+            using (var response = request.GetResponse())
+            using (var stream = response.GetResponseStream())
+            {
+                image.Image = Bitmap.FromStream(stream);
+            }
             name.Text = music.MusicName;
             var artist = _artistRepository.GetAll().First(e => e.ArtistId == music.ArtistId);
             singer.Text = artist.ArtistName;
@@ -42,14 +55,25 @@ namespace Muzic
 
         public void PlaySong(int i)
         {
-            AudioFileReader af = new AudioFileReader(Musics[i].URL + ".mp3");
-            Homepage.LoadMusic(af);
+            Homepage.labPlaying_name.Text = Musics[i].MusicName;
+            var artist = _artistRepository.GetAll().First(e => e.ArtistId == Musics[i].ArtistId);
+            Homepage.labPlaying_singer.Text = artist.ArtistName;
+            var request1 = WebRequest.Create(Musics[i].Thumbnail);
+            using (var response = request1.GetResponse())
+            using (var stream = response.GetResponseStream())
+            {
+                Homepage.image = (Bitmap) Image.FromStream(stream);
+            }
+
+            Homepage.CurrentIndex = i;
+            Homepage.LoadMusic(Musics[i].URL + ".mp3");
         }
 
         public Discover(IMusicRepository musicRepository, IArtistRepository artistRepository)
         {
             _musicRepository = musicRepository;
             _artistRepository = artistRepository;
+            Artists = _artistRepository.GetAll().ToList();
             InitializeComponent();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Discover));
             Musics = _musicRepository.GetAll().ToList();
