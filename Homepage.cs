@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using Muzic.Database.Entity;
 using NAudio.Wave;
 using System.Drawing.Drawing2D;
 
@@ -24,6 +25,9 @@ namespace Muzic
             var form = Program.host.Services.GetRequiredService<Discover>();
             form.Init(DockStyle.Fill, false, true);
             this.panMain.Controls.Add(form);
+
+          
+
             form.BringToFront();
             form.Show();
         }

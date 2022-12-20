@@ -66,6 +66,7 @@ namespace Muzic
             }
 
             Homepage.CurrentIndex = i;
+            
             Homepage.LoadMusic(Musics[i].URL + ".mp3");
         }
 
