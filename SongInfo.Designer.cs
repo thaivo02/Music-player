@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SongInfo));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnSend = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.txtCmt1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtComment = new System.Windows.Forms.TextBox();
             this.labLyrics = new System.Windows.Forms.Label();
@@ -43,8 +45,6 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnSend = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.txtCmt1 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,22 +69,53 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1326, 851);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // btnSend
+            // 
+            this.btnSend.BackColor = System.Drawing.Color.Transparent;
+            this.btnSend.BorderRadius = 15;
+            this.btnSend.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnSend.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSend.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSend.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSend.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSend.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSend.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSend.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnSend.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnSend.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnSend.Location = new System.Drawing.Point(14, 1190);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnSend.Size = new System.Drawing.Size(182, 42);
+            this.btnSend.TabIndex = 22;
+            this.btnSend.Text = "Send";
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            // 
             // guna2RatingStar1
             // 
             this.guna2RatingStar1.BorderColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.guna2RatingStar1.BorderThickness = 3;
             this.guna2RatingStar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2RatingStar1.Location = new System.Drawing.Point(214, 783);
+            this.guna2RatingStar1.Location = new System.Drawing.Point(214, 1188);
             this.guna2RatingStar1.Name = "guna2RatingStar1";
             this.guna2RatingStar1.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.guna2RatingStar1.Size = new System.Drawing.Size(150, 35);
+            this.guna2RatingStar1.Size = new System.Drawing.Size(150, 44);
             this.guna2RatingStar1.TabIndex = 21;
+            // 
+            // txtCmt1
+            // 
+            this.txtCmt1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtCmt1.Location = new System.Drawing.Point(14, 592);
+            this.txtCmt1.Name = "txtCmt1";
+            this.txtCmt1.Size = new System.Drawing.Size(350, 131);
+            this.txtCmt1.TabIndex = 20;
+            this.txtCmt1.Text = "Comment1";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(14, 252);
+            this.label1.Location = new System.Drawing.Point(14, 540);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 25);
             this.label1.TabIndex = 20;
@@ -95,10 +126,10 @@
             this.txtComment.AcceptsReturn = true;
             this.txtComment.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtComment.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtComment.Location = new System.Drawing.Point(14, 496);
+            this.txtComment.Location = new System.Drawing.Point(14, 901);
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
-            this.txtComment.Size = new System.Drawing.Size(350, 267);
+            this.txtComment.Size = new System.Drawing.Size(350, 276);
             this.txtComment.TabIndex = 19;
             this.txtComment.Text = "Write you comment";
             // 
@@ -108,7 +139,7 @@
             this.labLyrics.BackColor = System.Drawing.Color.Linen;
             this.labLyrics.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.labLyrics.ForeColor = System.Drawing.Color.Teal;
-            this.labLyrics.Location = new System.Drawing.Point(385, -273);
+            this.labLyrics.Location = new System.Drawing.Point(434, 12);
             this.labLyrics.Name = "labLyrics";
             this.labLyrics.Size = new System.Drawing.Size(789, 1190);
             this.labLyrics.TabIndex = 18;
@@ -129,10 +160,10 @@
             this.guna2GradientButton2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.guna2GradientButton2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             this.guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2GradientButton2.Location = new System.Drawing.Point(84, 216);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(92, 477);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
             this.guna2GradientButton2.PressedColor = System.Drawing.Color.AliceBlue;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(182, 33);
+            this.guna2GradientButton2.Size = new System.Drawing.Size(182, 42);
             this.guna2GradientButton2.TabIndex = 17;
             this.guna2GradientButton2.Text = "Play";
             // 
@@ -151,10 +182,10 @@
             this.guna2GradientButton1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             this.guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2GradientButton1.Location = new System.Drawing.Point(55, 167);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(63, 428);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.PressedColor = System.Drawing.Color.AliceBlue;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(241, 33);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(241, 42);
             this.guna2GradientButton1.TabIndex = 17;
             this.guna2GradientButton1.Text = "Add to playlist";
             // 
@@ -162,7 +193,7 @@
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(65, 110);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(73, 371);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(220, 30);
             this.guna2HtmlLabel6.TabIndex = 1;
@@ -172,7 +203,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(53, 57);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(61, 318);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(245, 47);
             this.guna2HtmlLabel1.TabIndex = 1;
@@ -186,10 +217,10 @@
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(290, 290);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(25, -249);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(33, 12);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(300, 300);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(300, 300);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(300, 309);
             this.guna2ImageButton1.TabIndex = 0;
             // 
             // guna2HtmlLabel5
@@ -239,37 +270,6 @@
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(52, 30);
             this.guna2HtmlLabel4.TabIndex = 1;
             this.guna2HtmlLabel4.Text = "LOVE";
-            // 
-            // btnSend
-            // 
-            this.btnSend.BackColor = System.Drawing.Color.Transparent;
-            this.btnSend.BorderRadius = 15;
-            this.btnSend.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.btnSend.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSend.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSend.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSend.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSend.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSend.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSend.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnSend.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.btnSend.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnSend.Location = new System.Drawing.Point(14, 785);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.PressedColor = System.Drawing.Color.AliceBlue;
-            this.btnSend.Size = new System.Drawing.Size(182, 33);
-            this.btnSend.TabIndex = 22;
-            this.btnSend.Text = "Send";
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
-            // 
-            // txtCmt1
-            // 
-            this.txtCmt1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtCmt1.Location = new System.Drawing.Point(14, 304);
-            this.txtCmt1.Name = "txtCmt1";
-            this.txtCmt1.Size = new System.Drawing.Size(350, 122);
-            this.txtCmt1.TabIndex = 20;
-            this.txtCmt1.Text = "Comment1";
             // 
             // SongInfo
             // 

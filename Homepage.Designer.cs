@@ -145,6 +145,7 @@
             this.panPlaying_rotate.Size = new System.Drawing.Size(72, 72);
             this.panPlaying_rotate.TabIndex = 11;
             this.panPlaying_rotate.Paint += new System.Windows.Forms.PaintEventHandler(this.rotateCD);
+            this.panPlaying_rotate.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // guna2HtmlLabel1
             // 
