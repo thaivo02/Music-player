@@ -57,14 +57,137 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="guna2Panel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="guna2GradientButton2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="resource.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="labLyrics.Text" xml:space="preserve">
+    <value>Jack a nigga's shit in the nine-four
+Pack my nine millimeter 'cause I ain't finna go out
+Like a busta ass nigga and just lay down
+I'ma run up on a nigga, shoot my nine with the fifteen rounds
+Jack a nigga's shit in the nine-four
+Pack my nine millimeter 'cause I ain't finna go out
+Like a busta ass nigga and just lay down
+I'ma run up on a nigga, shoot my nine with the fifteen rounds
+Jack a nigga's shit in the nine-four
+Pack my nine millimeter 'cause I ain't finna go out
+Like a busta ass nigga and just lay down
+I'ma run up on a nigga, shoot my nine with the fifteen rounds
+Jack a nigga's shit in the nine-four
+Pack my nine millimeter 'cause I ain't finna go out
+Like a busta ass nigga and just lay down
+I'ma run up on a nigga, shoot my nine with the fifteen rounds
+Got Lil E on cloud nine
+Murder, murder in my mind
+Got Lil E on cloud nine
+Murder, murder in my mind
+Heavy clips in my, in my front seat
+Tryna put some bodies on my brand new Uzi
+Nigga running up? Shout my motherfuckin' G's up
+And when they tryna ease up, tell the man, "So long"
+Jack a nigga's shit in the nine-four
+Pack my nine millimeter 'cause I ain't finna go out
+Like a busta ass nigga and just lay down
+I'ma run up on a nigga, shoot my nine with the fifteen rounds
+Got Lil E on cloud nine
+Murder, murder in my mind
+Got Lil E on cloud nine
+Murder, murder in my mind
+Murder, murder in my mind
+Got Lil E on cloud nine
+Murder, murder in my mind</value>
+  </data>
+  <data name="resource.Image1" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAFAhJREFUeF7t3V+s3/Vdx3FOi223lNaFrkwRCtzIn7F44ToK1cTEwWBczAuMNzaZ
@@ -156,10 +279,7 @@
         YII=
 </value>
   </data>
-  <metadata name="guna2GradientButton1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="resource.Image1" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="resource.Image2" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAEFhJREFUeF7t3X/I7nV9x/GjlilBv8yf/TCCCFySWLhIM1ugDvuBSxmY/Zc/GfTP
@@ -235,18 +355,6 @@
         8JrlmdwhAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="labLyrics.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="guna2HtmlLabel6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="guna2HtmlLabel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="guna2ImageButton1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="guna2ImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAeAAAAHgCAYAAAB91L6VAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF58
@@ -8613,19 +8721,4 @@
         RK5CYII=
 </value>
   </data>
-  <metadata name="guna2HtmlLabel5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="guna2HtmlLabel2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="guna2HtmlLabel3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="guna2HtmlLabel4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

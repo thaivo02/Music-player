@@ -439,7 +439,6 @@
             this.panPop6.Name = "panPop6";
             this.panPop6.Size = new System.Drawing.Size(376, 80);
             this.panPop6.TabIndex = 18;
-            this.panPop6.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // btnPop6_fav
             // 
@@ -526,7 +525,6 @@
             this.panPop3.Name = "panPop3";
             this.panPop3.Size = new System.Drawing.Size(376, 80);
             this.panPop3.TabIndex = 16;
-            this.panPop3.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // btnPop3_fav
             // 
@@ -613,7 +611,6 @@
             this.panPop5.Name = "panPop5";
             this.panPop5.Size = new System.Drawing.Size(376, 80);
             this.panPop5.TabIndex = 14;
-            this.panPop5.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // btnPop5_fav
             // 
@@ -700,7 +697,6 @@
             this.panPop2.Name = "panPop2";
             this.panPop2.Size = new System.Drawing.Size(376, 80);
             this.panPop2.TabIndex = 12;
-            this.panPop2.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // btnPop2_fav
             // 
@@ -787,7 +783,6 @@
             this.panPop4.Name = "panPop4";
             this.panPop4.Size = new System.Drawing.Size(376, 80);
             this.panPop4.TabIndex = 10;
-            this.panPop4.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // btnPop4_fav
             // 
@@ -874,7 +869,6 @@
             this.panPop1.Name = "panPop1";
             this.panPop1.Size = new System.Drawing.Size(376, 80);
             this.panPop1.TabIndex = 7;
-            this.panPop1.Click += new System.EventHandler(this.btnSongInfo);
             // 
             // btnPop1_fav
             // 

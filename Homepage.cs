@@ -7,7 +7,7 @@ namespace Muzic
     public partial class Homepage : Form
     {
         public static WaveOutEvent wo = new WaveOutEvent();
-        public static AudioFileReader af = new AudioFileReader(@"Songs\\Ed Sheeran - Shape Of You.mp3");
+        public static AudioFileReader af = new AudioFileReader(@"Songs\\Lost frequencies - Back To You.mp3");
         public static int CurrentIndex = 0;
         protected override CreateParams CreateParams
         {
@@ -192,6 +192,14 @@ namespace Muzic
         private int cx = 36, cy = 36, rx = 72, ry = 72;
 
         private float angle;
+
+        private void btnNew_playlist_Click(object sender, EventArgs e)
+        {
+            NewPlaylist newPlaylist = new NewPlaylist();
+            newPlaylist.Show();
+
+        }
+
         public static Bitmap image = new Bitmap(@"Homepage\Songs\backtoyou.jpg");
 
         public Image RoundCorners(Bitmap StartImage, int CornerRadius, Color BackgroundColor)
