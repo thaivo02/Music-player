@@ -551,16 +551,16 @@
             // 
             // labPlaying_name
             // 
-            this.labPlaying_name.BackColor = System.Drawing.Color.Transparent;
-            this.labPlaying_name.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaying_name.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.labPlaying_name.IsSelectionEnabled = false;
-            this.labPlaying_name.Location = new System.Drawing.Point(114, 25);
-            this.labPlaying_name.Name = "labPlaying_name";
-            this.labPlaying_name.Size = new System.Drawing.Size(104, 27);
-            this.labPlaying_name.TabIndex = 6;
-            this.labPlaying_name.Text = "Back to you";
-            this.labPlaying_name.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            labPlaying_name.BackColor = System.Drawing.Color.Transparent;
+            labPlaying_name.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            labPlaying_name.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            labPlaying_name.IsSelectionEnabled = false;
+            labPlaying_name.Location = new System.Drawing.Point(114, 25);
+            labPlaying_name.Name = "labPlaying_name";
+            labPlaying_name.Size = new System.Drawing.Size(104, 27);
+            labPlaying_name.TabIndex = 6;
+            labPlaying_name.Text = "Back to you";
+            labPlaying_name.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labTime_start
             // 
@@ -812,8 +812,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnPlaylist;
         private static System.Windows.Forms.Timer progressTimer;
         private Guna.UI2.WinForms.Guna2Panel panMain;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labPlaying_singer;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labPlaying_name;
         private Guna.UI2.WinForms.Guna2HtmlLabel labTime_start;
         private static Guna.UI2.WinForms.Guna2HtmlLabel labTime_end;
         private Guna.UI2.WinForms.Guna2Panel panPlaying;
