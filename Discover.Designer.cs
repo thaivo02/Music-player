@@ -87,6 +87,7 @@
             this.labPop1_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.picPop1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panBanner = new Guna.UI2.WinForms.Guna2Panel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.labBanner2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labBanner1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -943,6 +944,7 @@
             // panBanner
             // 
             this.panBanner.BackColor = System.Drawing.Color.LightPink;
+            this.panBanner.Controls.Add(this.listBox1);
             this.panBanner.Controls.Add(this.txtSearch);
             this.panBanner.Controls.Add(this.labBanner2);
             this.panBanner.Controls.Add(this.labBanner1);
@@ -954,6 +956,17 @@
             this.panBanner.Size = new System.Drawing.Size(1326, 398);
             this.panBanner.TabIndex = 2;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 23;
+            this.listBox1.Location = new System.Drawing.Point(354, 67);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(770, 119);
+            this.listBox1.TabIndex = 3;
+            this.listBox1.Visible = false;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
             // txtSearch
             // 
             this.txtSearch.BackColor = System.Drawing.Color.Lavender;
@@ -964,6 +977,7 @@
             this.txtSearch.PlaceholderText = "Search";
             this.txtSearch.Size = new System.Drawing.Size(770, 34);
             this.txtSearch.TabIndex = 2;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // labBanner2
             // 
@@ -1109,5 +1123,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton picSong2;
         private Guna.UI2.WinForms.Guna2ImageButton picSong6;
         private Guna.UI2.WinForms.Guna2ImageButton picSong5;
+        private ListBox listBox1;
     }
 }

@@ -170,5 +170,40 @@ namespace Muzic
         {
             PlaySong(5);
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtSearch.Text))
+            {
+                listBox1.Visible = true;
+                foreach (string str in Musics.Select(e => e.MusicName))
+                {
+                    if (str.ToLower().Contains(txtSearch.Text))
+                    {
+                        listBox1.Items.Add(str);
+                    }
+                }
+            } else
+            {
+                listBox1.Visible= false;
+                listBox1.Items.Clear();
+            }
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string text = listBox1.GetItemText(listBox1.SelectedItem);
+            var index = 0;
+            var temp = 0;
+            Musics.ForEach(e =>
+            {
+                if (e.MusicName == text)
+                {
+                    temp = index;
+                }
+                index += 1;
+            });
+            PlaySong(temp);
+        }
     }
 }
