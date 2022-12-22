@@ -1,20 +1,10 @@
-﻿using Muzic.CommonMethod;
-using Muzic.Properties;
-using Muzic.Repositories.MusicRepositories;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Guna.UI2.WinForms;
+﻿using Guna.UI2.WinForms;
+using Muzic.CommonMethod;
 using Muzic.Database.Entity;
 using Muzic.Repositories.ArtistRepositories;
-using NAudio.Wave;
+using Muzic.Repositories.MusicRepositories;
+using System.Data;
+using System.Net;
 
 namespace Muzic
 {
@@ -36,9 +26,8 @@ namespace Muzic
             name.Text = music.MusicName;
             var artist = _artistRepository.GetAll().First(e => e.ArtistId == music.ArtistId);
             singer.Text = artist.ArtistName;
-            
         }
-        
+
         public void UpdatePopSong(Guna2PictureBox image, Guna2HtmlLabel name, Guna2HtmlLabel singer, Music music)
         {
             var request = WebRequest.Create(music.Thumbnail);
@@ -62,7 +51,7 @@ namespace Muzic
             using (var response = request1.GetResponse())
             using (var stream = response.GetResponseStream())
             {
-                Homepage.image = (Bitmap) Image.FromStream(stream);
+                Homepage.image = (Bitmap)Image.FromStream(stream);
             }
 
             Homepage.CurrentIndex = i;
@@ -89,13 +78,13 @@ namespace Muzic
 
                 i += 1;
             });
-            UpdateLabSong(picSong1, labSong1_name, labSong1_singer, Musics[0]);                       
-            UpdateLabSong(picSong2, labSong2_name, labSong2_singer, Musics[1]);                       
-            UpdateLabSong(picSong3, labSong3_name, labSong3_singer, Musics[2]);                       
-            UpdateLabSong(picSong4, labSong4_name, labSong4_singer, Musics[3]);                       
-            UpdateLabSong(picSong5, labSong5_name, labSong5_singer, Musics[4]);                       
-            UpdateLabSong(picSong6, labSong6_name, labSong6_singer, Musics[5]);    
-            
+            UpdateLabSong(picSong1, labSong1_name, labSong1_singer, Musics[0]);
+            UpdateLabSong(picSong2, labSong2_name, labSong2_singer, Musics[1]);
+            UpdateLabSong(picSong3, labSong3_name, labSong3_singer, Musics[2]);
+            UpdateLabSong(picSong4, labSong4_name, labSong4_singer, Musics[3]);
+            UpdateLabSong(picSong5, labSong5_name, labSong5_singer, Musics[4]);
+            UpdateLabSong(picSong6, labSong6_name, labSong6_singer, Musics[5]);
+
             UpdatePopSong(picPop1, labPop1_name, labPop1_singer, Musics[6]);
             UpdatePopSong(picPop2, labPop2_name, labPop2_singer, Musics[7]);
             UpdatePopSong(picPop3, labPop3_name, labPop3_singer, Musics[8]);
@@ -175,17 +164,26 @@ namespace Muzic
         {
             if (!string.IsNullOrEmpty(txtSearch.Text))
             {
+                listBox1.Items.Clear();
                 listBox1.Visible = true;
                 foreach (string str in Musics.Select(e => e.MusicName))
                 {
-                    if (str.ToLower().Contains(txtSearch.Text))
+                    if (str.ToLower().Contains(txtSearch.Text.ToLower()))
                     {
                         listBox1.Items.Add(str);
                     }
                 }
-            } else
+                foreach (string str in Artists.Select(e => e.ArtistName))
+                {
+                    if (str.ToLower().Contains(txtSearch.Text.ToLower()))
+                    {
+                        listBox1.Items.Add(str);
+                    }
+                }
+            }
+            else
             {
-                listBox1.Visible= false;
+                listBox1.Visible = false;
                 listBox1.Items.Clear();
             }
         }

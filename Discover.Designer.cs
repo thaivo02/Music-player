@@ -958,11 +958,16 @@
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.Color.Lavender;
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 23;
+            this.listBox1.ItemHeight = 28;
             this.listBox1.Location = new System.Drawing.Point(354, 67);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(770, 119);
+            this.listBox1.Size = new System.Drawing.Size(770, 112);
+            this.listBox1.Sorted = true;
             this.listBox1.TabIndex = 3;
             this.listBox1.Visible = false;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);

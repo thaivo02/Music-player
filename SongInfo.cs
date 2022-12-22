@@ -52,6 +52,7 @@ namespace Muzic
                 _musicRepository.Update(music);
                 _musicRepository.SaveChanges();
                 this.txtCmt1.Text = comment;
+                txtComment.Text = "";
             }
         }
     }

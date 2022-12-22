@@ -30,24 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArtistInfo));
             this.panMain = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Song3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ImageButton7 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton8 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnPlay3 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.labSong3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labSinger3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.picSong3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.Song2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.panPop4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnPlay2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.labSong2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labSinger2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.picSong2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.Song1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnPop4_fav = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnPop4_play = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.labPop4_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labPop4_singer = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.picPop4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnPlay1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.labSong1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labSinger1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.picSong1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -67,15 +67,15 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labArtist1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.picArtist1 = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.labArtist = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.picArtist = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.panMain.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
-            this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.panPop4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop4)).BeginInit();
+            this.Song3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSong3)).BeginInit();
+            this.Song2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSong2)).BeginInit();
+            this.Song1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSong1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
@@ -86,9 +86,9 @@
             // panMain
             // 
             this.panMain.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panMain.Controls.Add(this.guna2Panel4);
-            this.panMain.Controls.Add(this.guna2Panel1);
-            this.panMain.Controls.Add(this.panPop4);
+            this.panMain.Controls.Add(this.Song3);
+            this.panMain.Controls.Add(this.Song2);
+            this.panMain.Controls.Add(this.Song1);
             this.panMain.Controls.Add(this.guna2GradientButton1);
             this.panMain.Controls.Add(this.guna2PictureBox7);
             this.panMain.Controls.Add(this.guna2PictureBox6);
@@ -108,8 +108,8 @@
             this.panMain.Controls.Add(this.guna2HtmlLabel5);
             this.panMain.Controls.Add(this.guna2HtmlLabel2);
             this.panMain.Controls.Add(this.guna2HtmlLabel1);
-            this.panMain.Controls.Add(this.labArtist1);
-            this.panMain.Controls.Add(this.picArtist1);
+            this.panMain.Controls.Add(this.labArtist);
+            this.panMain.Controls.Add(this.picArtist);
             this.panMain.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panMain.Location = new System.Drawing.Point(0, 0);
@@ -117,21 +117,22 @@
             this.panMain.Size = new System.Drawing.Size(1326, 851);
             this.panMain.TabIndex = 0;
             // 
-            // guna2Panel4
+            // Song3
             // 
-            this.guna2Panel4.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel4.BorderRadius = 6;
-            this.guna2Panel4.BorderThickness = 1;
-            this.guna2Panel4.Controls.Add(this.guna2ImageButton7);
-            this.guna2Panel4.Controls.Add(this.guna2ImageButton8);
-            this.guna2Panel4.Controls.Add(this.guna2HtmlLabel9);
-            this.guna2Panel4.Controls.Add(this.guna2HtmlLabel10);
-            this.guna2Panel4.Controls.Add(this.guna2PictureBox4);
-            this.guna2Panel4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Panel4.Location = new System.Drawing.Point(909, 338);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(376, 80);
-            this.guna2Panel4.TabIndex = 17;
+            this.Song3.BorderColor = System.Drawing.Color.Silver;
+            this.Song3.BorderRadius = 6;
+            this.Song3.BorderThickness = 1;
+            this.Song3.Controls.Add(this.guna2ImageButton7);
+            this.Song3.Controls.Add(this.btnPlay3);
+            this.Song3.Controls.Add(this.labSong3);
+            this.Song3.Controls.Add(this.labSinger3);
+            this.Song3.Controls.Add(this.picSong3);
+            this.Song3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Song3.Location = new System.Drawing.Point(909, 338);
+            this.Song3.Name = "Song3";
+            this.Song3.Size = new System.Drawing.Size(376, 80);
+            this.Song3.TabIndex = 17;
+            this.Song3.Visible = false;
             // 
             // guna2ImageButton7
             // 
@@ -147,76 +148,78 @@
             this.guna2ImageButton7.Size = new System.Drawing.Size(45, 45);
             this.guna2ImageButton7.TabIndex = 8;
             // 
-            // guna2ImageButton8
+            // btnPlay3
             // 
-            this.guna2ImageButton8.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton8.HoverState.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2ImageButton8.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton8.Image")));
-            this.guna2ImageButton8.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton8.ImageRotate = 0F;
-            this.guna2ImageButton8.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2ImageButton8.Location = new System.Drawing.Point(271, 18);
-            this.guna2ImageButton8.Name = "guna2ImageButton8";
-            this.guna2ImageButton8.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton8.Size = new System.Drawing.Size(45, 45);
-            this.guna2ImageButton8.TabIndex = 8;
+            this.btnPlay3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPlay3.HoverState.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnPlay3.Image = ((System.Drawing.Image)(resources.GetObject("btnPlay3.Image")));
+            this.btnPlay3.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnPlay3.ImageRotate = 0F;
+            this.btnPlay3.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnPlay3.Location = new System.Drawing.Point(271, 18);
+            this.btnPlay3.Name = "btnPlay3";
+            this.btnPlay3.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnPlay3.Size = new System.Drawing.Size(45, 45);
+            this.btnPlay3.TabIndex = 8;
+            this.btnPlay3.Click += new System.EventHandler(this.btnPlay3_Click);
             // 
-            // guna2HtmlLabel9
+            // labSong3
             // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.HotPink;
-            this.guna2HtmlLabel9.IsSelectionEnabled = false;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(83, 18);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(115, 27);
-            this.guna2HtmlLabel9.TabIndex = 6;
-            this.guna2HtmlLabel9.Text = "Popular song";
-            this.guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labSong3.BackColor = System.Drawing.Color.Transparent;
+            this.labSong3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labSong3.ForeColor = System.Drawing.Color.HotPink;
+            this.labSong3.IsSelectionEnabled = false;
+            this.labSong3.Location = new System.Drawing.Point(83, 18);
+            this.labSong3.Name = "labSong3";
+            this.labSong3.Size = new System.Drawing.Size(115, 27);
+            this.labSong3.TabIndex = 6;
+            this.labSong3.Text = "Popular song";
+            this.labSong3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2HtmlLabel10
+            // labSinger3
             // 
-            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel10.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.guna2HtmlLabel10.IsSelectionEnabled = false;
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(83, 44);
-            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(180, 22);
-            this.guna2HtmlLabel10.TabIndex = 6;
-            this.guna2HtmlLabel10.Text = "MIKA feat Ariana Grande";
-            this.guna2HtmlLabel10.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labSinger3.BackColor = System.Drawing.Color.Transparent;
+            this.labSinger3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labSinger3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.labSinger3.IsSelectionEnabled = false;
+            this.labSinger3.Location = new System.Drawing.Point(83, 44);
+            this.labSinger3.Name = "labSinger3";
+            this.labSinger3.Size = new System.Drawing.Size(180, 22);
+            this.labSinger3.TabIndex = 6;
+            this.labSinger3.Text = "MIKA feat Ariana Grande";
+            this.labSinger3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2PictureBox4
+            // picSong3
             // 
-            this.guna2PictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2PictureBox4.BorderRadius = 10;
-            this.guna2PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(8, 8);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(65, 65);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox4.TabIndex = 9;
-            this.guna2PictureBox4.TabStop = false;
+            this.picSong3.BackColor = System.Drawing.Color.Transparent;
+            this.picSong3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picSong3.BorderRadius = 10;
+            this.picSong3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSong3.Image = ((System.Drawing.Image)(resources.GetObject("picSong3.Image")));
+            this.picSong3.ImageRotate = 0F;
+            this.picSong3.Location = new System.Drawing.Point(8, 8);
+            this.picSong3.Name = "picSong3";
+            this.picSong3.Size = new System.Drawing.Size(65, 65);
+            this.picSong3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSong3.TabIndex = 9;
+            this.picSong3.TabStop = false;
             // 
-            // guna2Panel1
+            // Song2
             // 
-            this.guna2Panel1.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel1.BorderRadius = 6;
-            this.guna2Panel1.BorderThickness = 1;
-            this.guna2Panel1.Controls.Add(this.guna2ImageButton1);
-            this.guna2Panel1.Controls.Add(this.guna2ImageButton2);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel4);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Panel1.Location = new System.Drawing.Point(470, 338);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(376, 80);
-            this.guna2Panel1.TabIndex = 17;
+            this.Song2.BorderColor = System.Drawing.Color.Silver;
+            this.Song2.BorderRadius = 6;
+            this.Song2.BorderThickness = 1;
+            this.Song2.Controls.Add(this.guna2ImageButton1);
+            this.Song2.Controls.Add(this.btnPlay2);
+            this.Song2.Controls.Add(this.labSong2);
+            this.Song2.Controls.Add(this.labSinger2);
+            this.Song2.Controls.Add(this.picSong2);
+            this.Song2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Song2.Location = new System.Drawing.Point(470, 338);
+            this.Song2.Name = "Song2";
+            this.Song2.Size = new System.Drawing.Size(376, 80);
+            this.Song2.TabIndex = 17;
+            this.Song2.Visible = false;
             // 
             // guna2ImageButton1
             // 
@@ -232,76 +235,77 @@
             this.guna2ImageButton1.Size = new System.Drawing.Size(45, 45);
             this.guna2ImageButton1.TabIndex = 8;
             // 
-            // guna2ImageButton2
+            // btnPlay2
             // 
-            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
-            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton2.ImageRotate = 0F;
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(271, 18);
-            this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton2.Size = new System.Drawing.Size(45, 45);
-            this.guna2ImageButton2.TabIndex = 8;
+            this.btnPlay2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPlay2.HoverState.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnPlay2.Image = ((System.Drawing.Image)(resources.GetObject("btnPlay2.Image")));
+            this.btnPlay2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnPlay2.ImageRotate = 0F;
+            this.btnPlay2.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnPlay2.Location = new System.Drawing.Point(271, 18);
+            this.btnPlay2.Name = "btnPlay2";
+            this.btnPlay2.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnPlay2.Size = new System.Drawing.Size(45, 45);
+            this.btnPlay2.TabIndex = 8;
+            this.btnPlay2.Click += new System.EventHandler(this.btnPlay2_Click);
             // 
-            // guna2HtmlLabel3
+            // labSong2
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.HotPink;
-            this.guna2HtmlLabel3.IsSelectionEnabled = false;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(83, 18);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(115, 27);
-            this.guna2HtmlLabel3.TabIndex = 6;
-            this.guna2HtmlLabel3.Text = "Popular song";
-            this.guna2HtmlLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labSong2.BackColor = System.Drawing.Color.Transparent;
+            this.labSong2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labSong2.ForeColor = System.Drawing.Color.HotPink;
+            this.labSong2.IsSelectionEnabled = false;
+            this.labSong2.Location = new System.Drawing.Point(83, 18);
+            this.labSong2.Name = "labSong2";
+            this.labSong2.Size = new System.Drawing.Size(115, 27);
+            this.labSong2.TabIndex = 6;
+            this.labSong2.Text = "Popular song";
+            this.labSong2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2HtmlLabel4
+            // labSinger2
             // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.guna2HtmlLabel4.IsSelectionEnabled = false;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(83, 44);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(180, 22);
-            this.guna2HtmlLabel4.TabIndex = 6;
-            this.guna2HtmlLabel4.Text = "MIKA feat Ariana Grande";
-            this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labSinger2.BackColor = System.Drawing.Color.Transparent;
+            this.labSinger2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labSinger2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.labSinger2.IsSelectionEnabled = false;
+            this.labSinger2.Location = new System.Drawing.Point(83, 44);
+            this.labSinger2.Name = "labSinger2";
+            this.labSinger2.Size = new System.Drawing.Size(180, 22);
+            this.labSinger2.TabIndex = 6;
+            this.labSinger2.Text = "MIKA feat Ariana Grande";
+            this.labSinger2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2PictureBox1
+            // picSong2
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2PictureBox1.BorderRadius = 10;
-            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(8, 8);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(65, 65);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 9;
-            this.guna2PictureBox1.TabStop = false;
+            this.picSong2.BackColor = System.Drawing.Color.Transparent;
+            this.picSong2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picSong2.BorderRadius = 10;
+            this.picSong2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSong2.Image = ((System.Drawing.Image)(resources.GetObject("picSong2.Image")));
+            this.picSong2.ImageRotate = 0F;
+            this.picSong2.Location = new System.Drawing.Point(8, 8);
+            this.picSong2.Name = "picSong2";
+            this.picSong2.Size = new System.Drawing.Size(65, 65);
+            this.picSong2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSong2.TabIndex = 9;
+            this.picSong2.TabStop = false;
             // 
-            // panPop4
+            // Song1
             // 
-            this.panPop4.BorderColor = System.Drawing.Color.Silver;
-            this.panPop4.BorderRadius = 6;
-            this.panPop4.BorderThickness = 1;
-            this.panPop4.Controls.Add(this.btnPop4_fav);
-            this.panPop4.Controls.Add(this.btnPop4_play);
-            this.panPop4.Controls.Add(this.labPop4_name);
-            this.panPop4.Controls.Add(this.labPop4_singer);
-            this.panPop4.Controls.Add(this.picPop4);
-            this.panPop4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panPop4.Location = new System.Drawing.Point(31, 338);
-            this.panPop4.Name = "panPop4";
-            this.panPop4.Size = new System.Drawing.Size(376, 80);
-            this.panPop4.TabIndex = 17;
+            this.Song1.BorderColor = System.Drawing.Color.Silver;
+            this.Song1.BorderRadius = 6;
+            this.Song1.BorderThickness = 1;
+            this.Song1.Controls.Add(this.btnPop4_fav);
+            this.Song1.Controls.Add(this.btnPlay1);
+            this.Song1.Controls.Add(this.labSong1);
+            this.Song1.Controls.Add(this.labSinger1);
+            this.Song1.Controls.Add(this.picSong1);
+            this.Song1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Song1.Location = new System.Drawing.Point(31, 338);
+            this.Song1.Name = "Song1";
+            this.Song1.Size = new System.Drawing.Size(376, 80);
+            this.Song1.TabIndex = 17;
             // 
             // btnPop4_fav
             // 
@@ -317,60 +321,61 @@
             this.btnPop4_fav.Size = new System.Drawing.Size(45, 45);
             this.btnPop4_fav.TabIndex = 8;
             // 
-            // btnPop4_play
+            // btnPlay1
             // 
-            this.btnPop4_play.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnPop4_play.HoverState.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnPop4_play.Image = ((System.Drawing.Image)(resources.GetObject("btnPop4_play.Image")));
-            this.btnPop4_play.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnPop4_play.ImageRotate = 0F;
-            this.btnPop4_play.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnPop4_play.Location = new System.Drawing.Point(271, 18);
-            this.btnPop4_play.Name = "btnPop4_play";
-            this.btnPop4_play.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnPop4_play.Size = new System.Drawing.Size(45, 45);
-            this.btnPop4_play.TabIndex = 8;
+            this.btnPlay1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPlay1.HoverState.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnPlay1.Image = ((System.Drawing.Image)(resources.GetObject("btnPlay1.Image")));
+            this.btnPlay1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnPlay1.ImageRotate = 0F;
+            this.btnPlay1.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnPlay1.Location = new System.Drawing.Point(271, 18);
+            this.btnPlay1.Name = "btnPlay1";
+            this.btnPlay1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnPlay1.Size = new System.Drawing.Size(45, 45);
+            this.btnPlay1.TabIndex = 8;
+            this.btnPlay1.Click += new System.EventHandler(this.btnPlay1_Click);
             // 
-            // labPop4_name
+            // labSong1
             // 
-            this.labPop4_name.BackColor = System.Drawing.Color.Transparent;
-            this.labPop4_name.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPop4_name.ForeColor = System.Drawing.Color.HotPink;
-            this.labPop4_name.IsSelectionEnabled = false;
-            this.labPop4_name.Location = new System.Drawing.Point(83, 18);
-            this.labPop4_name.Name = "labPop4_name";
-            this.labPop4_name.Size = new System.Drawing.Size(115, 27);
-            this.labPop4_name.TabIndex = 6;
-            this.labPop4_name.Text = "Popular song";
-            this.labPop4_name.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labSong1.BackColor = System.Drawing.Color.Transparent;
+            this.labSong1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labSong1.ForeColor = System.Drawing.Color.HotPink;
+            this.labSong1.IsSelectionEnabled = false;
+            this.labSong1.Location = new System.Drawing.Point(83, 18);
+            this.labSong1.Name = "labSong1";
+            this.labSong1.Size = new System.Drawing.Size(115, 27);
+            this.labSong1.TabIndex = 6;
+            this.labSong1.Text = "Popular song";
+            this.labSong1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // labPop4_singer
+            // labSinger1
             // 
-            this.labPop4_singer.BackColor = System.Drawing.Color.Transparent;
-            this.labPop4_singer.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPop4_singer.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.labPop4_singer.IsSelectionEnabled = false;
-            this.labPop4_singer.Location = new System.Drawing.Point(83, 44);
-            this.labPop4_singer.Name = "labPop4_singer";
-            this.labPop4_singer.Size = new System.Drawing.Size(180, 22);
-            this.labPop4_singer.TabIndex = 6;
-            this.labPop4_singer.Text = "MIKA feat Ariana Grande";
-            this.labPop4_singer.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labSinger1.BackColor = System.Drawing.Color.Transparent;
+            this.labSinger1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labSinger1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.labSinger1.IsSelectionEnabled = false;
+            this.labSinger1.Location = new System.Drawing.Point(83, 44);
+            this.labSinger1.Name = "labSinger1";
+            this.labSinger1.Size = new System.Drawing.Size(180, 22);
+            this.labSinger1.TabIndex = 6;
+            this.labSinger1.Text = "MIKA feat Ariana Grande";
+            this.labSinger1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // picPop4
+            // picSong1
             // 
-            this.picPop4.BackColor = System.Drawing.Color.Transparent;
-            this.picPop4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picPop4.BorderRadius = 10;
-            this.picPop4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPop4.Image = ((System.Drawing.Image)(resources.GetObject("picPop4.Image")));
-            this.picPop4.ImageRotate = 0F;
-            this.picPop4.Location = new System.Drawing.Point(8, 8);
-            this.picPop4.Name = "picPop4";
-            this.picPop4.Size = new System.Drawing.Size(65, 65);
-            this.picPop4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPop4.TabIndex = 9;
-            this.picPop4.TabStop = false;
+            this.picSong1.BackColor = System.Drawing.Color.Transparent;
+            this.picSong1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picSong1.BorderRadius = 10;
+            this.picSong1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSong1.Image = ((System.Drawing.Image)(resources.GetObject("picSong1.Image")));
+            this.picSong1.ImageRotate = 0F;
+            this.picSong1.Location = new System.Drawing.Point(8, 8);
+            this.picSong1.Name = "picSong1";
+            this.picSong1.Size = new System.Drawing.Size(65, 65);
+            this.picSong1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSong1.TabIndex = 9;
+            this.picSong1.TabStop = false;
             // 
             // guna2GradientButton1
             // 
@@ -473,21 +478,23 @@
             // 
             this.guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel17.ForeColor = System.Drawing.Color.Gray;
             this.guna2HtmlLabel17.Location = new System.Drawing.Point(1083, 729);
             this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
-            this.guna2HtmlLabel17.Size = new System.Drawing.Size(90, 22);
+            this.guna2HtmlLabel17.Size = new System.Drawing.Size(82, 22);
             this.guna2HtmlLabel17.TabIndex = 14;
-            this.guna2HtmlLabel17.Text = "Release year";
+            this.guna2HtmlLabel17.Text = "repaintable";
             // 
             // guna2HtmlLabel16
             // 
             this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel16.ForeColor = System.Drawing.Color.Gray;
             this.guna2HtmlLabel16.Location = new System.Drawing.Point(822, 729);
             this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
-            this.guna2HtmlLabel16.Size = new System.Drawing.Size(90, 22);
+            this.guna2HtmlLabel16.Size = new System.Drawing.Size(169, 22);
             this.guna2HtmlLabel16.TabIndex = 14;
-            this.guna2HtmlLabel16.Text = "Release year";
+            this.guna2HtmlLabel16.Text = "Westcoast Radio (EDM)";
             // 
             // guna2HtmlLabel12
             // 
@@ -495,19 +502,20 @@
             this.guna2HtmlLabel12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel12.Location = new System.Drawing.Point(1083, 699);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(123, 30);
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(97, 30);
             this.guna2HtmlLabel12.TabIndex = 14;
-            this.guna2HtmlLabel12.Text = "Album name";
+            this.guna2HtmlLabel12.Text = "Lofi/sleep";
             // 
             // guna2HtmlLabel15
             // 
             this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel15.ForeColor = System.Drawing.Color.Gray;
             this.guna2HtmlLabel15.Location = new System.Drawing.Point(559, 729);
             this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            this.guna2HtmlLabel15.Size = new System.Drawing.Size(90, 22);
+            this.guna2HtmlLabel15.Size = new System.Drawing.Size(98, 22);
             this.guna2HtmlLabel15.TabIndex = 14;
-            this.guna2HtmlLabel15.Text = "Release year";
+            this.guna2HtmlLabel15.Text = "Ilyana Azman";
             // 
             // guna2HtmlLabel11
             // 
@@ -515,19 +523,20 @@
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel11.Location = new System.Drawing.Point(822, 699);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(123, 30);
+            this.guna2HtmlLabel11.Size = new System.Drawing.Size(184, 30);
             this.guna2HtmlLabel11.TabIndex = 14;
-            this.guna2HtmlLabel11.Text = "Album name";
+            this.guna2HtmlLabel11.Text = "Best of Future rave";
             // 
             // guna2HtmlLabel14
             // 
             this.guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel14.ForeColor = System.Drawing.Color.Gray;
             this.guna2HtmlLabel14.Location = new System.Drawing.Point(302, 729);
             this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
-            this.guna2HtmlLabel14.Size = new System.Drawing.Size(90, 22);
+            this.guna2HtmlLabel14.Size = new System.Drawing.Size(98, 22);
             this.guna2HtmlLabel14.TabIndex = 14;
-            this.guna2HtmlLabel14.Text = "Release year";
+            this.guna2HtmlLabel14.Text = "Ilyana Azman";
             // 
             // guna2HtmlLabel8
             // 
@@ -535,19 +544,20 @@
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel8.Location = new System.Drawing.Point(559, 699);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(123, 30);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(190, 30);
             this.guna2HtmlLabel8.TabIndex = 14;
-            this.guna2HtmlLabel8.Text = "Album name";
+            this.guna2HtmlLabel8.Text = "Best of Trap Nation";
             // 
             // guna2HtmlLabel13
             // 
             this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel13.ForeColor = System.Drawing.Color.Gray;
             this.guna2HtmlLabel13.Location = new System.Drawing.Point(39, 729);
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(90, 22);
+            this.guna2HtmlLabel13.Size = new System.Drawing.Size(98, 22);
             this.guna2HtmlLabel13.TabIndex = 14;
-            this.guna2HtmlLabel13.Text = "Release year";
+            this.guna2HtmlLabel13.Text = "Ilyana Azman";
             // 
             // guna2HtmlLabel7
             // 
@@ -555,9 +565,9 @@
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel7.Location = new System.Drawing.Point(302, 699);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(123, 30);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(206, 30);
             this.guna2HtmlLabel7.TabIndex = 14;
-            this.guna2HtmlLabel7.Text = "Album name";
+            this.guna2HtmlLabel7.Text = "Best of House Nation";
             // 
             // guna2HtmlLabel6
             // 
@@ -565,9 +575,9 @@
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(39, 699);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(123, 30);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(189, 30);
             this.guna2HtmlLabel6.TabIndex = 14;
-            this.guna2HtmlLabel6.Text = "Album name";
+            this.guna2HtmlLabel6.Text = "Best of Chill Nation";
             // 
             // guna2HtmlLabel5
             // 
@@ -575,9 +585,9 @@
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(31, 443);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(88, 39);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(160, 39);
             this.guna2HtmlLabel5.TabIndex = 14;
-            this.guna2HtmlLabel5.Text = "Album";
+            this.guna2HtmlLabel5.Text = "More album";
             // 
             // guna2HtmlLabel2
             // 
@@ -599,30 +609,30 @@
             this.guna2HtmlLabel1.TabIndex = 14;
             this.guna2HtmlLabel1.Text = "331.154 Followers";
             // 
-            // labArtist1
+            // labArtist
             // 
-            this.labArtist1.BackColor = System.Drawing.Color.Transparent;
-            this.labArtist1.Font = new System.Drawing.Font("Segoe UI", 59F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labArtist1.Location = new System.Drawing.Point(267, 27);
-            this.labArtist1.Name = "labArtist1";
-            this.labArtist1.Size = new System.Drawing.Size(500, 132);
-            this.labArtist1.TabIndex = 14;
-            this.labArtist1.Text = "Bad Bunny";
+            this.labArtist.BackColor = System.Drawing.Color.Transparent;
+            this.labArtist.Font = new System.Drawing.Font("Segoe UI", 59F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labArtist.Location = new System.Drawing.Point(267, 27);
+            this.labArtist.Name = "labArtist";
+            this.labArtist.Size = new System.Drawing.Size(500, 132);
+            this.labArtist.TabIndex = 14;
+            this.labArtist.Text = "Bad Bunny";
             // 
-            // picArtist1
+            // picArtist
             // 
-            this.picArtist1.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.picArtist1.CheckedState.ImageSize = new System.Drawing.Size(197, 197);
-            this.picArtist1.HoverState.ImageSize = new System.Drawing.Size(197, 197);
-            this.picArtist1.Image = ((System.Drawing.Image)(resources.GetObject("picArtist1.Image")));
-            this.picArtist1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.picArtist1.ImageRotate = 0F;
-            this.picArtist1.ImageSize = new System.Drawing.Size(187, 187);
-            this.picArtist1.Location = new System.Drawing.Point(31, 27);
-            this.picArtist1.Name = "picArtist1";
-            this.picArtist1.PressedState.ImageSize = new System.Drawing.Size(197, 197);
-            this.picArtist1.Size = new System.Drawing.Size(197, 197);
-            this.picArtist1.TabIndex = 2;
+            this.picArtist.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.picArtist.CheckedState.ImageSize = new System.Drawing.Size(197, 197);
+            this.picArtist.HoverState.ImageSize = new System.Drawing.Size(197, 197);
+            this.picArtist.Image = ((System.Drawing.Image)(resources.GetObject("picArtist.Image")));
+            this.picArtist.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picArtist.ImageRotate = 0F;
+            this.picArtist.ImageSize = new System.Drawing.Size(187, 187);
+            this.picArtist.Location = new System.Drawing.Point(31, 27);
+            this.picArtist.Name = "picArtist";
+            this.picArtist.PressedState.ImageSize = new System.Drawing.Size(197, 197);
+            this.picArtist.Size = new System.Drawing.Size(197, 197);
+            this.picArtist.TabIndex = 2;
             // 
             // ArtistInfo
             // 
@@ -635,15 +645,15 @@
             this.Text = "Trending";
             this.panMain.ResumeLayout(false);
             this.panMain.PerformLayout();
-            this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.panPop4.ResumeLayout(false);
-            this.panPop4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPop4)).EndInit();
+            this.Song3.ResumeLayout(false);
+            this.Song3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSong3)).EndInit();
+            this.Song2.ResumeLayout(false);
+            this.Song2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSong2)).EndInit();
+            this.Song1.ResumeLayout(false);
+            this.Song1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSong1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
@@ -656,29 +666,29 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel panMain;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton picArtist1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labArtist1;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton picArtist;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labArtist;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel Song2;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2Panel panPop4;
+        private Guna.UI2.WinForms.Guna2ImageButton btnPlay2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labSong2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labSinger2;
+        private Guna.UI2.WinForms.Guna2PictureBox picSong2;
+        private Guna.UI2.WinForms.Guna2Panel Song1;
         private Guna.UI2.WinForms.Guna2ImageButton btnPop4_fav;
-        private Guna.UI2.WinForms.Guna2ImageButton btnPop4_play;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labPop4_name;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labPop4_singer;
-        private Guna.UI2.WinForms.Guna2PictureBox picPop4;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2ImageButton btnPlay1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labSong1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labSinger1;
+        private Guna.UI2.WinForms.Guna2PictureBox picSong1;
+        private Guna.UI2.WinForms.Guna2Panel Song3;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton7;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton8;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2ImageButton btnPlay3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labSong3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labSinger3;
+        private Guna.UI2.WinForms.Guna2PictureBox picSong3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;

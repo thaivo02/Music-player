@@ -83,7 +83,7 @@
             this.btnSend.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.btnSend.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             this.btnSend.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnSend.Location = new System.Drawing.Point(14, 1190);
+            this.btnSend.Location = new System.Drawing.Point(14, 1157);
             this.btnSend.Name = "btnSend";
             this.btnSend.PressedColor = System.Drawing.Color.AliceBlue;
             this.btnSend.Size = new System.Drawing.Size(182, 42);
@@ -94,17 +94,17 @@
             // guna2RatingStar1
             // 
             this.guna2RatingStar1.BorderColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.guna2RatingStar1.BorderThickness = 3;
             this.guna2RatingStar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2RatingStar1.Location = new System.Drawing.Point(214, 1188);
+            this.guna2RatingStar1.Location = new System.Drawing.Point(202, 1155);
             this.guna2RatingStar1.Name = "guna2RatingStar1";
             this.guna2RatingStar1.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.guna2RatingStar1.Size = new System.Drawing.Size(150, 44);
+            this.guna2RatingStar1.Size = new System.Drawing.Size(162, 44);
             this.guna2RatingStar1.TabIndex = 21;
+            this.guna2RatingStar1.Value = 5F;
             // 
             // txtCmt1
             // 
-            this.txtCmt1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtCmt1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtCmt1.Location = new System.Drawing.Point(14, 592);
             this.txtCmt1.Name = "txtCmt1";
             this.txtCmt1.Size = new System.Drawing.Size(350, 131);
@@ -124,14 +124,16 @@
             // txtComment
             // 
             this.txtComment.AcceptsReturn = true;
+            this.txtComment.BackColor = System.Drawing.Color.Lavender;
             this.txtComment.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtComment.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtComment.Location = new System.Drawing.Point(14, 901);
+            this.txtComment.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtComment.Location = new System.Drawing.Point(14, 868);
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
+            this.txtComment.PlaceholderText = "Write you comment";
             this.txtComment.Size = new System.Drawing.Size(350, 276);
             this.txtComment.TabIndex = 19;
-            this.txtComment.Text = "Write you comment";
             // 
             // labLyrics
             // 
@@ -140,7 +142,7 @@
             this.labLyrics.ForeColor = System.Drawing.Color.Teal;
             this.labLyrics.Location = new System.Drawing.Point(434, 12);
             this.labLyrics.Name = "labLyrics";
-            this.labLyrics.Size = new System.Drawing.Size(789, 1503);
+            this.labLyrics.Size = new System.Drawing.Size(789, 2000);
             this.labLyrics.TabIndex = 18;
             this.labLyrics.Text = resources.GetString("labLyrics.Text");
             // 
