@@ -31,19 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArtistInfo));
             this.panMain = new Guna.UI2.WinForms.Guna2Panel();
             this.Song3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ImageButton7 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnFav3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnPlay3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labSong3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labSinger3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.picSong3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Song2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnFav2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnPlay2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labSong2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labSinger2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.picSong2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Song1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnPop4_fav = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnFav1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnPlay1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labSong1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labSinger1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -122,7 +122,7 @@
             this.Song3.BorderColor = System.Drawing.Color.Silver;
             this.Song3.BorderRadius = 6;
             this.Song3.BorderThickness = 1;
-            this.Song3.Controls.Add(this.guna2ImageButton7);
+            this.Song3.Controls.Add(this.btnFav3);
             this.Song3.Controls.Add(this.btnPlay3);
             this.Song3.Controls.Add(this.labSong3);
             this.Song3.Controls.Add(this.labSinger3);
@@ -134,19 +134,20 @@
             this.Song3.TabIndex = 17;
             this.Song3.Visible = false;
             // 
-            // guna2ImageButton7
+            // btnFav3
             // 
-            this.guna2ImageButton7.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton7.HoverState.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2ImageButton7.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton7.Image")));
-            this.guna2ImageButton7.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton7.ImageRotate = 0F;
-            this.guna2ImageButton7.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2ImageButton7.Location = new System.Drawing.Point(320, 18);
-            this.guna2ImageButton7.Name = "guna2ImageButton7";
-            this.guna2ImageButton7.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton7.Size = new System.Drawing.Size(45, 45);
-            this.guna2ImageButton7.TabIndex = 8;
+            this.btnFav3.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnFav3.CheckedState.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnFav3.HoverState.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnFav3.Image = ((System.Drawing.Image)(resources.GetObject("btnFav3.Image")));
+            this.btnFav3.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnFav3.ImageRotate = 0F;
+            this.btnFav3.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnFav3.Location = new System.Drawing.Point(320, 18);
+            this.btnFav3.Name = "btnFav3";
+            this.btnFav3.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnFav3.Size = new System.Drawing.Size(45, 45);
+            this.btnFav3.TabIndex = 8;
             // 
             // btnPlay3
             // 
@@ -209,7 +210,7 @@
             this.Song2.BorderColor = System.Drawing.Color.Silver;
             this.Song2.BorderRadius = 6;
             this.Song2.BorderThickness = 1;
-            this.Song2.Controls.Add(this.guna2ImageButton1);
+            this.Song2.Controls.Add(this.btnFav2);
             this.Song2.Controls.Add(this.btnPlay2);
             this.Song2.Controls.Add(this.labSong2);
             this.Song2.Controls.Add(this.labSinger2);
@@ -221,19 +222,20 @@
             this.Song2.TabIndex = 17;
             this.Song2.Visible = false;
             // 
-            // guna2ImageButton1
+            // btnFav2
             // 
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(320, 18);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(45, 45);
-            this.guna2ImageButton1.TabIndex = 8;
+            this.btnFav2.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnFav2.CheckedState.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnFav2.HoverState.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnFav2.Image = ((System.Drawing.Image)(resources.GetObject("btnFav2.Image")));
+            this.btnFav2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnFav2.ImageRotate = 0F;
+            this.btnFav2.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnFav2.Location = new System.Drawing.Point(320, 18);
+            this.btnFav2.Name = "btnFav2";
+            this.btnFav2.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnFav2.Size = new System.Drawing.Size(45, 45);
+            this.btnFav2.TabIndex = 8;
             // 
             // btnPlay2
             // 
@@ -296,7 +298,7 @@
             this.Song1.BorderColor = System.Drawing.Color.Silver;
             this.Song1.BorderRadius = 6;
             this.Song1.BorderThickness = 1;
-            this.Song1.Controls.Add(this.btnPop4_fav);
+            this.Song1.Controls.Add(this.btnFav1);
             this.Song1.Controls.Add(this.btnPlay1);
             this.Song1.Controls.Add(this.labSong1);
             this.Song1.Controls.Add(this.labSinger1);
@@ -307,19 +309,20 @@
             this.Song1.Size = new System.Drawing.Size(376, 80);
             this.Song1.TabIndex = 17;
             // 
-            // btnPop4_fav
+            // btnFav1
             // 
-            this.btnPop4_fav.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnPop4_fav.HoverState.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnPop4_fav.Image = ((System.Drawing.Image)(resources.GetObject("btnPop4_fav.Image")));
-            this.btnPop4_fav.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnPop4_fav.ImageRotate = 0F;
-            this.btnPop4_fav.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnPop4_fav.Location = new System.Drawing.Point(320, 18);
-            this.btnPop4_fav.Name = "btnPop4_fav";
-            this.btnPop4_fav.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnPop4_fav.Size = new System.Drawing.Size(45, 45);
-            this.btnPop4_fav.TabIndex = 8;
+            this.btnFav1.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnFav1.CheckedState.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnFav1.HoverState.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnFav1.Image = ((System.Drawing.Image)(resources.GetObject("btnFav1.Image")));
+            this.btnFav1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnFav1.ImageRotate = 0F;
+            this.btnFav1.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnFav1.Location = new System.Drawing.Point(320, 18);
+            this.btnFav1.Name = "btnFav1";
+            this.btnFav1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnFav1.Size = new System.Drawing.Size(45, 45);
+            this.btnFav1.TabIndex = 8;
             // 
             // btnPlay1
             // 
@@ -381,7 +384,7 @@
             // 
             this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton1.BorderRadius = 15;
-            this.guna2GradientButton1.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.guna2GradientButton1.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.guna2GradientButton1.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -621,7 +624,7 @@
             // 
             // picArtist
             // 
-            this.picArtist.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.picArtist.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.picArtist.CheckedState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist.HoverState.ImageSize = new System.Drawing.Size(197, 197);
             this.picArtist.Image = ((System.Drawing.Image)(resources.GetObject("picArtist.Image")));
@@ -672,19 +675,19 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2Panel Song2;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Guna.UI2.WinForms.Guna2ImageButton btnFav2;
         private Guna.UI2.WinForms.Guna2ImageButton btnPlay2;
         private Guna.UI2.WinForms.Guna2HtmlLabel labSong2;
         private Guna.UI2.WinForms.Guna2HtmlLabel labSinger2;
         private Guna.UI2.WinForms.Guna2PictureBox picSong2;
         private Guna.UI2.WinForms.Guna2Panel Song1;
-        private Guna.UI2.WinForms.Guna2ImageButton btnPop4_fav;
+        private Guna.UI2.WinForms.Guna2ImageButton btnFav1;
         private Guna.UI2.WinForms.Guna2ImageButton btnPlay1;
         private Guna.UI2.WinForms.Guna2HtmlLabel labSong1;
         private Guna.UI2.WinForms.Guna2HtmlLabel labSinger1;
         private Guna.UI2.WinForms.Guna2PictureBox picSong1;
         private Guna.UI2.WinForms.Guna2Panel Song3;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton7;
+        private Guna.UI2.WinForms.Guna2ImageButton btnFav3;
         private Guna.UI2.WinForms.Guna2ImageButton btnPlay3;
         private Guna.UI2.WinForms.Guna2HtmlLabel labSong3;
         private Guna.UI2.WinForms.Guna2HtmlLabel labSinger3;

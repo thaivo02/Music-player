@@ -61,7 +61,8 @@ namespace Muzic
 
         private void btnGenre_Click(object sender, EventArgs e)
         {
-            Genre frm = new Genre() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            var frm = Program.host.Services.GetRequiredService<Genre>();
+            frm.Init(DockStyle.Fill, false, true);
             this.panMain.Controls.Add(frm);
             frm.BringToFront();
             frm.Show();
@@ -70,6 +71,15 @@ namespace Muzic
         private void btnTop_Click(object sender, EventArgs e)
         {
             Top frm = new Top() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.panMain.Controls.Add(frm);
+            frm.BringToFront();
+            frm.Show();
+        }
+
+        private void btnPlaylist_Click(object sender, EventArgs e)
+        {
+            var frm = Program.host.Services.GetRequiredService<MyPlaylist>();
+            frm.Init(DockStyle.Fill, false, true);
             this.panMain.Controls.Add(frm);
             frm.BringToFront();
             frm.Show();

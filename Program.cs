@@ -23,6 +23,8 @@ namespace Muzic
                 c.AddTransient<ArtistInfo>();
                 c.AddTransient<SongInfo>();
                 c.AddTransient<NewPlaylist>();
+                c.AddTransient<Genre>();
+                c.AddTransient<MyPlaylist>();
             }).Build();
         /// <summary>
         ///  The main entry point for the application.

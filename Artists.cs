@@ -29,9 +29,7 @@ namespace Muzic
                 index = 10 + (int)button.Name[10] - 48;
             else index = (int)button.Name[9] - 48;
             var frm = Program.host.Services.GetRequiredService<ArtistInfo>();
-            frm.Dock = DockStyle.Fill;
-            frm.TopLevel = false;
-            frm.TopMost = true;
+            frm.Init(DockStyle.Fill, false, true);
             this.panMain.Controls.Add(frm);
             frm.BringToFront();
             frm.Show();

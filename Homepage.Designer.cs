@@ -365,6 +365,7 @@
             this.btnPlaylist.Size = new System.Drawing.Size(225, 41);
             this.btnPlaylist.TabIndex = 7;
             this.btnPlaylist.Text = "My playlists";
+            this.btnPlaylist.Click += new System.EventHandler(this.btnPlaylist_Click);
             // 
             // btnHistory
             // 

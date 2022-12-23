@@ -1,5 +1,4 @@
 ﻿using Guna.UI2.WinForms;
-using Muzic.CommonMethod;
 using Muzic.Database.Entity;
 using Muzic.Repositories.ArtistRepositories;
 using Muzic.Repositories.MusicRepositories;
@@ -33,6 +32,13 @@ namespace Muzic
                 UpdateSong(picSong3, labSong3, labSinger3, Songs[2]);
             }
         }
+        public void Init(DockStyle dock, bool topLevel, bool topMost)
+        {
+            Dock = dock;
+            TopLevel = topLevel;
+            TopMost = topMost;
+        }
+
 
         public void UpdateSong(Guna2PictureBox image, Guna2HtmlLabel name, Guna2HtmlLabel singer, Music music)
         {
