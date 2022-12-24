@@ -9,7 +9,7 @@ namespace Muzic.Database
         public DbSet<Artist> Accounts { get; set; }
         public DbSet<Music> Musics { get; set; }
         public DbSet<PlaylistMusic> PlaylistMusics { get; set; }
-        public DbSet<MyPlaylist> Playlists { get; set; }
+        public DbSet<Playlist> Playlists { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {

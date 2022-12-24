@@ -13,6 +13,7 @@ namespace Muzic
         private readonly IMusicRepository _musicRepository;
         private readonly IArtistRepository _artistRepository;
         public static List<Music> Musics = new List<Music>();
+        public static List<Music> MusicsTemp = new List<Music>();
         public static List<Artist> Artists = new List<Artist>();
         public void UpdateLabSong(Guna2ImageButton image, Guna2HtmlLabel name, Guna2HtmlLabel singer, Music music)
         {
@@ -67,6 +68,9 @@ namespace Muzic
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Discover));
             Musics = _musicRepository.GetAll().ToList();
             Musics.Shuffle();
+
+            MusicsTemp = new List<Music>(Musics);
+            
             var i = 0;
             Discover.Musics.ForEach(e =>
             {
@@ -102,61 +106,73 @@ namespace Muzic
 
         private void btnPop1_play_Click(object sender, EventArgs e)
         {
+            Musics = new List<Music>(MusicsTemp);
             PlaySong(6);
         }
 
         private void btnPop2_play_Click(object sender, EventArgs e)
         {
+            Musics = new List<Music>(MusicsTemp);
             PlaySong(7);
         }
 
         private void btnPop3_play_Click(object sender, EventArgs e)
         {
+            Musics = new List<Music>(MusicsTemp);
             PlaySong(8);
         }
 
         private void btnPop4_play_Click(object sender, EventArgs e)
         {
+            Musics = new List<Music>(MusicsTemp);
             PlaySong(9);
         }
 
         private void btnPop5_play_Click(object sender, EventArgs e)
         {
+            Musics = new List<Music>(MusicsTemp);
             PlaySong(10);
         }
 
         private void btnPop6_play_Click(object sender, EventArgs e)
         {
+            Musics = new List<Music>(MusicsTemp);
             PlaySong(11);
         }
 
         private void picSong1_Click(object sender, EventArgs e)
         {
+            Musics = new List<Music>(MusicsTemp);
             PlaySong(0);
         }
 
         private void picSong2_Click(object sender, EventArgs e)
         {
+            Musics = new List<Music>(MusicsTemp);
             PlaySong(1);
         }
 
         private void picSong3_Click(object sender, EventArgs e)
         {
+            Musics = new List<Music>(MusicsTemp);
             PlaySong(2);
         }
 
         private void picSong4_Click(object sender, EventArgs e)
         {
+            Musics = new List<Music>(MusicsTemp);
             PlaySong(3);
         }
 
         private void picSong5_Click(object sender, EventArgs e)
         {
+            Musics = new List<Music>(MusicsTemp);
             PlaySong(4);
         }
 
         private void picSong6_Click(object sender, EventArgs e)
         {
+            Musics = new List<Music>(MusicsTemp);
             PlaySong(5);
         }
 

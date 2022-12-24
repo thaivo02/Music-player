@@ -10,7 +10,6 @@ namespace Muzic
         {
             _playlistRepository = playlistRepository;
             InitializeComponent();
-
         }
 
         public void Init(DockStyle dock, bool topLevel, bool topMost)

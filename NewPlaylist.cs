@@ -20,6 +20,7 @@ namespace Muzic
                 PlaylistName = playlist
             });
             _playlistRepository.SaveChanges();
+            this.Close();
         }
     }
 }
