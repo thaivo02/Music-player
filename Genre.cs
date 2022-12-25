@@ -107,6 +107,8 @@ namespace Muzic
             {
                 Homepage.image = (Bitmap)Image.FromStream(stream);
             }
+            Musics.First(e => e.MusicName == listCountry[0].MusicName).Frequency += 1;
+            _musicRepository.SaveChanges();
 
             Homepage.CurrentIndex = 0;
             Homepage.LoadMusic(listCountry[0].URL + ".mp3");
@@ -123,6 +125,8 @@ namespace Muzic
             {
                 Homepage.image = (Bitmap)Image.FromStream(stream);
             }
+            Musics.First(e => e.MusicName == listDisco[0].MusicName).Frequency += 1;
+            _musicRepository.SaveChanges();
 
             Homepage.CurrentIndex = 0;
             Homepage.LoadMusic(listDisco[0].URL + ".mp3");

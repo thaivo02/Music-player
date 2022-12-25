@@ -42,6 +42,9 @@
     <Compile Update="ArtistInfo.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Favorite.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="MyPlaylist.cs">
       <SubType>Form</SubType>
     </Compile>

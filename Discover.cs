@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using Microsoft.Extensions.DependencyInjection;
 using Muzic.CommonMethod;
 using Muzic.Database.Entity;
 using Muzic.Repositories.ArtistRepositories;
@@ -29,7 +30,7 @@ namespace Muzic
             singer.Text = artist.ArtistName;
         }
 
-        public void UpdatePopSong(Guna2PictureBox image, Guna2HtmlLabel name, Guna2HtmlLabel singer, Music music)
+        public void UpdatePopSong(Guna2PictureBox image, Guna2HtmlLabel name, Guna2HtmlLabel singer, Guna2ImageButton favorite, Music music)
         {
             var request = WebRequest.Create(music.Thumbnail);
 
@@ -41,6 +42,7 @@ namespace Muzic
             name.Text = music.MusicName;
             var artist = _artistRepository.GetAll().First(e => e.ArtistId == music.ArtistId);
             singer.Text = artist.ArtistName;
+            favorite.Checked = music.IsFavorite;
         }
 
         public void PlaySong(int i)
@@ -56,6 +58,8 @@ namespace Muzic
             }
 
             Musics.First(e => e.MusicName == Musics[i].MusicName).Frequency += 1;
+            _musicRepository.SaveChanges();
+
             Homepage.CurrentIndex = i;
             Homepage.LoadMusic(Musics[i].URL + ".mp3");
         }
@@ -90,12 +94,12 @@ namespace Muzic
             UpdateLabSong(picSong5, labSong5_name, labSong5_singer, Musics[4]);
             UpdateLabSong(picSong6, labSong6_name, labSong6_singer, Musics[5]);
 
-            UpdatePopSong(picPop1, labPop1_name, labPop1_singer, Musics[6]);
-            UpdatePopSong(picPop2, labPop2_name, labPop2_singer, Musics[7]);
-            UpdatePopSong(picPop3, labPop3_name, labPop3_singer, Musics[8]);
-            UpdatePopSong(picPop4, labPop4_name, labPop4_singer, Musics[9]);
-            UpdatePopSong(picPop5, labPop5_name, labPop5_singer, Musics[10]);
-            UpdatePopSong(picPop6, labPop6_name, labPop6_singer, Musics[11]);
+            UpdatePopSong(picPop1, labPop1_name, labPop1_singer, btnPop1_fav, Musics[6]);
+            UpdatePopSong(picPop2, labPop2_name, labPop2_singer, btnPop2_fav, Musics[7]);
+            UpdatePopSong(picPop3, labPop3_name, labPop3_singer, btnPop3_fav, Musics[8]);
+            UpdatePopSong(picPop4, labPop4_name, labPop4_singer, btnPop4_fav, Musics[9]);
+            UpdatePopSong(picPop5, labPop5_name, labPop5_singer, btnPop5_fav, Musics[10]);
+            UpdatePopSong(picPop6, labPop6_name, labPop6_singer, btnPop6_fav, Musics[11]);
         }
 
         public void Init(DockStyle dock, bool topLevel, bool topMost)
@@ -221,6 +225,48 @@ namespace Muzic
                 index += 1;
             });
             if (artist != "Artist") PlaySong(temp);
+        }
+
+        private void btnPop6_fav_Click(object sender, EventArgs e)
+        {
+            btnPop6_fav.Checked = !btnPop6_fav.Checked;
+            Favorite(11);
+        }
+
+        private void btnPop4_fav_Click(object sender, EventArgs e)
+        {
+            btnPop4_fav.Checked= !btnPop4_fav.Checked;
+            Favorite(9);
+        }
+
+        private void btnPop2_fav_Click(object sender, EventArgs e)
+        {
+            btnPop2_fav.Checked = !btnPop2_fav.Checked;
+            Favorite(7);
+        }
+
+        private void btnPop5_fav_Click(object sender, EventArgs e)
+        {
+            btnPop5_fav.Checked = !btnPop5_fav.Checked;
+            Favorite(10);
+        }
+
+        private void btnPop3_fav_Click(object sender, EventArgs e)
+        {
+            btnPop3_fav.Checked = !btnPop3_fav.Checked;
+            Favorite(8);
+        }
+
+        private void btnPop1_fav_Click(object sender, EventArgs e)
+        {
+            btnPop1_fav.Checked = !btnPop1_fav.Checked;
+            Favorite(6);
+        }
+
+        private void Favorite(int i)
+        {
+            Musics[i].IsFavorite = !Musics[i].IsFavorite;
+            _musicRepository.SaveChanges();
         }
     }
 }

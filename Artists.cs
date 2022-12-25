@@ -12,7 +12,7 @@ namespace Muzic
             InitializeComponent();
         }
 
-        private void btnInfo(object sender, EventArgs e)
+        public void btnInfo(object sender, EventArgs e)
         {
             button = (Guna2ImageRadioButton)sender;
             if (button.Name.Length > 10)

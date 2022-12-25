@@ -443,7 +443,8 @@
             // 
             // btnPop6_fav
             // 
-            this.btnPop6_fav.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPop6_fav.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnPop6_fav.CheckedState.ImageSize = new System.Drawing.Size(25, 25);
             this.btnPop6_fav.HoverState.ImageSize = new System.Drawing.Size(35, 35);
             this.btnPop6_fav.Image = ((System.Drawing.Image)(resources.GetObject("btnPop6_fav.Image")));
             this.btnPop6_fav.ImageOffset = new System.Drawing.Point(0, 0);
@@ -454,6 +455,7 @@
             this.btnPop6_fav.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop6_fav.Size = new System.Drawing.Size(45, 45);
             this.btnPop6_fav.TabIndex = 8;
+            this.btnPop6_fav.Click += new System.EventHandler(this.btnPop6_fav_Click);
             // 
             // btnPop6_play
             // 
@@ -529,7 +531,8 @@
             // 
             // btnPop3_fav
             // 
-            this.btnPop3_fav.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPop3_fav.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnPop3_fav.CheckedState.ImageSize = new System.Drawing.Size(25, 25);
             this.btnPop3_fav.HoverState.ImageSize = new System.Drawing.Size(35, 35);
             this.btnPop3_fav.Image = ((System.Drawing.Image)(resources.GetObject("btnPop3_fav.Image")));
             this.btnPop3_fav.ImageOffset = new System.Drawing.Point(0, 0);
@@ -540,6 +543,7 @@
             this.btnPop3_fav.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop3_fav.Size = new System.Drawing.Size(45, 45);
             this.btnPop3_fav.TabIndex = 8;
+            this.btnPop3_fav.Click += new System.EventHandler(this.btnPop3_fav_Click);
             // 
             // btnPop3_play
             // 
@@ -615,7 +619,8 @@
             // 
             // btnPop5_fav
             // 
-            this.btnPop5_fav.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPop5_fav.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnPop5_fav.CheckedState.ImageSize = new System.Drawing.Size(25, 25);
             this.btnPop5_fav.HoverState.ImageSize = new System.Drawing.Size(35, 35);
             this.btnPop5_fav.Image = ((System.Drawing.Image)(resources.GetObject("btnPop5_fav.Image")));
             this.btnPop5_fav.ImageOffset = new System.Drawing.Point(0, 0);
@@ -626,6 +631,7 @@
             this.btnPop5_fav.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop5_fav.Size = new System.Drawing.Size(45, 45);
             this.btnPop5_fav.TabIndex = 8;
+            this.btnPop5_fav.Click += new System.EventHandler(this.btnPop5_fav_Click);
             // 
             // btnPop5_play
             // 
@@ -701,7 +707,8 @@
             // 
             // btnPop2_fav
             // 
-            this.btnPop2_fav.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPop2_fav.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btnPop2_fav.CheckedState.ImageSize = new System.Drawing.Size(25, 25);
             this.btnPop2_fav.HoverState.ImageSize = new System.Drawing.Size(35, 35);
             this.btnPop2_fav.Image = ((System.Drawing.Image)(resources.GetObject("btnPop2_fav.Image")));
             this.btnPop2_fav.ImageOffset = new System.Drawing.Point(0, 0);
@@ -712,6 +719,7 @@
             this.btnPop2_fav.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop2_fav.Size = new System.Drawing.Size(45, 45);
             this.btnPop2_fav.TabIndex = 8;
+            this.btnPop2_fav.Click += new System.EventHandler(this.btnPop2_fav_Click);
             // 
             // btnPop2_play
             // 
@@ -787,7 +795,8 @@
             // 
             // btnPop4_fav
             // 
-            this.btnPop4_fav.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPop4_fav.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnPop4_fav.CheckedState.ImageSize = new System.Drawing.Size(25, 25);
             this.btnPop4_fav.HoverState.ImageSize = new System.Drawing.Size(35, 35);
             this.btnPop4_fav.Image = ((System.Drawing.Image)(resources.GetObject("btnPop4_fav.Image")));
             this.btnPop4_fav.ImageOffset = new System.Drawing.Point(0, 0);
@@ -798,6 +807,7 @@
             this.btnPop4_fav.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop4_fav.Size = new System.Drawing.Size(45, 45);
             this.btnPop4_fav.TabIndex = 8;
+            this.btnPop4_fav.Click += new System.EventHandler(this.btnPop4_fav_Click);
             // 
             // btnPop4_play
             // 
@@ -873,7 +883,8 @@
             // 
             // btnPop1_fav
             // 
-            this.btnPop1_fav.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPop1_fav.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.btnPop1_fav.CheckedState.ImageSize = new System.Drawing.Size(25, 25);
             this.btnPop1_fav.HoverState.ImageSize = new System.Drawing.Size(35, 35);
             this.btnPop1_fav.Image = ((System.Drawing.Image)(resources.GetObject("btnPop1_fav.Image")));
             this.btnPop1_fav.ImageOffset = new System.Drawing.Point(0, 0);
@@ -884,6 +895,7 @@
             this.btnPop1_fav.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnPop1_fav.Size = new System.Drawing.Size(45, 45);
             this.btnPop1_fav.TabIndex = 8;
+            this.btnPop1_fav.Click += new System.EventHandler(this.btnPop1_fav_Click);
             // 
             // btnPop1_play
             // 

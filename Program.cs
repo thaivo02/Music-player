@@ -26,6 +26,8 @@ namespace Muzic
                 c.AddTransient<Genre>();
                 c.AddTransient<MyPlaylist>();
                 c.AddTransient<History>();
+                c.AddTransient<Favorite>();
+                c.AddTransient<Homepage>();
             }).Build();
         /// <summary>
         ///  The main entry point for the application.
@@ -37,7 +39,7 @@ namespace Muzic
             // see https://aka.ms/applicationconfiguration.
             host.Start();
             ApplicationConfiguration.Initialize();
-            Application.Run(new Homepage());
+            Application.Run(Program.host.Services.GetRequiredService<Homepage>());
         }
     }
 }

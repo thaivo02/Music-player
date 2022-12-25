@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Muzic.Database.Entity;
+using Muzic.Repositories.MusicRepositories;
 using NAudio.Wave;
 using System.Drawing.Drawing2D;
 
@@ -10,6 +11,7 @@ namespace Muzic
         public static WaveOutEvent wo = new WaveOutEvent();
         public static AudioFileReader af = new AudioFileReader(@"Songs\\Lost frequencies - Back To You.mp3");
         public static int CurrentIndex = 16;
+        private readonly IMusicRepository _musicRepository;
         protected override CreateParams CreateParams
         {
             get
@@ -19,8 +21,9 @@ namespace Muzic
                 return cp;
             }
         }
-        public Homepage()
+        public Homepage(IMusicRepository musicRepository)
         {
+            _musicRepository = musicRepository;
             InitializeComponent();
             var form = Program.host.Services.GetRequiredService<Discover>();
             form.Init(DockStyle.Fill, false, true);
@@ -100,6 +103,7 @@ namespace Muzic
             var artist = Discover.Artists.First(e => e.ArtistId == Discover.Musics[index].ArtistId);
             labPlaying_singer.Text = artist.ArtistName;
             Discover.Musics.First(e => e.MusicName == Discover.Musics[index].MusicName).Frequency += 1;
+            _musicRepository.SaveChanges();
 
             LoadMusic(Discover.Musics[index].URL + ".mp3");
         }
@@ -119,6 +123,7 @@ namespace Muzic
             var artist = Discover.Artists.First(e => e.ArtistId == Discover.Musics[index].ArtistId);
             labPlaying_singer.Text = artist.ArtistName;
             Discover.Musics.First(e => e.MusicName == Discover.Musics[index].MusicName).Frequency += 1;
+            _musicRepository.SaveChanges();
 
             LoadMusic(Discover.Musics[index].URL + ".mp3");
         }
@@ -253,6 +258,12 @@ namespace Muzic
         private void btnHistory_Click(object sender, EventArgs e)
         {
             History frm = Program.host.Services.GetRequiredService<History>();
+            frm.Show();
+        }
+        
+        private void btnFavorite_Click(object sender, EventArgs e)
+        {
+            Favorite frm = Program.host.Services.GetRequiredService<Favorite>();
             frm.Show();
         }
     }

@@ -463,6 +463,8 @@
             this.btnFavorite.Size = new System.Drawing.Size(225, 45);
             this.btnFavorite.TabIndex = 3;
             this.btnFavorite.Text = "Favorite";
+            this.btnFavorite.Click += new System.EventHandler(this.btnFavorite_Click);
+
             // 
             // btnTop
             // 
