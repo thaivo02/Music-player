@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SongInfo));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.comboPlaylist = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnSend = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.txtCmt1 = new System.Windows.Forms.Label();
@@ -45,6 +46,7 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +54,7 @@
             // 
             this.guna2Panel1.AutoScroll = true;
             this.guna2Panel1.BackColor = System.Drawing.Color.LavenderBlush;
+            this.guna2Panel1.Controls.Add(this.comboPlaylist);
             this.guna2Panel1.Controls.Add(this.btnSend);
             this.guna2Panel1.Controls.Add(this.guna2RatingStar1);
             this.guna2Panel1.Controls.Add(this.txtCmt1);
@@ -69,6 +72,23 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1326, 851);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // comboPlaylist
+            // 
+            this.comboPlaylist.BackColor = System.Drawing.Color.Transparent;
+            this.comboPlaylist.BorderRadius = 6;
+            this.comboPlaylist.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboPlaylist.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboPlaylist.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboPlaylist.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboPlaylist.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboPlaylist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboPlaylist.ItemHeight = 30;
+            this.comboPlaylist.Location = new System.Drawing.Point(243, 481);
+            this.comboPlaylist.Name = "comboPlaylist";
+            this.comboPlaylist.Size = new System.Drawing.Size(160, 36);
+            this.comboPlaylist.TabIndex = 23;
+            this.comboPlaylist.SelectedValueChanged += new System.EventHandler(this.comboPlaylist_SelectedValueChanged);
+            // 
             // btnSend
             // 
             this.btnSend.BackColor = System.Drawing.Color.Transparent;
@@ -83,7 +103,7 @@
             this.btnSend.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.btnSend.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             this.btnSend.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnSend.Location = new System.Drawing.Point(14, 1157);
+            this.btnSend.Location = new System.Drawing.Point(27, 1157);
             this.btnSend.Name = "btnSend";
             this.btnSend.PressedColor = System.Drawing.Color.AliceBlue;
             this.btnSend.Size = new System.Drawing.Size(182, 42);
@@ -95,7 +115,7 @@
             // 
             this.guna2RatingStar1.BorderColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.guna2RatingStar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2RatingStar1.Location = new System.Drawing.Point(202, 1155);
+            this.guna2RatingStar1.Location = new System.Drawing.Point(221, 1156);
             this.guna2RatingStar1.Name = "guna2RatingStar1";
             this.guna2RatingStar1.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             this.guna2RatingStar1.Size = new System.Drawing.Size(162, 44);
@@ -105,19 +125,19 @@
             // txtCmt1
             // 
             this.txtCmt1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtCmt1.Location = new System.Drawing.Point(14, 592);
+            this.txtCmt1.Location = new System.Drawing.Point(33, 673);
             this.txtCmt1.Name = "txtCmt1";
-            this.txtCmt1.Size = new System.Drawing.Size(350, 131);
+            this.txtCmt1.Size = new System.Drawing.Size(350, 161);
             this.txtCmt1.TabIndex = 20;
-            this.txtCmt1.Text = "Comment1";
+            this.txtCmt1.Text = "No cmt";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(14, 540);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(33, 601);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 25);
+            this.label1.Size = new System.Drawing.Size(176, 46);
             this.label1.TabIndex = 20;
             this.label1.Text = "Comment";
             // 
@@ -128,7 +148,7 @@
             this.txtComment.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtComment.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtComment.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtComment.Location = new System.Drawing.Point(14, 868);
+            this.txtComment.Location = new System.Drawing.Point(33, 873);
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
             this.txtComment.PlaceholderText = "Write you comment";
@@ -140,7 +160,7 @@
             this.labLyrics.BackColor = System.Drawing.Color.Linen;
             this.labLyrics.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.labLyrics.ForeColor = System.Drawing.Color.Teal;
-            this.labLyrics.Location = new System.Drawing.Point(434, 12);
+            this.labLyrics.Location = new System.Drawing.Point(484, 12);
             this.labLyrics.Name = "labLyrics";
             this.labLyrics.Size = new System.Drawing.Size(789, 2000);
             this.labLyrics.TabIndex = 18;
@@ -161,12 +181,13 @@
             this.guna2GradientButton2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.guna2GradientButton2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             this.guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2GradientButton2.Location = new System.Drawing.Point(92, 477);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(33, 537);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
             this.guna2GradientButton2.PressedColor = System.Drawing.Color.AliceBlue;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(182, 42);
+            this.guna2GradientButton2.Size = new System.Drawing.Size(370, 42);
             this.guna2GradientButton2.TabIndex = 17;
-            this.guna2GradientButton2.Text = "Play";
+            this.guna2GradientButton2.Text = "Download";
+            this.guna2GradientButton2.Click += new System.EventHandler(this.btnDownload_Click);
             // 
             // guna2GradientButton1
             // 
@@ -183,45 +204,46 @@
             this.guna2GradientButton1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             this.guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2GradientButton1.Location = new System.Drawing.Point(63, 428);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(33, 475);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.PressedColor = System.Drawing.Color.AliceBlue;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(241, 42);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(201, 42);
             this.guna2GradientButton1.TabIndex = 17;
             this.guna2GradientButton1.Text = "Add to playlist";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.btnAddtoPlaylist_Click);
             // 
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(73, 371);
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(264, 416);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(220, 30);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(84, 25);
             this.guna2HtmlLabel6.TabIndex = 1;
-            this.guna2HtmlLabel6.Text = "KORDHELL  • 22/04/2001";
+            this.guna2HtmlLabel6.Text = "KORDHELL";
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(61, 318);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(33, 407);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(245, 47);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(225, 43);
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "Murder in mind";
             // 
             // guna2ImageButton1
             // 
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(300, 300);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(375, 384);
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(290, 290);
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(370, 379);
             this.guna2ImageButton1.Location = new System.Drawing.Point(33, 12);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(300, 300);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(300, 309);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(370, 379);
             this.guna2ImageButton1.TabIndex = 0;
             // 
             // guna2HtmlLabel5
@@ -305,5 +327,7 @@
         private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
         private Guna.UI2.WinForms.Guna2GradientButton btnSend;
         private Label txtCmt1;
+        private Guna.UI2.WinForms.Guna2ComboBox comboPlaylist;
+        private FolderBrowserDialog folderBrowserDialog1;
     }
 }

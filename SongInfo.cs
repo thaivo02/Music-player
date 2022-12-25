@@ -10,16 +10,28 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Muzic.Database.Entity;
 using Muzic.Repositories.MusicRepositories;
+using Muzic.Repositories.PlaylistMusicRepositories;
+using Muzic.Repositories.PlaylistRepositories;
 
 namespace Muzic
 {
     public partial class SongInfo : Form
     {
+        private readonly IPlaylistRepository _playlistRepository;
         private readonly IMusicRepository _musicRepository;
-        public SongInfo(IMusicRepository musicRepository)
+        private readonly IPlaylistMusicRepository _playlistMusicRepository;
+        public static List<Playlist> Playlist = new List<Playlist>();
+        public static List<PlaylistMusic> PlaylistMusic = new List<PlaylistMusic>();
+        private string playlistName = string.Empty;
+        public SongInfo(IMusicRepository musicRepository, IPlaylistMusicRepository playlistMusicRepository, IPlaylistRepository playlistRepository)
         {
+            _playlistRepository = playlistRepository;
+            _playlistMusicRepository = playlistMusicRepository;
             _musicRepository = musicRepository;
             InitializeComponent();
+            Playlist =  _playlistRepository.GetAll().ToList();
+            PlaylistMusic = _playlistMusicRepository.GetAll().ToList();
+
             var music = Discover.Musics[Homepage.CurrentIndex];
             string text = System.IO.File.ReadAllText(Discover.Musics[Homepage.CurrentIndex].Lyric+".txt");
             labLyrics.Text = text;
@@ -33,6 +45,7 @@ namespace Muzic
             }
 
             this.txtCmt1.Text = music.Comment;
+            initCombobox();
         }
 
         public void Init()
@@ -40,6 +53,14 @@ namespace Muzic
             Dock = DockStyle.Fill;
             TopLevel = false;
             TopMost = true;
+        }
+
+        private void initCombobox()
+        {
+            List<string> PlaylistName = new List<string>();
+            for (int i = 0; i < Playlist.Count; i++)
+                PlaylistName.Add(Playlist[i].PlaylistName);
+            this.comboPlaylist.DataSource = PlaylistName;
         }
 
         private void btnSend_Click(object sender, EventArgs e)
@@ -54,6 +75,35 @@ namespace Muzic
                 this.txtCmt1.Text = comment;
                 txtComment.Text = "";
             }
+        }
+
+        private void btnAddtoPlaylist_Click(object sender, EventArgs e)
+        {
+            int playlistIndex = Playlist.Find(e => e.PlaylistName == playlistName).PlaylistId; 
+            if (PlaylistMusic.Exists(e => e.MusicId == Discover.Musics[Homepage.CurrentIndex].MusicId && e.PlaylistId == playlistIndex) == false)
+            {
+                PlaylistMusic addPlaylist = new PlaylistMusic()
+                {
+                    MusicId = Discover.Musics[Homepage.CurrentIndex].MusicId,
+                    PlaylistId = playlistIndex
+                };
+                _playlistMusicRepository.Add(addPlaylist);
+                _playlistMusicRepository.SaveChanges();
+            }
+        }
+
+        private void btnDownload_Click(object sender, EventArgs e)
+        {
+            folderBrowserDialog1.ShowDialog();
+            var location = Discover.Musics[Homepage.CurrentIndex].URL + ".mp3";
+            var destination = folderBrowserDialog1.SelectedPath.ToString();
+            var name = Discover.Musics[Homepage.CurrentIndex].MusicName + ".mp3";
+            File.Copy(location, destination + "\\" + name);
+        }
+
+        private void comboPlaylist_SelectedValueChanged(object sender, EventArgs e)
+        {
+            playlistName = comboPlaylist.Text;
         }
     }
 }

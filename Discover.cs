@@ -182,20 +182,20 @@ namespace Muzic
             {
                 listBox1.Items.Clear();
                 listBox1.Visible = true;
-                foreach (string str in Musics.Select(e => e.MusicName))
-                {
-                    if (str.ToLower().Contains(txtSearch.Text.ToLower()))
-                    {
-                        listBox1.Items.Add(str);
-                    }
-                }
                 foreach (string str in Artists.Select(e => e.ArtistName))
                 {
                     if (str.ToLower().Contains(txtSearch.Text.ToLower()))
                     {
-                        listBox1.Items.Add(str);
+                        listBox1.Items.Add(str + " - Artist");
                     }
                 }
+                foreach (string str in Musics.Select(e => e.MusicName))
+                {
+                    if (str.ToLower().Contains(txtSearch.Text.ToLower()))
+                    {
+                        listBox1.Items.Add(str + " - Song");
+                    }
+                } 
             }
             else
             {
@@ -206,18 +206,20 @@ namespace Muzic
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string text = listBox1.GetItemText(listBox1.SelectedItem);
+            string textFull = listBox1.GetItemText(listBox1.SelectedItem);
+            string text = textFull.Split(" - ")[0];
+            string artist = textFull.Split(" - ")[1];
             var index = 0;
             var temp = 0;
             Musics.ForEach(e =>
             {
-                if (e.MusicName == text)
+                if (e.MusicName == text && artist != "Artist")
                 {
                     temp = index;
                 }
                 index += 1;
             });
-            PlaySong(temp);
+            if (artist != "Artist") PlaySong(temp);
         }
     }
 }

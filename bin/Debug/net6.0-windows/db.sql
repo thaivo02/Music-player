@@ -46,3 +46,13 @@ INSERT INTO Accounts (ArtistName) VALUES ('The Kid LAROI')
 INSERT INTO Accounts (ArtistName) VALUES ('The Weeknd')
 INSERT INTO Accounts (ArtistName) VALUES ('Zedd')
 INSERT INTO Accounts (ArtistName) VALUES ('Alan Walker')
+
+INSERT INTO Playlists(PlaylistName) VALUES ('Default')
+
+DECLARE @c INT = 1;
+
+WHILE @c < 32
+BEGIN
+	INSERT INTO Muzic.dbo.PlaylistMusics (PlaylistId, MusicId) VALUES(1, @c);
+	SET @c = @c + 1
+END
