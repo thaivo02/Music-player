@@ -1,8 +1,10 @@
 ﻿using Guna.UI2.WinForms;
 using Muzic.Database.Entity;
+using Muzic.Repositories.ArtistRepositories;
 using Muzic.Repositories.MusicRepositories;
 using Muzic.Repositories.PlaylistMusicRepositories;
 using Muzic.Repositories.PlaylistRepositories;
+using System.Net;
 
 namespace Muzic
 {
@@ -10,12 +12,15 @@ namespace Muzic
     {
         private readonly IPlaylistRepository _playlistRepository;
         private readonly IPlaylistMusicRepository _playlistMusicRepository;
+        private readonly IArtistRepository _artistRepository;
         public static List<Playlist> Playlist = new List<Playlist>();
         public static List<PlaylistMusic> PlaylistMusic = new List<PlaylistMusic>();
-        public MyPlaylist(IPlaylistRepository playlistRepository, IPlaylistMusicRepository playlistMusicRepository)
+        public MyPlaylist(IPlaylistRepository playlistRepository, IPlaylistMusicRepository playlistMusicRepository, IArtistRepository artistRepository)
         {
             _playlistRepository = playlistRepository;
             _playlistMusicRepository = playlistMusicRepository;
+            _artistRepository = artistRepository;
+
             InitializeComponent();
             Playlist = _playlistRepository.GetAll().ToList();
             PlaylistMusic = _playlistMusicRepository.GetAll().ToList();
@@ -49,12 +54,32 @@ namespace Muzic
         public void clickPlaylist(object sender, EventArgs e)
         {
             Guna2ImageButton pressed = (Guna2ImageButton)sender;
-            // Lay music
+            int index = 1;
+            if (pressed.Name.Length > 12)
+                index = 10 + (int)pressed.Name[12] - 48;
+            else index = (int)pressed.Name[11] - 48;
             var musicsFromPlaylist = new List<Music>(Discover.Musics);
-            // so 1 thay bang Id lay ra
-            var playlist = _playlistMusicRepository.GetAll().Where(e => e.PlaylistId == 2);
-            musicsFromPlaylist.Select(e => playlist.Any(u => u.MusicId == e.MusicId));
-            Discover.Musics = new List<Music>(musicsFromPlaylist);
+            var playlist = _playlistMusicRepository.GetAll().Where(e => e.PlaylistId == index);
+            musicsFromPlaylist = musicsFromPlaylist.Where(e => playlist.Any(u => u.MusicId == e.MusicId)).ToList();
+            //musicsFromPlaylist.Select(e => playlist.Any(u => u.MusicId == e.MusicId));
+            Discover.Musics = musicsFromPlaylist;
+            PlaySong(0);
+        }
+
+        public void PlaySong(int i)
+        {
+            Homepage.labPlaying_name.Text = Discover.Musics[i].MusicName;
+            var artist = _artistRepository.GetAll().First(e => e.ArtistId == Discover.Musics[i].ArtistId);
+            Homepage.labPlaying_singer.Text = artist.ArtistName;
+            var request1 = WebRequest.Create(Discover.Musics[i].Thumbnail);
+            using (var response = request1.GetResponse())
+            using (var stream = response.GetResponseStream())
+            {
+                Homepage.image = (Bitmap)Image.FromStream(stream);
+            }
+
+            Homepage.CurrentIndex = i;
+            Homepage.LoadMusic(Discover.Musics[i].URL + ".mp3");
         }
     }
 }

@@ -55,6 +55,7 @@ namespace Muzic
                 Homepage.image = (Bitmap)Image.FromStream(stream);
             }
 
+            Musics.First(e => e.MusicName == Musics[i].MusicName).Frequency += 1;
             Homepage.CurrentIndex = i;
             Homepage.LoadMusic(Musics[i].URL + ".mp3");
         }

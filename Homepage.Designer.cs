@@ -389,6 +389,7 @@
             this.btnHistory.Size = new System.Drawing.Size(225, 41);
             this.btnHistory.TabIndex = 7;
             this.btnHistory.Text = "History";
+            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
             // 
             // btnGenre
             // 

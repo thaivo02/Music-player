@@ -99,6 +99,8 @@ namespace Muzic
             labPlaying_name.Text = Discover.Musics[index].MusicName;
             var artist = Discover.Artists.First(e => e.ArtistId == Discover.Musics[index].ArtistId);
             labPlaying_singer.Text = artist.ArtistName;
+            Discover.Musics.First(e => e.MusicName == Discover.Musics[index].MusicName).Frequency += 1;
+
             LoadMusic(Discover.Musics[index].URL + ".mp3");
         }
 
@@ -108,7 +110,7 @@ namespace Muzic
             var index = random.Next(Discover.Musics.Count);
             if (btnRandom.Checked)
             {
-                index = Math.Min(Discover.Musics.Count, CurrentIndex + 1);
+                index = Math.Min(Discover.Musics.Count - 1, CurrentIndex + 1);
                 CurrentIndex = index;
             }
 
@@ -116,6 +118,8 @@ namespace Muzic
             labPlaying_name.Text = Discover.Musics[index].MusicName;
             var artist = Discover.Artists.First(e => e.ArtistId == Discover.Musics[index].ArtistId);
             labPlaying_singer.Text = artist.ArtistName;
+            Discover.Musics.First(e => e.MusicName == Discover.Musics[index].MusicName).Frequency += 1;
+
             LoadMusic(Discover.Musics[index].URL + ".mp3");
         }
 
@@ -135,7 +139,7 @@ namespace Muzic
             progressTimer.Stop();
             btnPause.Checked = true;
             wo.Play();
-            progressTimer.Start();
+            progressTimer.Start();  
         }
 
         private void Homepage_Load(object sender, EventArgs e)
@@ -244,6 +248,12 @@ namespace Muzic
             g.RotateTransform(angle, MatrixOrder.Append);
             g.TranslateTransform(cx, cy, MatrixOrder.Append);
             g.DrawImage(RoundedImage, -rx / 2, -ry / 2, rx, ry);
+        }
+
+        private void btnHistory_Click(object sender, EventArgs e)
+        {
+            History frm = Program.host.Services.GetRequiredService<History>();
+            frm.Show();
         }
     }
 }
