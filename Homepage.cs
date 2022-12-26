@@ -47,7 +47,7 @@ namespace Muzic
         }
         private void btnTrend_Click(object sender, EventArgs e)
         {
-            Artists frm = new Artists() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            HotArtists frm = new HotArtists() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.panMain.Controls.Add(frm);
             frm.BringToFront();
             frm.Show();

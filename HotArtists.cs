@@ -3,11 +3,11 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Muzic
 {
-    public partial class Artists : Form
+    public partial class HotArtists : Form
     {
         public static Guna2ImageRadioButton button = null;
         public static int index = 0;
-        public Artists()
+        public HotArtists()
         {
             InitializeComponent();
         }

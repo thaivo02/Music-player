@@ -1,6 +1,6 @@
 ﻿namespace Muzic
 {
-    partial class Artists
+    partial class HotArtists
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Artists));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HotArtists));
             this.panMain = new Guna.UI2.WinForms.Guna2Panel();
             this.labArtist15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.picArtist15 = new Guna.UI2.WinForms.Guna2ImageRadioButton();

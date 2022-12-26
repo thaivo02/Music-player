@@ -16,9 +16,9 @@ namespace Muzic
             _artistRepository = artistRepository;
             _musicRepository = musicRepository;
             InitializeComponent();
-            picArtist.Image = Artists.button.Image;
-            labArtist.Text = Discover.Artists.First(e => e.ArtistId == Artists.index).ArtistName;
-            Songs = Discover.Musics.FindAll(e => e.ArtistId == Artists.index).ToList();
+            picArtist.Image = HotArtists.button.Image;
+            labArtist.Text = Discover.Artists.First(e => e.ArtistId == HotArtists.index).ArtistName;
+            Songs = Discover.Musics.FindAll(e => e.ArtistId == HotArtists.index).ToList();
 
             UpdateSong(picSong1, labSong1, labSinger1, Songs[0]);
             if (Songs.Count >= 2)
