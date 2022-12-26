@@ -225,6 +225,20 @@ namespace Muzic
                 index += 1;
             });
             if (artist != "Artist") PlaySong(temp);
+            else
+            {
+                int artsistId = Artists.First(e => e.ArtistName == text).ArtistId;
+                HotArtists.button.Name = "picArtist" + artsistId.ToString();
+                HotArtists.button.Image = Image.FromFile(@"../net6.0-windows/Homepage/Artists/" + artsistId.ToString() + ".png");
+                HotArtists.index = artsistId;
+                var frm = Program.host.Services.GetRequiredService<ArtistInfo>();
+                frm.Init(DockStyle.Fill, false, true);
+                this.panBanner.Visible = false;
+                frm.Scale(0.9f);
+                this.panMain.Controls.Add(frm);
+                frm.BringToFront();
+                frm.Show();
+            }
         }
 
         private void btnPop6_fav_Click(object sender, EventArgs e)

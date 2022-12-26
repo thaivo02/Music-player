@@ -20,16 +20,16 @@ namespace Muzic
             labArtist.Text = Discover.Artists.First(e => e.ArtistId == HotArtists.index).ArtistName;
             Songs = Discover.Musics.FindAll(e => e.ArtistId == HotArtists.index).ToList();
 
-            UpdateSong(picSong1, labSong1, labSinger1, Songs[0]);
+            UpdateSong(picSong1, labSong1, labSinger1, btnFav1, Songs[0]);
             if (Songs.Count >= 2)
             {
                 Song2.Visible = true;
-                UpdateSong(picSong2, labSong2, labSinger2, Songs[1]);
+                UpdateSong(picSong2, labSong2, labSinger2, btnFav2, Songs[1]);
             }
             if (Songs.Count == 3)
             {
                 Song3.Visible = true;
-                UpdateSong(picSong3, labSong3, labSinger3, Songs[2]);
+                UpdateSong(picSong3, labSong3, labSinger3, btnFav3, Songs[2]);
             }
         }
         public void Init(DockStyle dock, bool topLevel, bool topMost)
@@ -40,7 +40,7 @@ namespace Muzic
         }
 
 
-        public void UpdateSong(Guna2PictureBox image, Guna2HtmlLabel name, Guna2HtmlLabel singer, Music music)
+        public void UpdateSong(Guna2PictureBox image, Guna2HtmlLabel name, Guna2HtmlLabel singer, Guna2ImageButton favorite, Music music)
         {
             var request = WebRequest.Create(music.Thumbnail);
 
@@ -52,6 +52,7 @@ namespace Muzic
             name.Text = music.MusicName;
             var artist = _artistRepository.GetAll().First(e => e.ArtistId == music.ArtistId);
             singer.Text = artist.ArtistName;
+            favorite.Checked = music.IsFavorite;
         }
 
         public void PlaySong(int i)
@@ -83,6 +84,30 @@ namespace Muzic
         private void btnPlay3_Click(object sender, EventArgs e)
         {
             PlaySong(2);
+        }
+
+        private void btnFav3_Click(object sender, EventArgs e)
+        {
+            btnFav3.Checked = !btnFav3.Checked;
+            Favorite(2);
+        }
+
+        private void btnFav2_Click(object sender, EventArgs e)
+        {
+            btnFav2.Checked = !btnFav2.Checked;
+            Favorite(1);
+        }
+
+        private void btnFav1_Click(object sender, EventArgs e)
+        {
+            btnFav1.Checked = !btnFav1.Checked;
+            Favorite(0);
+        }
+
+        private void Favorite(int i)
+        {
+            Songs[i].IsFavorite = !Songs[i].IsFavorite;
+            _musicRepository.SaveChanges();
         }
     }
 }

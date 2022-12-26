@@ -5,7 +5,7 @@ namespace Muzic
 {
     public partial class HotArtists : Form
     {
-        public static Guna2ImageRadioButton button = null;
+        public static Guna2ImageRadioButton button = new Guna2ImageRadioButton();
         public static int index = 0;
         public HotArtists()
         {

@@ -148,6 +148,7 @@
             this.btnFav3.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnFav3.Size = new System.Drawing.Size(45, 45);
             this.btnFav3.TabIndex = 8;
+            this.btnFav3.Click += new System.EventHandler(this.btnFav3_Click);
             // 
             // btnPlay3
             // 
@@ -236,6 +237,7 @@
             this.btnFav2.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnFav2.Size = new System.Drawing.Size(45, 45);
             this.btnFav2.TabIndex = 8;
+            this.btnFav2.Click += new System.EventHandler(this.btnFav2_Click);
             // 
             // btnPlay2
             // 
@@ -323,6 +325,7 @@
             this.btnFav1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnFav1.Size = new System.Drawing.Size(45, 45);
             this.btnFav1.TabIndex = 8;
+            this.btnFav1.Click += new System.EventHandler(this.btnFav1_Click);
             // 
             // btnPlay1
             // 

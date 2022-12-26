@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             this.colSong = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.colArtist = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +57,8 @@
             this.dataGrid.ColumnHeadersHeight = 22;
             this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colSong});
+            this.colSong,
+            this.colArtist});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(210)))), ((int)(((byte)(223)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -99,9 +101,19 @@
             // 
             // colSong
             // 
+            this.colSong.FillWeight = 130.4813F;
             this.colSong.HeaderText = "Favorite songs";
             this.colSong.MinimumWidth = 6;
             this.colSong.Name = "colSong";
+            this.colSong.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // colArtist
+            // 
+            this.colArtist.FillWeight = 69.51871F;
+            this.colArtist.HeaderText = "Artist name";
+            this.colArtist.MinimumWidth = 6;
+            this.colArtist.Name = "colArtist";
+            this.colArtist.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Favorite
             // 
@@ -121,5 +133,6 @@
 
         private Guna.UI2.WinForms.Guna2DataGridView dataGrid;
         private DataGridViewButtonColumn colSong;
+        private DataGridViewButtonColumn colArtist;
     }
 }
