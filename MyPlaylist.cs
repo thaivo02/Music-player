@@ -45,9 +45,9 @@ namespace Muzic
                 }
                 string name = "labPlaylist_name" + i.ToString();
                 string amount = "labPlaylist_amount" + i.ToString();
-                this.Controls.Find(name, true)[0].Text = "Playlist name: " + Playlist.First(e => e.PlaylistId == i).PlaylistName;
-                this.Controls.Find(amount, true)[0].Text = Playlist.First(e => e.PlaylistId == i).PlaylistName + ": " +
-                                                         PlaylistMusic.Count(e => e.PlaylistId == i).ToString() + " songs in playlist";
+                this.Controls.Find(name, true)[0].Text = "Playlist name: " + Playlist[i - 1].PlaylistName;
+                this.Controls.Find(amount, true)[0].Text = Playlist[i - 1].PlaylistName + ": " +
+                                                         PlaylistMusic.Count(e => e.PlaylistId == Playlist[i - 1 ].PlaylistId).ToString() + " songs in playlist";
             }
         }
 
@@ -80,6 +80,18 @@ namespace Muzic
 
             Homepage.CurrentIndex = i;
             Homepage.LoadMusic(Discover.Musics[i].URL + ".mp3");
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int indexPlaylist = 0;
+            Guna2GradientButton pressed = (Guna2GradientButton)sender;
+            if (pressed.Name.Length > 10)
+                indexPlaylist = 10 + (int)pressed.Name[10] - 48;
+            else indexPlaylist = (int)pressed.Name[9] - 48;
+            Playlist delete = Playlist.Where(e => e.PlaylistName == Playlist[indexPlaylist].PlaylistName).FirstOrDefault();
+            _playlistRepository.Delete(delete);
+            _playlistRepository.SaveChanges();
         }
     }
 }

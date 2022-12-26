@@ -58,7 +58,7 @@ namespace Muzic
         private void initCombobox()
         {
             List<string> PlaylistName = new List<string>();
-            for (int i = 0; i < Playlist.Count; i++)
+            for (int i = 1; i < Playlist.Count; i++)
                 PlaylistName.Add(Playlist[i].PlaylistName);
             this.comboPlaylist.DataSource = PlaylistName;
         }

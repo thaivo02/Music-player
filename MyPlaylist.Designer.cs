@@ -31,46 +31,57 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyPlaylist));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panPlaylist12 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDelete11 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picPlaylist12 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaylist_amount12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPlaylist_name12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panPlaylist8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDelete7 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picPlaylist8 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaylist_amount8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPlaylist_name8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDelete3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picPlaylist4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaylist_amount4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPlaylist_name4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panPlaylist11 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDelete10 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picPlaylist11 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaylist_amount11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPlaylist_name11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panPlaylist7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDelete6 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picPlaylist7 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaylist_amount7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPlaylist_name7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panPlaylist3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDelete2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picPlaylist3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaylist_amount3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPlaylist_name3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panPlaylist10 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDelete9 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picPlaylist10 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaylist_amount10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPlaylist_name10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panPlaylist6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDelete5 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picPlaylist6 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaylist_amount6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPlaylist_name6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panPlaylist2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDelete1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picPlaylist2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaylist_amount2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPlaylist_name2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panPlaylist9 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDelete8 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picPlaylist9 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaylist_amount9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPlaylist_name9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panPlaylist5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDelete4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picPlaylist5 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labPlaylist_amount5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPlaylist_name5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -119,6 +130,7 @@
             // 
             // panPlaylist12
             // 
+            this.panPlaylist12.Controls.Add(this.btnDelete11);
             this.panPlaylist12.Controls.Add(this.picPlaylist12);
             this.panPlaylist12.Controls.Add(this.labPlaylist_amount12);
             this.panPlaylist12.Controls.Add(this.labPlaylist_name12);
@@ -127,6 +139,29 @@
             this.panPlaylist12.Size = new System.Drawing.Size(415, 154);
             this.panPlaylist12.TabIndex = 22;
             this.panPlaylist12.Visible = false;
+            // 
+            // btnDelete11
+            // 
+            this.btnDelete11.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete11.BorderRadius = 15;
+            this.btnDelete11.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnDelete11.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDelete11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete11.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete11.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnDelete11.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnDelete11.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnDelete11.Location = new System.Drawing.Point(175, 102);
+            this.btnDelete11.Name = "btnDelete11";
+            this.btnDelete11.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnDelete11.Size = new System.Drawing.Size(230, 33);
+            this.btnDelete11.TabIndex = 17;
+            this.btnDelete11.Text = "Delete playlist";
+            this.btnDelete11.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // picPlaylist12
             // 
@@ -147,7 +182,7 @@
             // 
             this.labPlaylist_amount12.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_amount12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_amount12.Location = new System.Drawing.Point(175, 63);
+            this.labPlaylist_amount12.Location = new System.Drawing.Point(175, 61);
             this.labPlaylist_amount12.Name = "labPlaylist_amount12";
             this.labPlaylist_amount12.Size = new System.Drawing.Size(215, 25);
             this.labPlaylist_amount12.TabIndex = 21;
@@ -157,7 +192,7 @@
             // 
             this.labPlaylist_name12.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_name12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_name12.Location = new System.Drawing.Point(175, 18);
+            this.labPlaylist_name12.Location = new System.Drawing.Point(175, 20);
             this.labPlaylist_name12.Name = "labPlaylist_name12";
             this.labPlaylist_name12.Size = new System.Drawing.Size(147, 25);
             this.labPlaylist_name12.TabIndex = 21;
@@ -165,6 +200,7 @@
             // 
             // panPlaylist8
             // 
+            this.panPlaylist8.Controls.Add(this.btnDelete7);
             this.panPlaylist8.Controls.Add(this.picPlaylist8);
             this.panPlaylist8.Controls.Add(this.labPlaylist_amount8);
             this.panPlaylist8.Controls.Add(this.labPlaylist_name8);
@@ -173,6 +209,29 @@
             this.panPlaylist8.Size = new System.Drawing.Size(415, 154);
             this.panPlaylist8.TabIndex = 22;
             this.panPlaylist8.Visible = false;
+            // 
+            // btnDelete7
+            // 
+            this.btnDelete7.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete7.BorderRadius = 15;
+            this.btnDelete7.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnDelete7.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDelete7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete7.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete7.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnDelete7.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnDelete7.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnDelete7.Location = new System.Drawing.Point(175, 102);
+            this.btnDelete7.Name = "btnDelete7";
+            this.btnDelete7.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnDelete7.Size = new System.Drawing.Size(230, 33);
+            this.btnDelete7.TabIndex = 17;
+            this.btnDelete7.Text = "Delete playlist";
+            this.btnDelete7.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // picPlaylist8
             // 
@@ -193,7 +252,7 @@
             // 
             this.labPlaylist_amount8.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_amount8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_amount8.Location = new System.Drawing.Point(175, 63);
+            this.labPlaylist_amount8.Location = new System.Drawing.Point(175, 61);
             this.labPlaylist_amount8.Name = "labPlaylist_amount8";
             this.labPlaylist_amount8.Size = new System.Drawing.Size(215, 25);
             this.labPlaylist_amount8.TabIndex = 21;
@@ -203,7 +262,7 @@
             // 
             this.labPlaylist_name8.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_name8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_name8.Location = new System.Drawing.Point(175, 18);
+            this.labPlaylist_name8.Location = new System.Drawing.Point(175, 20);
             this.labPlaylist_name8.Name = "labPlaylist_name8";
             this.labPlaylist_name8.Size = new System.Drawing.Size(147, 25);
             this.labPlaylist_name8.TabIndex = 21;
@@ -211,6 +270,7 @@
             // 
             // guna2Panel4
             // 
+            this.guna2Panel4.Controls.Add(this.btnDelete3);
             this.guna2Panel4.Controls.Add(this.picPlaylist4);
             this.guna2Panel4.Controls.Add(this.labPlaylist_amount4);
             this.guna2Panel4.Controls.Add(this.labPlaylist_name4);
@@ -219,6 +279,29 @@
             this.guna2Panel4.Size = new System.Drawing.Size(415, 154);
             this.guna2Panel4.TabIndex = 22;
             this.guna2Panel4.Visible = false;
+            // 
+            // btnDelete3
+            // 
+            this.btnDelete3.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete3.BorderRadius = 15;
+            this.btnDelete3.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnDelete3.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDelete3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnDelete3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnDelete3.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnDelete3.Location = new System.Drawing.Point(175, 102);
+            this.btnDelete3.Name = "btnDelete3";
+            this.btnDelete3.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnDelete3.Size = new System.Drawing.Size(230, 33);
+            this.btnDelete3.TabIndex = 17;
+            this.btnDelete3.Text = "Delete playlist";
+            this.btnDelete3.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // picPlaylist4
             // 
@@ -239,7 +322,7 @@
             // 
             this.labPlaylist_amount4.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_amount4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_amount4.Location = new System.Drawing.Point(175, 63);
+            this.labPlaylist_amount4.Location = new System.Drawing.Point(175, 61);
             this.labPlaylist_amount4.Name = "labPlaylist_amount4";
             this.labPlaylist_amount4.Size = new System.Drawing.Size(215, 25);
             this.labPlaylist_amount4.TabIndex = 21;
@@ -249,7 +332,7 @@
             // 
             this.labPlaylist_name4.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_name4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_name4.Location = new System.Drawing.Point(175, 18);
+            this.labPlaylist_name4.Location = new System.Drawing.Point(175, 20);
             this.labPlaylist_name4.Name = "labPlaylist_name4";
             this.labPlaylist_name4.Size = new System.Drawing.Size(147, 25);
             this.labPlaylist_name4.TabIndex = 21;
@@ -257,6 +340,7 @@
             // 
             // panPlaylist11
             // 
+            this.panPlaylist11.Controls.Add(this.btnDelete10);
             this.panPlaylist11.Controls.Add(this.picPlaylist11);
             this.panPlaylist11.Controls.Add(this.labPlaylist_amount11);
             this.panPlaylist11.Controls.Add(this.labPlaylist_name11);
@@ -265,6 +349,29 @@
             this.panPlaylist11.Size = new System.Drawing.Size(415, 154);
             this.panPlaylist11.TabIndex = 22;
             this.panPlaylist11.Visible = false;
+            // 
+            // btnDelete10
+            // 
+            this.btnDelete10.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete10.BorderRadius = 15;
+            this.btnDelete10.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btnDelete10.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDelete10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete10.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete10.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnDelete10.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnDelete10.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnDelete10.Location = new System.Drawing.Point(175, 102);
+            this.btnDelete10.Name = "btnDelete10";
+            this.btnDelete10.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnDelete10.Size = new System.Drawing.Size(230, 33);
+            this.btnDelete10.TabIndex = 17;
+            this.btnDelete10.Text = "Delete playlist";
+            this.btnDelete10.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // picPlaylist11
             // 
@@ -285,7 +392,7 @@
             // 
             this.labPlaylist_amount11.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_amount11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_amount11.Location = new System.Drawing.Point(175, 63);
+            this.labPlaylist_amount11.Location = new System.Drawing.Point(175, 61);
             this.labPlaylist_amount11.Name = "labPlaylist_amount11";
             this.labPlaylist_amount11.Size = new System.Drawing.Size(215, 25);
             this.labPlaylist_amount11.TabIndex = 21;
@@ -295,7 +402,7 @@
             // 
             this.labPlaylist_name11.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_name11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_name11.Location = new System.Drawing.Point(175, 18);
+            this.labPlaylist_name11.Location = new System.Drawing.Point(175, 20);
             this.labPlaylist_name11.Name = "labPlaylist_name11";
             this.labPlaylist_name11.Size = new System.Drawing.Size(147, 25);
             this.labPlaylist_name11.TabIndex = 21;
@@ -303,6 +410,7 @@
             // 
             // panPlaylist7
             // 
+            this.panPlaylist7.Controls.Add(this.btnDelete6);
             this.panPlaylist7.Controls.Add(this.picPlaylist7);
             this.panPlaylist7.Controls.Add(this.labPlaylist_amount7);
             this.panPlaylist7.Controls.Add(this.labPlaylist_name7);
@@ -311,6 +419,29 @@
             this.panPlaylist7.Size = new System.Drawing.Size(415, 154);
             this.panPlaylist7.TabIndex = 22;
             this.panPlaylist7.Visible = false;
+            // 
+            // btnDelete6
+            // 
+            this.btnDelete6.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete6.BorderRadius = 15;
+            this.btnDelete6.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnDelete6.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDelete6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete6.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete6.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnDelete6.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnDelete6.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnDelete6.Location = new System.Drawing.Point(175, 102);
+            this.btnDelete6.Name = "btnDelete6";
+            this.btnDelete6.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnDelete6.Size = new System.Drawing.Size(230, 33);
+            this.btnDelete6.TabIndex = 17;
+            this.btnDelete6.Text = "Delete playlist";
+            this.btnDelete6.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // picPlaylist7
             // 
@@ -331,7 +462,7 @@
             // 
             this.labPlaylist_amount7.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_amount7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_amount7.Location = new System.Drawing.Point(175, 63);
+            this.labPlaylist_amount7.Location = new System.Drawing.Point(175, 61);
             this.labPlaylist_amount7.Name = "labPlaylist_amount7";
             this.labPlaylist_amount7.Size = new System.Drawing.Size(215, 25);
             this.labPlaylist_amount7.TabIndex = 21;
@@ -341,7 +472,7 @@
             // 
             this.labPlaylist_name7.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_name7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_name7.Location = new System.Drawing.Point(175, 18);
+            this.labPlaylist_name7.Location = new System.Drawing.Point(175, 20);
             this.labPlaylist_name7.Name = "labPlaylist_name7";
             this.labPlaylist_name7.Size = new System.Drawing.Size(147, 25);
             this.labPlaylist_name7.TabIndex = 21;
@@ -349,6 +480,7 @@
             // 
             // panPlaylist3
             // 
+            this.panPlaylist3.Controls.Add(this.btnDelete2);
             this.panPlaylist3.Controls.Add(this.picPlaylist3);
             this.panPlaylist3.Controls.Add(this.labPlaylist_amount3);
             this.panPlaylist3.Controls.Add(this.labPlaylist_name3);
@@ -357,6 +489,29 @@
             this.panPlaylist3.Size = new System.Drawing.Size(415, 154);
             this.panPlaylist3.TabIndex = 22;
             this.panPlaylist3.Visible = false;
+            // 
+            // btnDelete2
+            // 
+            this.btnDelete2.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete2.BorderRadius = 15;
+            this.btnDelete2.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.btnDelete2.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDelete2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnDelete2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnDelete2.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnDelete2.Location = new System.Drawing.Point(175, 102);
+            this.btnDelete2.Name = "btnDelete2";
+            this.btnDelete2.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnDelete2.Size = new System.Drawing.Size(230, 33);
+            this.btnDelete2.TabIndex = 17;
+            this.btnDelete2.Text = "Delete playlist";
+            this.btnDelete2.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // picPlaylist3
             // 
@@ -377,7 +532,7 @@
             // 
             this.labPlaylist_amount3.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_amount3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_amount3.Location = new System.Drawing.Point(175, 63);
+            this.labPlaylist_amount3.Location = new System.Drawing.Point(175, 61);
             this.labPlaylist_amount3.Name = "labPlaylist_amount3";
             this.labPlaylist_amount3.Size = new System.Drawing.Size(215, 25);
             this.labPlaylist_amount3.TabIndex = 21;
@@ -387,7 +542,7 @@
             // 
             this.labPlaylist_name3.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_name3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_name3.Location = new System.Drawing.Point(175, 18);
+            this.labPlaylist_name3.Location = new System.Drawing.Point(175, 20);
             this.labPlaylist_name3.Name = "labPlaylist_name3";
             this.labPlaylist_name3.Size = new System.Drawing.Size(147, 25);
             this.labPlaylist_name3.TabIndex = 21;
@@ -395,6 +550,7 @@
             // 
             // panPlaylist10
             // 
+            this.panPlaylist10.Controls.Add(this.btnDelete9);
             this.panPlaylist10.Controls.Add(this.picPlaylist10);
             this.panPlaylist10.Controls.Add(this.labPlaylist_amount10);
             this.panPlaylist10.Controls.Add(this.labPlaylist_name10);
@@ -403,6 +559,29 @@
             this.panPlaylist10.Size = new System.Drawing.Size(415, 154);
             this.panPlaylist10.TabIndex = 22;
             this.panPlaylist10.Visible = false;
+            // 
+            // btnDelete9
+            // 
+            this.btnDelete9.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete9.BorderRadius = 15;
+            this.btnDelete9.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            this.btnDelete9.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDelete9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete9.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete9.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnDelete9.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnDelete9.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnDelete9.Location = new System.Drawing.Point(175, 102);
+            this.btnDelete9.Name = "btnDelete9";
+            this.btnDelete9.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnDelete9.Size = new System.Drawing.Size(230, 33);
+            this.btnDelete9.TabIndex = 17;
+            this.btnDelete9.Text = "Delete playlist";
+            this.btnDelete9.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // picPlaylist10
             // 
@@ -423,7 +602,7 @@
             // 
             this.labPlaylist_amount10.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_amount10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_amount10.Location = new System.Drawing.Point(175, 63);
+            this.labPlaylist_amount10.Location = new System.Drawing.Point(175, 61);
             this.labPlaylist_amount10.Name = "labPlaylist_amount10";
             this.labPlaylist_amount10.Size = new System.Drawing.Size(215, 25);
             this.labPlaylist_amount10.TabIndex = 21;
@@ -433,7 +612,7 @@
             // 
             this.labPlaylist_name10.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_name10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_name10.Location = new System.Drawing.Point(175, 18);
+            this.labPlaylist_name10.Location = new System.Drawing.Point(175, 20);
             this.labPlaylist_name10.Name = "labPlaylist_name10";
             this.labPlaylist_name10.Size = new System.Drawing.Size(147, 25);
             this.labPlaylist_name10.TabIndex = 21;
@@ -441,6 +620,7 @@
             // 
             // panPlaylist6
             // 
+            this.panPlaylist6.Controls.Add(this.btnDelete5);
             this.panPlaylist6.Controls.Add(this.picPlaylist6);
             this.panPlaylist6.Controls.Add(this.labPlaylist_amount6);
             this.panPlaylist6.Controls.Add(this.labPlaylist_name6);
@@ -449,6 +629,29 @@
             this.panPlaylist6.Size = new System.Drawing.Size(415, 154);
             this.panPlaylist6.TabIndex = 22;
             this.panPlaylist6.Visible = false;
+            // 
+            // btnDelete5
+            // 
+            this.btnDelete5.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete5.BorderRadius = 15;
+            this.btnDelete5.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            this.btnDelete5.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDelete5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete5.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete5.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnDelete5.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnDelete5.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnDelete5.Location = new System.Drawing.Point(175, 102);
+            this.btnDelete5.Name = "btnDelete5";
+            this.btnDelete5.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnDelete5.Size = new System.Drawing.Size(230, 33);
+            this.btnDelete5.TabIndex = 17;
+            this.btnDelete5.Text = "Delete playlist";
+            this.btnDelete5.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // picPlaylist6
             // 
@@ -469,7 +672,7 @@
             // 
             this.labPlaylist_amount6.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_amount6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_amount6.Location = new System.Drawing.Point(175, 63);
+            this.labPlaylist_amount6.Location = new System.Drawing.Point(175, 61);
             this.labPlaylist_amount6.Name = "labPlaylist_amount6";
             this.labPlaylist_amount6.Size = new System.Drawing.Size(215, 25);
             this.labPlaylist_amount6.TabIndex = 21;
@@ -479,7 +682,7 @@
             // 
             this.labPlaylist_name6.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_name6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_name6.Location = new System.Drawing.Point(175, 18);
+            this.labPlaylist_name6.Location = new System.Drawing.Point(175, 20);
             this.labPlaylist_name6.Name = "labPlaylist_name6";
             this.labPlaylist_name6.Size = new System.Drawing.Size(147, 25);
             this.labPlaylist_name6.TabIndex = 21;
@@ -487,6 +690,7 @@
             // 
             // panPlaylist2
             // 
+            this.panPlaylist2.Controls.Add(this.btnDelete1);
             this.panPlaylist2.Controls.Add(this.picPlaylist2);
             this.panPlaylist2.Controls.Add(this.labPlaylist_amount2);
             this.panPlaylist2.Controls.Add(this.labPlaylist_name2);
@@ -495,6 +699,29 @@
             this.panPlaylist2.Size = new System.Drawing.Size(415, 154);
             this.panPlaylist2.TabIndex = 22;
             this.panPlaylist2.Visible = false;
+            // 
+            // btnDelete1
+            // 
+            this.btnDelete1.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete1.BorderRadius = 15;
+            this.btnDelete1.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            this.btnDelete1.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDelete1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnDelete1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnDelete1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnDelete1.Location = new System.Drawing.Point(175, 102);
+            this.btnDelete1.Name = "btnDelete1";
+            this.btnDelete1.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnDelete1.Size = new System.Drawing.Size(230, 33);
+            this.btnDelete1.TabIndex = 17;
+            this.btnDelete1.Text = "Delete playlist";
+            this.btnDelete1.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // picPlaylist2
             // 
@@ -515,7 +742,7 @@
             // 
             this.labPlaylist_amount2.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_amount2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_amount2.Location = new System.Drawing.Point(175, 63);
+            this.labPlaylist_amount2.Location = new System.Drawing.Point(175, 61);
             this.labPlaylist_amount2.Name = "labPlaylist_amount2";
             this.labPlaylist_amount2.Size = new System.Drawing.Size(215, 25);
             this.labPlaylist_amount2.TabIndex = 21;
@@ -525,7 +752,7 @@
             // 
             this.labPlaylist_name2.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_name2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_name2.Location = new System.Drawing.Point(175, 18);
+            this.labPlaylist_name2.Location = new System.Drawing.Point(175, 20);
             this.labPlaylist_name2.Name = "labPlaylist_name2";
             this.labPlaylist_name2.Size = new System.Drawing.Size(147, 25);
             this.labPlaylist_name2.TabIndex = 21;
@@ -533,6 +760,7 @@
             // 
             // panPlaylist9
             // 
+            this.panPlaylist9.Controls.Add(this.btnDelete8);
             this.panPlaylist9.Controls.Add(this.picPlaylist9);
             this.panPlaylist9.Controls.Add(this.labPlaylist_amount9);
             this.panPlaylist9.Controls.Add(this.labPlaylist_name9);
@@ -541,6 +769,29 @@
             this.panPlaylist9.Size = new System.Drawing.Size(415, 154);
             this.panPlaylist9.TabIndex = 22;
             this.panPlaylist9.Visible = false;
+            // 
+            // btnDelete8
+            // 
+            this.btnDelete8.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete8.BorderRadius = 15;
+            this.btnDelete8.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
+            this.btnDelete8.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDelete8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete8.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete8.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnDelete8.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnDelete8.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnDelete8.Location = new System.Drawing.Point(175, 102);
+            this.btnDelete8.Name = "btnDelete8";
+            this.btnDelete8.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnDelete8.Size = new System.Drawing.Size(230, 33);
+            this.btnDelete8.TabIndex = 17;
+            this.btnDelete8.Text = "Delete playlist";
+            this.btnDelete8.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // picPlaylist9
             // 
@@ -561,7 +812,7 @@
             // 
             this.labPlaylist_amount9.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_amount9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_amount9.Location = new System.Drawing.Point(175, 63);
+            this.labPlaylist_amount9.Location = new System.Drawing.Point(175, 61);
             this.labPlaylist_amount9.Name = "labPlaylist_amount9";
             this.labPlaylist_amount9.Size = new System.Drawing.Size(215, 25);
             this.labPlaylist_amount9.TabIndex = 21;
@@ -571,7 +822,7 @@
             // 
             this.labPlaylist_name9.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_name9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_name9.Location = new System.Drawing.Point(175, 18);
+            this.labPlaylist_name9.Location = new System.Drawing.Point(175, 20);
             this.labPlaylist_name9.Name = "labPlaylist_name9";
             this.labPlaylist_name9.Size = new System.Drawing.Size(147, 25);
             this.labPlaylist_name9.TabIndex = 21;
@@ -579,6 +830,7 @@
             // 
             // panPlaylist5
             // 
+            this.panPlaylist5.Controls.Add(this.btnDelete4);
             this.panPlaylist5.Controls.Add(this.picPlaylist5);
             this.panPlaylist5.Controls.Add(this.labPlaylist_amount5);
             this.panPlaylist5.Controls.Add(this.labPlaylist_name5);
@@ -587,6 +839,29 @@
             this.panPlaylist5.Size = new System.Drawing.Size(415, 154);
             this.panPlaylist5.TabIndex = 22;
             this.panPlaylist5.Visible = false;
+            // 
+            // btnDelete4
+            // 
+            this.btnDelete4.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete4.BorderRadius = 15;
+            this.btnDelete4.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
+            this.btnDelete4.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDelete4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete4.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnDelete4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnDelete4.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnDelete4.Location = new System.Drawing.Point(175, 102);
+            this.btnDelete4.Name = "btnDelete4";
+            this.btnDelete4.PressedColor = System.Drawing.Color.AliceBlue;
+            this.btnDelete4.Size = new System.Drawing.Size(230, 33);
+            this.btnDelete4.TabIndex = 17;
+            this.btnDelete4.Text = "Delete playlist";
+            this.btnDelete4.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // picPlaylist5
             // 
@@ -607,7 +882,7 @@
             // 
             this.labPlaylist_amount5.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_amount5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_amount5.Location = new System.Drawing.Point(175, 63);
+            this.labPlaylist_amount5.Location = new System.Drawing.Point(175, 61);
             this.labPlaylist_amount5.Name = "labPlaylist_amount5";
             this.labPlaylist_amount5.Size = new System.Drawing.Size(215, 25);
             this.labPlaylist_amount5.TabIndex = 21;
@@ -617,7 +892,7 @@
             // 
             this.labPlaylist_name5.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_name5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_name5.Location = new System.Drawing.Point(175, 18);
+            this.labPlaylist_name5.Location = new System.Drawing.Point(175, 20);
             this.labPlaylist_name5.Name = "labPlaylist_name5";
             this.labPlaylist_name5.Size = new System.Drawing.Size(147, 25);
             this.labPlaylist_name5.TabIndex = 21;
@@ -652,7 +927,7 @@
             // 
             this.labPlaylist_amount1.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_amount1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_amount1.Location = new System.Drawing.Point(175, 63);
+            this.labPlaylist_amount1.Location = new System.Drawing.Point(175, 87);
             this.labPlaylist_amount1.Name = "labPlaylist_amount1";
             this.labPlaylist_amount1.Size = new System.Drawing.Size(215, 25);
             this.labPlaylist_amount1.TabIndex = 21;
@@ -662,7 +937,7 @@
             // 
             this.labPlaylist_name1.BackColor = System.Drawing.Color.Transparent;
             this.labPlaylist_name1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labPlaylist_name1.Location = new System.Drawing.Point(175, 18);
+            this.labPlaylist_name1.Location = new System.Drawing.Point(175, 42);
             this.labPlaylist_name1.Name = "labPlaylist_name1";
             this.labPlaylist_name1.Size = new System.Drawing.Size(147, 25);
             this.labPlaylist_name1.TabIndex = 21;
@@ -769,5 +1044,16 @@
         private Guna.UI2.WinForms.Guna2ImageButton picPlaylist5;
         private Guna.UI2.WinForms.Guna2HtmlLabel labPlaylist_amount5;
         private Guna.UI2.WinForms.Guna2HtmlLabel labPlaylist_name5;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDelete2;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDelete1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDelete3;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDelete6;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDelete5;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDelete11;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDelete7;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDelete10;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDelete9;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDelete8;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDelete4;
     }
 }
