@@ -67,7 +67,7 @@ namespace Muzic
                 Homepage.image = (Bitmap)Image.FromStream(stream);
             }
 
-            Homepage.CurrentIndex = i;
+            Homepage.CurrentIndex = Discover.Musics.FindIndex(e => e.MusicId == Songs[i].MusicId);
             Homepage.LoadMusic(Songs[i].URL + ".mp3");
         }
 

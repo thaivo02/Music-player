@@ -58,8 +58,9 @@ namespace Muzic
             if (pressed.Name.Length > 12)
                 index = 10 + (int)pressed.Name[12] - 48;
             else index = (int)pressed.Name[11] - 48;
+
             var musicsFromPlaylist = new List<Music>(Discover.Musics);
-            var playlist = _playlistMusicRepository.GetAll().Where(e => e.PlaylistId == index);
+            var playlist = _playlistMusicRepository.GetAll().Where(e => e.PlaylistId == Playlist[index - 1].PlaylistId);
             musicsFromPlaylist = musicsFromPlaylist.Where(e => playlist.Any(u => u.MusicId == e.MusicId)).ToList();
             //musicsFromPlaylist.Select(e => playlist.Any(u => u.MusicId == e.MusicId));
             Discover.Musics = musicsFromPlaylist;

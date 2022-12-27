@@ -49,8 +49,9 @@ namespace Muzic
                 Musics.First(e => e.MusicName == listFavorite[0].MusicName).Frequency += 1;
                 _musicRepository.SaveChanges();
 
-                Homepage.CurrentIndex = 0;
+                Homepage.CurrentIndex = Discover.Musics.FindIndex(e => e.MusicId == listFavorite[0].MusicId);
                 Homepage.LoadMusic(listFavorite[0].URL + ".mp3");
+
             }
         }
     }
